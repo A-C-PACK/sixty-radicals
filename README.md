@@ -2,7 +2,9 @@
 
 A single-page website that teaches a Chinese learner the 30 most useful simplified-character radicals: what each one means, where it sits in a character, and how to use it to guess the meaning of characters never seen before.
 
-Open `dist/index.html` in a browser. It is one self-contained file (about 2.4 MB) and needs only an internet connection for the web fonts and the Hanzi Writer script used for tracing.
+**Visit it: https://a-c-pack.github.io/thirty-radicals/**
+
+The page is `docs/index.html`, one self-contained file (about 2.4 MB) served by GitHub Pages. It can also be opened straight from disk, and needs an internet connection only for the web fonts and the Hanzi Writer script used for tracing.
 
 ## What is in it
 
@@ -14,7 +16,7 @@ Open `dist/index.html` in a browser. It is one self-contained file (about 2.4 MB
 ## Building
 
 ```
-python3 build.py        # -> dist/index.html and dist/artifact.html
+python3 build.py        # -> docs/index.html (the public page)
 ```
 
 | Path | What it is |

@@ -1,6 +1,6 @@
 """Build the radicals site.
 
-    python3 build.py            # -> dist/index.html (open locally) and dist/artifact.html (for publishing)
+    python3 build.py            # -> docs/index.html (the public page, served by GitHub Pages) and dist/artifact.html (the Artifact)
 
 Content lives in src/content/g1..g6.json, styles in src/css/*.css, scripts in src/app/*.js
 (concatenated in name order). Stroke outlines for every Chinese character that appears
@@ -13,7 +13,10 @@ import re
 
 from fetch import EXTRA, HW, ROOT, get, groups
 
-SRC, DIST = ROOT / "src", ROOT / "dist"
+SRC, DIST, DOCS = ROOT / "src", ROOT / "dist", ROOT / "docs"
+ABOUT = "Learn the 30 most useful Chinese radicals: stroke-drawn lessons, quizzes, a 60-second decode sprint and Mandarin audio."
+ICON = ("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23F2452F'/%3E"
+        "%3Cpath d='M18 20h28M18 32h28M18 44h28M32 14v36' stroke='%23F7F2E8' stroke-width='6' stroke-linecap='round' fill='none'/%3E%3C/svg%3E")
 CJK = re.compile(r"[⺀-⿟㐀-鿿]")
 # Radical forms with no entry of their own in the stroke data: cut out of a character that carries them.
 DERIVED = {"⻊": "跑"}
@@ -92,11 +95,18 @@ def main():
             .replace("{{FONTS}}", FONTS))
     DIST.mkdir(exist_ok=True)
     (DIST / "artifact.html").write_text(body)
-    (DIST / "index.html").write_text(
+    # the public page is the same body as a full document, with the title and sharing tags in its head
+    title = re.search(r"<title>(.*?)</title>", body).group(1)
+    DOCS.mkdir(exist_ok=True)
+    (DOCS / ".nojekyll").write_text("")
+    (DOCS / "index.html").write_text(
         '<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
         '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
+        f'<title>{title}</title>\n<meta name="description" content="{ABOUT}">\n'
+        f'<meta property="og:title" content="{title}">\n<meta property="og:description" content="{ABOUT}">\n<meta property="og:type" content="website">\n'
+        f'<meta name="theme-color" content="#0A0A10">\n<link rel="icon" href="{ICON}">\n'
         "<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>\n</head>\n<body>\n"
-        + body + "\n</body>\n</html>\n")
+        + re.sub(r"<title>.*?</title>\n?", "", body, count=1) + "\n</body>\n</html>\n")
     n = sum(len(g["radicals"]) for g in gs)
     print(f"{n} radicals, {len(strokes)} drawn characters, {len(data['audio'])} audio clips, "
           f"{len(body) / 1e6:.2f} MB" + (f"; no stroke data (font fallback): {' '.join(missing)}" if missing else ""))
