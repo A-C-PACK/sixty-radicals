@@ -62,7 +62,7 @@ const sample = (list) => list[Math.floor(Math.random() * list.length)];
 // ---------------------------------------------------------------- saved progress
 // Kept in this browser only. Everything works without it.
 const STORE_KEY = "thirty-radicals-v1";
-const fresh = () => ({ rad: {}, best: {}, sprint: 0, sound: true, intro: 0 });
+const fresh = () => ({ rad: {}, best: {}, sprint: 0, sound: true, intro: 0, hunt: {}, built: {} });
 let state = fresh();
 try { state = Object.assign(fresh(), JSON.parse(localStorage.getItem(STORE_KEY) || "{}")); } catch (e) { /* private window */ }
 const save = () => { try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch (e) { /* ignore */ } };

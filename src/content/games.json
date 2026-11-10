@@ -1,0 +1,436 @@
+{
+ "people": {
+  "scene": {
+   "zh": "家人", "en": "Family chat", "kind": "chat", "noun": "family chat", "where": "in the chat",
+   "sections": [
+    {"label": "Before dinner", "rows": [
+     {"tag": "Mum", "zh": "你们到家了吗?", "en": "Are you home yet?"},
+     {"tag": "Dad", "zh": "到了. 姐姐在做饭.", "en": "We are. Big sister is cooking."},
+     {"tag": "Mum", "zh": "好! 请奶奶喝茶.", "en": "Good! Make Grandma some tea."},
+     {"tag": "Grandma", "zh": "谢谢. 谁想吃饺子?", "en": "Thank you. Who wants dumplings?"},
+     {"tag": "Little sister", "zh": "我! 他也想吃.", "en": "Me! And so does he."},
+     {"tag": "Mum", "zh": "我很忙. 你们快吃.", "en": "I am busy. You go ahead and eat."},
+     {"tag": "Grandma", "zh": "她说她忙. 别忘了她的饺子!", "en": "She says she is busy. Do not forget her dumplings!"}
+    ]}
+   ],
+   "hunts": [
+    {"rad": "person", "targets": {
+      "你": ["nǐ", "you", "A person: the one you are talking to."],
+      "们": ["men", "plural for people", "It turns one person into several: 你们 is all of you."],
+      "做": ["zuò", "to do, to make", "Making and doing are what people do."],
+      "他": ["tā", "he", "A person: that other one."]},
+     "traps": {"谁": "The middle of 谁 looks like 亻, but it belongs to the right-hand part. 谁 carries 讠 SPEECH."}},
+    {"rad": "woman", "targets": {
+      "姐": ["jiě", "older sister", "A woman in the family."],
+      "好": ["hǎo", "good", "A woman with a child 子: the old picture of something good."],
+      "奶": ["nǎi", "milk", "奶奶 is grandma, your father's mother."],
+      "她": ["tā", "she", "他 with the person swapped for a woman."]},
+     "traps": {}},
+    {"rad": "speech", "targets": {
+      "请": ["qǐng", "please, to invite", "A polite request is spoken."],
+      "谢": ["xiè", "to thank", "Thanks are said out loud."],
+      "谁": ["shéi", "who", "A question you ask. You will hear both shéi and shuí."],
+      "说": ["shuō", "to say", "Words out loud."]},
+     "traps": {}},
+    {"rad": "heart", "targets": {
+      "想": ["xiǎng", "to want, to think", "Wanting happens in the heart. Underneath, the radical keeps its full shape 心."],
+      "忙": ["máng", "busy", "A state of mind. On the left the heart thins to 忄."],
+      "快": ["kuài", "quick", "It first meant glad, as it still does in 快乐, happy."],
+      "忘": ["wàng", "to forget", "Lost 亡 from the heart 心."]},
+     "traps": {}}
+   ]
+  },
+  "builds": [
+   {"ch": "妈", "py": "mā", "mean": "mom", "rad": "woman", "pos": "left",
+    "radOpts": ["woman", "person", "mouth", "heart"], "posOpts": ["left", "right", "top", "bottom"],
+    "radNotes": {"person": "亻 is for people in general. Another of the thirty is narrower: women and family."},
+    "posNote": "女 stands on the left and narrows a little to make room.",
+    "parts": [["马", "mǎ", "horse"], ["且", "qiě", "moreover", "姐", "jiě", "older sister"], ["也", "yě", "also", "她", "tā", "she"]],
+    "done": "女 says a woman. 马 mǎ lends its sound: mā."},
+   {"ch": "请", "py": "qǐng", "mean": "please", "rad": "speech", "pos": "left",
+    "radOpts": ["speech", "mouth", "heart", "person"], "posOpts": ["left", "right", "top", "bottom"],
+    "radNotes": {"mouth": "口 is for eating and noises. A polite request is made in words."},
+    "posNote": "讠 is the thin side form of 言. It always stands on the left.",
+    "parts": [["青", "qīng", "blue-green"], ["舌", "shé", "tongue", "话", "huà", "speech, words"], ["吾", "wú", "I (old word)", "语", "yǔ", "language"]],
+    "done": "讠 says it is spoken. 青 qīng lends its sound: qǐng."},
+   {"ch": "想", "py": "xiǎng", "mean": "to think", "rad": "heart", "form": "心", "pos": "bottom",
+    "radOpts": ["heart", "eye", "mouth", "speech"], "posOpts": ["left", "right", "top", "bottom"],
+    "radNotes": {},
+    "posNote": "Underneath, the heart keeps its full shape 心. On the left it thins to 忄.",
+    "parts": [["相", "xiāng", "each other"], ["亡", "wáng", "lost, gone", "忘", "wàng", "to forget"], ["你", "nǐ", "you", "您", "nín", "you (polite)"]],
+    "done": "心 says it happens in the heart. 相 xiāng lends its sound: xiǎng."}
+  ]
+ },
+
+ "body": {
+  "scene": {
+   "zh": "诊所", "en": "Clinic", "kind": "list", "noun": "clinic form", "where": "on the form",
+   "sections": [
+    {"label": "What is wrong?", "rows": [
+     {"zh": "头疼", "en": "Headache"},
+     {"zh": "胃痛", "en": "Stomach ache"},
+     {"zh": "背痛", "en": "Backache"},
+     {"zh": "腿疼", "en": "Sore leg"},
+     {"zh": "脚痒", "en": "Itchy foot"},
+     {"zh": "眼睛红", "en": "Red eyes"}
+    ]},
+    {"label": "The doctor says", "wide": true, "rows": [
+     {"zh": "病不重, 多睡觉.", "en": "It is nothing serious. Get more sleep."},
+     {"zh": "多喝水, 少看手机.", "en": "Drink more water and look at your phone less."},
+     {"zh": "按时吃药.", "en": "Take your medicine on time."},
+     {"zh": "脚上抹药, 天天换.", "en": "Rub ointment on the foot and change the dressing every day."},
+     {"zh": "明天来打针.", "en": "Come back tomorrow for an injection."}
+    ]}
+   ],
+   "hunts": [
+    {"rad": "sick", "targets": {
+      "疼": ["téng", "to ache", "It hurts."],
+      "痛": ["tòng", "pain", "It hurts more."],
+      "痒": ["yǎng", "itchy", "Not quite pain, but still a complaint."],
+      "病": ["bìng", "illness", "The radical is named after this one."]},
+     "traps": {}},
+    {"rad": "flesh", "hint": "It usually stands on the left. Look underneath as well.", "targets": {
+      "胃": ["wèi", "stomach", "An organ of the body. Here 月 sits underneath."],
+      "背": ["bèi", "the back", "A part of the body, again with 月 underneath."],
+      "腿": ["tuǐ", "leg", "Part of the body."],
+      "脚": ["jiǎo", "foot", "The foot as a part of the body. ⻊ FOOT is kept for what feet do."]},
+     "traps": {
+      "睛": "There is a small 月 in 睛, at the bottom of its sound part 青. The meaning part is 目 EYE.",
+      "明": "The 月 in 明 is the moon, beside the sun 日: bright. Same shape, but not the body."}},
+    {"rad": "eye", "targets": {
+      "眼": ["yǎn", "eye", "The everyday word is 眼睛, and both halves carry 目."],
+      "睛": ["jīng", "eyeball", "The second half of 眼睛, eye."],
+      "睡": ["shuì", "to sleep", "The eyes droop shut."],
+      "看": ["kàn", "to look", "A hand 手 shading the eye. Here 目 sits underneath."]},
+     "traps": {}},
+    {"rad": "hand", "targets": {
+      "按": ["àn", "to press", "Pressing is done with the hand. 按时 is keeping to the time."],
+      "抹": ["mǒ", "to rub on", "You rub it on with your hand."],
+      "换": ["huàn", "to change, to swap", "Swapping one thing for another, by hand."],
+      "打": ["dǎ", "to hit", "A hand strikes. 打针 is to give an injection."]},
+     "traps": {"看": "The top of 看 is a whole hand 手, shading the eye. But 看 is about seeing, so it carries 目 EYE."}}
+   ]
+  },
+  "builds": [
+   {"ch": "打", "py": "dǎ", "mean": "to hit", "rad": "hand", "pos": "left",
+    "radOpts": ["hand", "foot", "eye", "sick"], "posOpts": ["left", "right", "top", "wrap-tl"],
+    "radNotes": {},
+    "posNote": "扌 is the thin side form of 手. It always stands on the left.",
+    "parts": [["丁", "dīng", "nail"], ["立", "lì", "to stand", "拉", "lā", "to pull"], ["爪", "zhǎo", "claw", "抓", "zhuā", "to grab"]],
+    "done": "扌 says a hand does it. 丁 dīng lends the start of its sound: dǎ."},
+   {"ch": "跑", "py": "pǎo", "mean": "to run", "rad": "foot", "pos": "left",
+    "radOpts": ["foot", "hand", "walk", "flesh"], "posOpts": ["left", "right", "bottom", "wrap-bl"],
+    "radNotes": {"walk": "辶 is about distance and travel. This one is what the feet themselves do.",
+     "flesh": "月 names parts of the body. Running is something the feet do."},
+    "posNote": "⻊ is 足 squeezed onto the left, with its last stroke tilted up.",
+    "parts": [["包", "bāo", "bag, to wrap"], ["兆", "zhào", "omen", "跳", "tiào", "to jump"], ["各", "gè", "each", "路", "lù", "road"]],
+    "done": "⻊ says the feet do it. 包 bāo lends its sound: pǎo."},
+   {"ch": "病", "py": "bìng", "mean": "illness", "rad": "sick", "pos": "wrap-tl",
+    "radOpts": ["sick", "flesh", "heart", "hand"], "posOpts": ["left", "top", "wrap-tl", "wrap-bl"],
+    "radNotes": {"flesh": "月 names parts of the body. Being unwell has a radical of its own."},
+    "posNote": "疒 covers the top and runs down the left side.",
+    "parts": [["丙", "bǐng", "third"], ["冬", "dōng", "winter", "疼", "téng", "to ache"], ["羊", "yáng", "sheep", "痒", "yǎng", "itchy"]],
+    "done": "疒 says illness. 丙 bǐng lends its sound: bìng."}
+  ]
+ },
+
+ "elements": {
+  "scene": {
+   "zh": "天气", "en": "Forecast", "kind": "list", "noun": "weather forecast", "where": "in the forecast",
+   "sections": [
+    {"label": "Today", "rows": [
+     {"zh": "北京 晴", "en": "Beijing: clear", "tag": "4°"},
+     {"zh": "上海 小雨", "en": "Shanghai: light rain", "tag": "11°"},
+     {"zh": "长春 大雪", "en": "Changchun: heavy snow", "tag": "-9°"},
+     {"zh": "广州 雷雨", "en": "Guangzhou: thunderstorms", "tag": "22°"},
+     {"zh": "武汉 大雾", "en": "Wuhan: thick fog", "tag": "8°"},
+     {"zh": "深圳 多云", "en": "Shenzhen: cloudy", "tag": "23°"}
+    ]},
+    {"label": "Tomorrow", "wide": true, "rows": [
+     {"zh": "早晚温差大.", "en": "A big gap between morning and evening temperatures."},
+     {"zh": "空气湿, 路面滑.", "en": "Damp air and slippery roads."},
+     {"zh": "夜里很冷, 有霜.", "en": "Very cold overnight, with frost."},
+     {"zh": "海边风浪大.", "en": "Rough seas along the coast."},
+     {"zh": "明天午后很暖.", "en": "Warm tomorrow after noon."},
+     {"zh": "出门带雨伞.", "en": "Take an umbrella when you go out."}
+    ]}
+   ],
+   "hunts": [
+    {"rad": "rain", "targets": {
+      "雪": ["xuě", "snow", "It falls from the sky."],
+      "雷": ["léi", "thunder", "It arrives with the rain."],
+      "雾": ["wù", "fog", "Water hanging in the air."],
+      "霜": ["shuāng", "frost", "Cold weather settling on the ground."]},
+     "traps": {}},
+    {"rad": "sun", "hint": "Look on the left first, then underneath.", "targets": {
+      "晴": ["qíng", "clear, sunny", "The sun is out."],
+      "春": ["chūn", "spring", "The season the sun comes back. Here 日 sits underneath."],
+      "早": ["zǎo", "early, morning", "The sun is coming up."],
+      "晚": ["wǎn", "evening, late", "The sun is going down."],
+      "明": ["míng", "bright", "Sun and moon 月 together. 明天 is tomorrow."],
+      "暖": ["nuǎn", "warm", "Warmed by the sun."]},
+     "traps": {
+      "温": "There is a 日 in 温, but it sits inside the right-hand part. The meaning part is 氵 WATER.",
+      "湿": "There is a 日 in 湿, but it sits inside the right-hand part. The meaning part is 氵 WATER."}},
+    {"rad": "water", "targets": {
+      "海": ["hǎi", "sea", "A lot of water."],
+      "汉": ["hàn", "the Han river", "汉 began as the name of a river. 武汉 stands where it meets the Yangtze."],
+      "深": ["shēn", "deep", "Deep water."],
+      "温": ["wēn", "warm", "Warm was first said of water."],
+      "湿": ["shī", "wet", "Water in the air: damp."],
+      "滑": ["huá", "slippery", "A wet road is a slippery one."],
+      "浪": ["làng", "wave", "Water on the move."]},
+     "traps": {"冷": "冷 has two drops, not three. 冫 is ICE, a different radical."}}
+   ]
+  },
+  "builds": [
+   {"ch": "洗", "py": "xǐ", "mean": "to wash", "rad": "water", "pos": "left",
+    "radOpts": ["water", "rain", "fire", "earth"], "posOpts": ["left", "right", "top", "bottom"],
+    "radNotes": {"rain": "雨 is for weather from the sky. Washing uses water on the ground."},
+    "posNote": "氵 is the thin side form of 水. It always stands on the left.",
+    "parts": [["先", "xiān", "first"], ["每", "měi", "every", "海", "hǎi", "sea"], ["可", "kě", "can", "河", "hé", "river"]],
+    "done": "氵 says water is involved. 先 xiān lends the start of its sound: xǐ."},
+   {"ch": "煮", "py": "zhǔ", "mean": "to boil", "rad": "fire", "form": "灬", "pos": "bottom",
+    "radOpts": ["fire", "water", "sun", "earth"], "posOpts": ["left", "right", "top", "bottom"],
+    "radNotes": {"water": "A fair guess, since boiling needs water. This character points at what does the heating."},
+    "posNote": "Underneath, 火 flattens into four dots, 灬: a fire under the pot.",
+    "parts": [["者", "zhě", "one who"], ["执", "zhí", "to hold", "热", "rè", "hot"], ["占", "zhàn", "to occupy", "点", "diǎn", "dot, o'clock"]],
+    "done": "灬 says fire. 者 zhě lends the start of its sound: zhǔ."},
+   {"ch": "雾", "py": "wù", "mean": "fog", "rad": "rain", "pos": "top",
+    "radOpts": ["rain", "water", "sun", "earth"], "posOpts": ["left", "top", "bottom", "wrap-tl"],
+    "radNotes": {"water": "氵 is for water you can pour. Fog hangs in the sky."},
+    "posNote": "雨 always sits on top, pressed flat, like the sky it falls from.",
+    "parts": [["务", "wù", "task, duty"], ["田", "tián", "field", "雷", "léi", "thunder"], ["相", "xiāng", "each other", "霜", "shuāng", "frost"]],
+    "done": "雨 says weather. 务 wù lends its whole sound: wù."}
+  ]
+ },
+
+ "living": {
+  "scene": {
+   "zh": "动物园", "en": "Zoo", "kind": "list", "noun": "zoo map", "where": "on the map",
+   "sections": [
+    {"label": "Animals", "rows": [
+     {"zh": "猴山", "en": "Monkey Hill", "tag": "←"},
+     {"zh": "熊猫馆", "en": "Panda House", "tag": "↑"},
+     {"zh": "狮虎山", "en": "Lion and Tiger Hill", "tag": "→"},
+     {"zh": "狐狸", "en": "Foxes", "tag": "→"},
+     {"zh": "狼", "en": "Wolves", "tag": "↑"},
+     {"zh": "蛇馆", "en": "Snake House", "tag": "←"},
+     {"zh": "蝴蝶馆", "en": "Butterfly House", "tag": "↑"},
+     {"zh": "青蛙池", "en": "Frog Pond", "tag": "→"}
+    ]},
+    {"label": "Gardens", "rows": [
+     {"zh": "竹林", "en": "Bamboo Grove", "tag": "←"},
+     {"zh": "松树林", "en": "Pine Wood", "tag": "↑"},
+     {"zh": "荷花池", "en": "Lotus Pond", "tag": "→"},
+     {"zh": "梅园", "en": "Plum Garden", "tag": "←"},
+     {"zh": "茶室", "en": "Tea House", "tag": "↑"},
+     {"zh": "草地", "en": "Lawn", "tag": "→"}
+    ]},
+    {"label": "Please", "wide": true, "rows": [
+     {"zh": "请勿喂食.", "en": "Do not feed the animals."},
+     {"zh": "请勿摘花.", "en": "Do not pick the flowers."},
+     {"zh": "小心蚊虫.", "en": "Watch out for mosquitoes."},
+     {"zh": "小心蜜蜂.", "en": "Watch out for bees."}
+    ]}
+   ],
+   "hunts": [
+    {"rad": "animal", "targets": {
+      "猴": ["hóu", "monkey", "A wild one."],
+      "猫": ["māo", "cat", "熊猫, bear cat, is the giant panda."],
+      "狮": ["shī", "lion", "A big cat."],
+      "狐": ["hú", "fox", "狐狸 is a fox, and both halves carry 犭."],
+      "狸": ["lí", "fox, raccoon dog", "The second half of 狐狸, fox."],
+      "狼": ["láng", "wolf", "A wild dog."]},
+     "traps": {}},
+    {"rad": "bug", "hint": "It usually stands on the left. Look underneath as well.", "targets": {
+      "蛇": ["shé", "snake", "虫 began as a drawing of a snake."],
+      "蝴": ["hú", "butterfly", "蝴蝶 is a butterfly, and both halves carry 虫."],
+      "蝶": ["dié", "butterfly", "The second half of 蝴蝶."],
+      "蛙": ["wā", "frog", "Small, damp and hopping: frogs are filed with the bugs."],
+      "蚊": ["wén", "mosquito", "A bug that bites."],
+      "蜜": ["mì", "honey", "Made by insects. Here 虫 sits underneath."],
+      "蜂": ["fēng", "bee", "A bug that stings."]},
+     "traps": {}},
+    {"rad": "grass", "targets": {
+      "荷": ["hé", "lotus", "A water plant. 荷花 is its flower."],
+      "花": ["huā", "flower", "A plant in bloom."],
+      "茶": ["chá", "tea", "Leaves from a bush."],
+      "草": ["cǎo", "grass", "The radical is named after it."]},
+     "traps": {"猫": "There is a 艹 in 猫, on top of its sound part 苗 miáo. The meaning part is 犭 ANIMAL."}},
+    {"rad": "tree", "targets": {
+      "松": ["sōng", "pine", "A kind of tree."],
+      "树": ["shù", "tree", "The everyday word for a tree."],
+      "林": ["lín", "woods", "Two trees make a wood."],
+      "梅": ["méi", "plum", "A fruit tree, loved for its winter blossom."]},
+     "traps": {
+      "茶": "The bottom of 茶 looks like 木, but tea is a leafy plant: it carries 艹 GRASS.",
+      "蝶": "There is a 木 in 蝶, at the bottom of its sound part. The meaning part is 虫 BUG."}}
+   ]
+  },
+  "builds": [
+   {"ch": "花", "py": "huā", "mean": "flower", "rad": "grass", "pos": "top",
+    "radOpts": ["grass", "tree", "bamboo", "bug"], "posOpts": ["left", "right", "top", "bottom"],
+    "radNotes": {"tree": "木 is for trees and things made of wood. Flowers and leafy plants take another one."},
+    "posNote": "艹 always sits on top.",
+    "parts": [["化", "huà", "to change"], ["早", "zǎo", "early", "草", "cǎo", "grass"], ["采", "cǎi", "to pick", "菜", "cài", "vegetable"]],
+    "done": "艹 says it is a plant. 化 huà lends its sound: huā."},
+   {"ch": "猫", "py": "māo", "mean": "cat", "rad": "animal", "pos": "left",
+    "radOpts": ["animal", "bug", "grass", "person"], "posOpts": ["left", "right", "top", "wrap-bl"],
+    "radNotes": {"bug": "虫 is for insects and small crawling things. A cat has four legs and fur."},
+    "posNote": "犭 is the side form of 犬, dog. It always stands on the left.",
+    "parts": [["苗", "miáo", "sprout"], ["句", "jù", "sentence", "狗", "gǒu", "dog"], ["良", "liáng", "good", "狼", "láng", "wolf"]],
+    "done": "犭 says an animal. 苗 miáo lends its sound: māo, close to a meow."},
+   {"ch": "蚊", "py": "wén", "mean": "mosquito", "rad": "bug", "pos": "left",
+    "radOpts": ["bug", "animal", "bamboo", "mouth"], "posOpts": ["left", "right", "top", "bottom"],
+    "radNotes": {"animal": "犭 is for four-legged animals. This one has six legs and wings."},
+    "posNote": "虫 stands on the left here. In a few characters, such as 蜜, it drops to the bottom.",
+    "parts": [["文", "wén", "writing"], ["下", "xià", "down, below", "虾", "xiā", "shrimp"], ["它", "tā", "it", "蛇", "shé", "snake"]],
+    "done": "虫 says a bug. 文 wén lends its whole sound: wén."}
+  ]
+ },
+
+ "home": {
+  "scene": {
+   "zh": "菜单", "en": "Menu", "kind": "list", "noun": "menu", "where": "on the menu",
+   "sections": [
+    {"label": "To eat", "rows": [
+     {"zh": "酸辣汤", "en": "Hot and sour soup", "tag": "¥18"},
+     {"zh": "海鲜炒饭", "en": "Seafood fried rice", "tag": "¥32"},
+     {"zh": "牛肉河粉", "en": "Beef rice noodles", "tag": "¥28"},
+     {"zh": "猪肉饺子", "en": "Pork dumplings", "tag": "¥22"},
+     {"zh": "北京烤鸭", "en": "Peking roast duck", "tag": "¥88"},
+     {"zh": "红烧鱼", "en": "Red-braised fish", "tag": "¥48"},
+     {"zh": "煎饼", "en": "Savoury pancake", "tag": "¥12"},
+     {"zh": "蔬菜沙拉", "en": "Vegetable salad", "tag": "¥20"},
+     {"zh": "馒头", "en": "Steamed buns", "tag": "¥6"}
+    ]},
+    {"label": "To drink", "rows": [
+     {"zh": "果汁", "en": "Fruit juice", "tag": "¥15"},
+     {"zh": "汽水", "en": "Soda", "tag": "¥8"},
+     {"zh": "冰茶", "en": "Iced tea", "tag": "¥12"},
+     {"zh": "热茶", "en": "Hot tea", "tag": "¥10"}
+    ]}
+   ],
+   "hunts": [
+    {"rad": "water", "targets": {
+      "汤": ["tāng", "soup", "Soup is a liquid."],
+      "海": ["hǎi", "sea", "Seafood comes out of the sea."],
+      "河": ["hé", "river", "河粉 is short for Shahe noodles, named after a town whose name means sand river."],
+      "沙": ["shā", "sand", "Sand lies where water has been. Here 沙拉 only spells out the sound of salad: shālā."],
+      "汁": ["zhī", "juice", "Juice is a liquid."],
+      "汽": ["qì", "steam, gas", "Steam rises off water. 汽水 is gas water."]},
+     "traps": {"冰": "冰 has two drops, not three. 冫 is ICE, a different radical."}},
+    {"rad": "fire", "targets": {
+      "炒": ["chǎo", "to stir-fry", "Tossed in a pan over a flame."],
+      "烤": ["kǎo", "to roast", "Roasted over a fire."],
+      "烧": ["shāo", "to burn, to braise", "红烧 is red-braising: cooked slowly over heat."],
+      "煎": ["jiān", "to pan-fry", "The fire sits underneath, flattened into 灬."],
+      "热": ["rè", "hot", "Heat, with the fire underneath as 灬."]},
+     "traps": {}},
+    {"rad": "food", "targets": {
+      "饭": ["fàn", "cooked rice, a meal", "The everyday word for a meal."],
+      "饺": ["jiǎo", "dumpling", "Something you eat."],
+      "饼": ["bǐng", "flat cake", "Anything round, flat and edible."],
+      "馒": ["mán", "steamed bun", "馒头 is a plain steamed bun."]},
+     "traps": {}}
+   ]
+  },
+  "builds": [
+   {"ch": "饭", "py": "fàn", "mean": "a meal", "rad": "food", "pos": "left",
+    "radOpts": ["food", "mouth", "roof", "fire"], "posOpts": ["left", "right", "top", "bottom"],
+    "radNotes": {"mouth": "口 marks eating as something you do, as in 吃. The meal itself takes another one."},
+    "posNote": "饣 is the thin side form of 食. It always stands on the left.",
+    "parts": [["反", "fǎn", "opposite"], ["我", "wǒ", "I, me", "饿", "è", "hungry"], ["交", "jiāo", "to hand over", "饺", "jiǎo", "dumpling"]],
+    "done": "饣 says food. 反 fǎn lends its sound: fàn."},
+   {"ch": "间", "py": "jiān", "mean": "room, between", "rad": "door", "pos": "frame",
+    "radOpts": ["door", "roof", "walk", "earth"], "posOpts": ["left", "top", "frame", "wrap-tl"],
+    "radNotes": {"roof": "宀 covers a house from above. This one is what you walk through."},
+    "posNote": "门 stands around the outside, and the other part goes in the doorway.",
+    "parts": [["日", "rì", "sun"], ["人", "rén", "person", "闪", "shǎn", "to flash, to dodge"], ["马", "mǎ", "horse", "闯", "chuǎng", "to rush in"]],
+    "done": "Sunlight 日 through the gap in a door: the space between. Both parts carry meaning here, and neither gives the sound."},
+   {"ch": "客", "py": "kè", "mean": "guest", "rad": "roof", "pos": "top",
+    "radOpts": ["roof", "door", "person", "woman"], "posOpts": ["left", "top", "bottom", "frame"],
+    "radNotes": {"person": "A fair guess, since a guest is a person. This character is about being under someone's roof."},
+    "posNote": "宀 always sits on top, like the roof it is.",
+    "parts": [["各", "gè", "each"], ["女", "nǚ", "woman", "安", "ān", "safe, at peace"], ["子", "zǐ", "child", "字", "zì", "character, word"]],
+    "done": "宀 says under a roof. 各 gè lends its ending: kè."}
+  ]
+ },
+
+ "tools": {
+  "scene": {
+   "zh": "火车站", "en": "Station", "kind": "list", "noun": "station", "where": "on the signs",
+   "sections": [
+    {"label": "This way", "rows": [
+     {"zh": "进站口", "en": "Entrance", "tag": "↑"},
+     {"zh": "出站口", "en": "Exit", "tag": "←"},
+     {"zh": "售票处", "en": "Ticket office", "tag": "→"},
+     {"zh": "候车室", "en": "Waiting room", "tag": "↑"},
+     {"zh": "贵宾室", "en": "VIP lounge", "tag": "→"},
+     {"zh": "地铁", "en": "Metro", "tag": "↓"},
+     {"zh": "银行", "en": "Bank", "tag": "←"},
+     {"zh": "轮椅通道", "en": "Step-free route", "tag": "→"},
+     {"zh": "车辆入口", "en": "Vehicle entrance", "tag": "↓"}
+    ]},
+    {"label": "Services", "rows": [
+     {"zh": "购票", "en": "Buy tickets"},
+     {"zh": "退票", "en": "Refunds"},
+     {"zh": "转车", "en": "Connections"},
+     {"zh": "软卧", "en": "Soft sleeper"},
+     {"zh": "货运", "en": "Freight"},
+     {"zh": "取钱", "en": "Cash machine"},
+     {"zh": "免费饮水", "en": "Free drinking water"},
+     {"zh": "失物: 眼镜", "en": "Lost property: glasses"}
+    ]}
+   ],
+   "hunts": [
+    {"rad": "walk", "targets": {
+      "进": ["jìn", "to enter", "Moving in."],
+      "通": ["tōng", "to go through", "A way through is a way you can walk."],
+      "道": ["dào", "way, road", "A road is for walking. 通道 is a passage."],
+      "退": ["tuì", "to go back, to return", "Stepping backwards. 退票 hands a ticket back."],
+      "运": ["yùn", "to transport", "Moving things from place to place."]},
+     "traps": {}},
+    {"rad": "vehicle", "targets": {
+      "轮": ["lún", "wheel", "What a vehicle rolls on. 轮椅 is a wheelchair."],
+      "辆": ["liàng", "counter for vehicles", "一辆车 is one car. 车辆 is vehicles in general."],
+      "转": ["zhuǎn", "to turn, to change", "Wheels go round. 转车 is changing trains."],
+      "软": ["ruǎn", "soft", "First said of a cart with padded wheels, for a gentle ride."]},
+     "traps": {}},
+    {"rad": "metal", "targets": {
+      "铁": ["tiě", "iron", "A metal. 地铁, ground iron, is the underground railway."],
+      "银": ["yín", "silver", "A metal. 银行, silver house, is a bank."],
+      "钱": ["qián", "money", "Coins are metal."],
+      "镜": ["jìng", "mirror, lens", "The first mirrors were polished bronze. 眼镜 is glasses."]},
+     "traps": {}},
+    {"rad": "shell", "hint": "Look on the left and underneath.", "targets": {
+      "贵": ["guì", "expensive, honoured", "It costs many shells. 贵宾 is an honoured guest."],
+      "购": ["gòu", "to buy", "Paying out shells."],
+      "货": ["huò", "goods", "Things for sale."],
+      "费": ["fèi", "fee, to spend", "Shells going out. 免费 is free of charge."]},
+     "traps": {}}
+   ]
+  },
+  "builds": [
+   {"ch": "远", "py": "yuǎn", "mean": "far", "rad": "walk", "pos": "wrap-bl",
+    "radOpts": ["walk", "foot", "vehicle", "door"], "posOpts": ["left", "bottom", "wrap-tl", "wrap-bl"],
+    "radNotes": {"foot": "⻊ is for what feet do: run, jump, kick. Distance and travel take another one."},
+    "posNote": "辶 always wraps the left side and the bottom.",
+    "parts": [["元", "yuán", "first, the yuan"], ["文", "wén", "writing", "这", "zhè", "this"], ["寸", "cùn", "an inch", "过", "guò", "to pass"]],
+    "done": "辶 says it is about movement and distance. 元 yuán lends its sound: yuǎn."},
+   {"ch": "钟", "py": "zhōng", "mean": "clock, bell", "rad": "metal", "pos": "left",
+    "radOpts": ["metal", "shell", "knife", "sun"], "posOpts": ["left", "right", "top", "bottom"],
+    "radNotes": {"sun": "日 marks time, as in 时. This is the thing itself, and it was first cast in bronze."},
+    "posNote": "钅 is the thin side form of 金. It always stands on the left.",
+    "parts": [["中", "zhōng", "middle"], ["十", "shí", "ten", "针", "zhēn", "needle"], ["失", "shī", "to lose", "铁", "tiě", "iron"]],
+    "done": "钅 says metal. 中 zhōng lends its whole sound: zhōng."},
+   {"ch": "货", "py": "huò", "mean": "goods", "rad": "shell", "pos": "bottom",
+    "radOpts": ["shell", "metal", "vehicle", "knife"], "posOpts": ["left", "right", "top", "bottom"],
+    "radNotes": {"metal": "钅 gives 钱, money as coins. Trade goes back further, to shells."},
+    "posNote": "贝 often sits underneath, as in 贵 and 费. It can also stand on the left, as in 购.",
+    "parts": [["化", "huà", "to change"], ["弗", "fú", "not (old word)", "费", "fèi", "fee"], ["加", "jiā", "to add", "贺", "hè", "to congratulate"]],
+    "done": "贝 says trade. 化 huà lends its sound: huò, as it did in 花 huā."}
+  ]
+ }
+}

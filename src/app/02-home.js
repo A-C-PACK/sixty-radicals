@@ -162,7 +162,8 @@ function groupBand(g, gi) {
       el("div.group-act",
         el("span.group-prog", `${seen} / ${g.radicals.length} learned`),
         el("a.btn.small", { href: "#set-" + g.id }, best === undefined ? "Practise this set" : `Practise again · best ${best}%`))),
-    el("div.tiles", g.radicals.map(radTile)));
+    el("div.tiles", g.radicals.map(radTile)),
+    gameLinks(g));
 }
 
 function playSection() {
@@ -201,7 +202,7 @@ function footer() {
         el("p", "They were picked for two things: how many everyday characters they appear in, and how dependable the hint is. Together they are the dictionary radical of about 58% of the 2,500 most-used simplified characters. Frequent radicals with a weak hint, such as 阝, were left out in favour of clearer ones like food and rain.")),
       el("div",
         el("h4", "How the site teaches"),
-        el("p", "Five radicals at a time, each with its picture, its position and four familiar characters. Then you recall them, spot them inside characters, and use them on characters you have not met. Missed questions come back. A red seal means three right answers in a row.")),
+        el("p", "Five radicals at a time, each with its picture, its position and four familiar characters. Then you recall them, spot them inside characters, and use them on characters you have not met. Missed questions come back. Each set ends with two games: a radical hunt through something you would really read, and a round of building characters from their parts. A red seal means three right answers in a row.")),
       el("div",
         el("h4", "Credits"),
         el("p", "Stroke outlines: Make Me a Hanzi and Hanzi Writer data, derived from Arphic fonts under the Arphic Public License. Progress is saved in this browser only."),

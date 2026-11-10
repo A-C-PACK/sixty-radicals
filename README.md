@@ -10,7 +10,8 @@ The page is `docs/index.html`, one self-contained file (about 2.4 MB) served by 
 
 - Six themed sets of five radicals. Each lesson gives the radical's origin, its usual position, the name teachers use for it, a memory clue, four example characters, a "watch out" note, a question on an unseen character, and stroke tracing.
 - Set quizzes with five question types (meaning, shape, spot the radical, decode, family), a mixed review weighted towards weak radicals, and a 60-second decode sprint.
-- Mandarin pronunciation for all 208 taught characters and the 30 radical names (238 clips).
+- Two games at the end of every set. In **Radical hunt** you read a family chat, a clinic form, a weather forecast, zoo signs, a menu or station signs, and tap every character that carries a given radical. In **Build a character** you start from a meaning and pick the radical, where it sits, and the part that finishes it.
+- Mandarin pronunciation for all 208 taught characters, the 30 radical names and the characters the games teach (278 clips).
 - Progress is kept in the browser's local storage.
 
 ## Building
@@ -22,6 +23,7 @@ python3 build.py        # -> docs/index.html (the public page)
 | Path | What it is |
 | --- | --- |
 | `src/content/g1..g6.json` | The lesson content, one file per set |
+| `src/content/games.json` | The hunt scene and build round for each set. The build checks it against the dictionary, so no tap in a hunt is marked wrong unfairly |
 | `src/app/*.js`, `src/css/*.css`, `src/page.html` | Scripts, styles and page shell, inlined by the build |
 | `src/audio/mp3/`, `clips.json`, `manifest.json` | Pronunciation clips and the record of how each was checked |
 | `fetch.py` | Fetches stroke outlines for every character the site draws into `cache/hw/` |

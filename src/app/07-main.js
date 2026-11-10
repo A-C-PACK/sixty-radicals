@@ -9,6 +9,8 @@ function route() {
   if (h.startsWith("r-") && RAD[h.slice(2)]) return { kind: "lesson", make: () => lessonView(RAD[h.slice(2)]) };
   const g = h.startsWith("set-") && GROUPS.find((x) => x.id === h.slice(4));
   if (g) return { kind: "quiz", make: () => setQuizView(g) };
+  const gm = h.match(/^(hunt|build)-(.+)$/), gg = gm && GROUPS.find((x) => x.id === gm[2]);
+  if (gg) return { kind: "game", make: () => gameView(gm[1], gg) };
   if (h === "review") return { kind: "quiz", make: reviewView };
   if (h === "sprint") return { kind: "quiz", make: sprintView };
   return { kind: "home", make: homeView, anchor: ["how", "the-thirty", "play"].includes(h) ? h : null };

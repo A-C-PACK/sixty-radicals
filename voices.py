@@ -220,6 +220,10 @@ def site_items():
             items[r["cn"]] = (name, None)
     for ch, p in (("吗", "ma"), ("蚂", "mǎ")):          # the radical-swap demo on the home page
         items.setdefault(ch, syllable(p))
+    # the games: every character a hunt asks for, and every character a build round makes
+    for game in json.loads((ROOT / "src" / "content" / "games.json").read_text()).values():
+        for ch, p in [(c, t[0]) for h in game["scene"]["hunts"] for c, t in h["targets"].items()] + [(b["ch"], b["py"]) for b in game["builds"]]:
+            assert items.setdefault(ch, syllable(p)) == syllable(p), (ch, p, items[ch])
     return {t: (([s], tone) if isinstance(s, str) else (s, tone)) for t, (s, tone) in items.items()}
 
 

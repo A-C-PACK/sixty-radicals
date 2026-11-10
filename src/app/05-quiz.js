@@ -43,7 +43,7 @@ function resultRow(r, ok) {
 }
 
 /** A round with feedback after every answer. Missed questions come back once at the end. */
-function quizView({ title, questions, onDone, again, nextLink }) {
+function quizView({ title, questions, onDone, again, nextLink, extra }) {
   const host = el("div.q");
   const shell = quizShell(title, host);
   const firstTry = new Map();
@@ -86,7 +86,8 @@ function quizView({ title, questions, onDone, again, nextLink }) {
         el("div.done-btns",
           nextLink || null,
           el("button.btn" + (nextLink ? ".ghost" : ".primary"), { type: "button", onclick: again }, "Another round"),
-          el("a.btn.ghost", { href: "#the-thirty" }, "Back to the thirty"))));
+          el("a.btn.ghost", { href: "#the-thirty" }, "Back to the thirty")),
+        extra?.()));
     window.scrollTo({ top: 0 });
   };
   step();
@@ -98,6 +99,7 @@ function setQuizView(g) {
   return quizView({ title: `${g.title} · practice`, questions: setQuestions(g),
     onDone: (pct) => { state.best[g.id] = Math.max(state.best[g.id] ?? 0, pct); save(); },
     again: () => render(true),
+    extra: () => el("div.done-games", el("p.eyebrow", "Use them in the wild"), gameLinks(g)),
     nextLink: nextG ? el("a.btn.primary", { href: "#r-" + nextG.radicals[0].id }, `Start the next set: ${nextG.title}`)
       : el("a.btn.primary", { href: "#sprint" }, "Try the 60-second decode") });
 }
