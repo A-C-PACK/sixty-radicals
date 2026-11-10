@@ -1,0 +1,105 @@
+<title>Voice Audition</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans:wght@500;700&family=Outfit:wght@400;500;700&display=swap">
+<style>
+:root { color-scheme: dark; --bg: #0A0A10; --panel: #181926; --line: #2D2F45; --ink: #F7F2E8; --muted: #A2A5BC; --red: #F2452F;
+  --c-pink: #FF6FA8; --c-teal: #3FD9C6; --c-amber: #FFB23E; --c-water: #3DB8FF; --c-violet: #A78BFA; --c-green: #6FE39A; }
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: "Outfit", system-ui, sans-serif; font-size: 17px; line-height: 1.5; }
+.wrap { max-width: 860px; margin: 0 auto; padding: 40px max(16px, env(safe-area-inset-right, 0px)) 80px max(16px, env(safe-area-inset-left, 0px)); }
+.eyebrow { font-weight: 700; font-size: 0.76rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); margin: 0; }
+h1 { font-family: "Anton", Impact, sans-serif; font-weight: 400; font-size: clamp(2.4rem, 8vw, 4rem); line-height: 1.04; margin: 8px 0 14px; }
+h1 span { color: var(--red); }
+.lede { color: var(--muted); max-width: 60ch; margin: 0 0 28px; }
+.voice { padding: 22px; border-radius: 28px; background: var(--panel); border: 3px solid var(--line); margin-top: 18px; transition: border-color 0.2s; }
+.voice.playing { border-color: var(--rc); }
+.voice-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.voice h2 { font-family: "Anton", Impact, sans-serif; font-weight: 400; font-size: 2rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--rc); margin: 0; line-height: 1.1; }
+.voice p { margin: 4px 0 0; color: var(--muted); font-size: 0.95rem; }
+.check { font-weight: 700; font-size: 0.82rem; color: var(--ink) !important; }
+.btn { min-height: 44px; padding: 10px 20px; border-radius: 999px; border: 2px solid var(--rc); background: transparent; color: var(--ink); font: inherit; font-weight: 700;
+  font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; }
+.btn:hover { background: color-mix(in srgb, var(--rc) 18%, transparent); }
+.clips { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin-top: 16px; }
+.clip { display: flex; flex-direction: column; align-items: center; gap: 2px; min-height: 92px; padding: 12px 8px; border-radius: 18px; border: 2px solid var(--line); background: var(--bg);
+  color: var(--ink); font: inherit; cursor: pointer; text-align: center; transition: border-color 0.15s, transform 0.12s; }
+.clip:hover { border-color: var(--muted); transform: translateY(-2px); }
+.clip.on { border-color: var(--rc); background: color-mix(in srgb, var(--rc) 14%, var(--bg)); }
+.clip.wide { grid-column: span 2; }
+.zh { font-size: 1.7rem; line-height: 1.2; font-family: "Kaiti SC", "STKaiti", "KaiTi", "Noto Serif CJK SC", "Songti SC", serif; }
+.clip.wide .zh { font-size: 1.25rem; }
+.py { font-family: "Noto Sans", sans-serif; font-weight: 500; font-size: 0.9rem; }
+.what { font-size: 0.74rem; color: var(--muted); }
+.flag { font-size: 0.7rem; font-weight: 700; color: var(--c-amber); }
+.note { margin-top: 28px; color: var(--muted); font-size: 0.92rem; max-width: 64ch; }
+:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+@media (max-width: 560px) { .clips { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+</style>
+
+<div class="wrap">
+  <p class="eyebrow">Thirty Radicals · pronunciation clips</p>
+  <h1>PICK A <span>VOICE</span></h1>
+  <p class="lede">Five preset voices reading the same six samples: one character for each tone, a radical's name and a full sentence. On the site, the single characters and the names are what learners would hear.</p>
+  <div id="voices"></div>
+  <p class="note">“Unchecked” marks a take that did not pass the automatic check (speech recognition for the syllables, a pitch contour for the tone). The tone check could not track the three men's lower voices reliably, so a miss there may be the check's fault and your ear is the better judge. Eric is different: the recogniser misheard his words in most takes.</p>
+</div>
+
+<script>
+const VOICES = /*DATA*/;
+let ctx = null, current = null, token = 0;
+const buffers = new Map();
+async function buffer(clip) {
+  if (!buffers.has(clip)) {
+    const bin = atob(clip.audio), bytes = new Uint8Array(bin.length);
+    for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+    buffers.set(clip, await ctx.decodeAudioData(bytes.buffer));
+  }
+  return buffers.get(clip);
+}
+function stop() { token++; try { current?.stop(); } catch (e) { /* already ended */ } current = null;
+  document.querySelectorAll(".on, .playing").forEach((n) => n.classList.remove("on", "playing")); }
+async function play(card, items) {
+  stop();
+  const mine = token;
+  ctx ||= new (window.AudioContext || window.webkitAudioContext)();
+  await ctx.resume();
+  card.classList.add("playing");
+  for (const [clip, btn] of items) {
+    const buf = await buffer(clip);
+    if (mine !== token) return;
+    btn.classList.add("on");
+    await new Promise((done) => { current = ctx.createBufferSource(); current.buffer = buf; current.connect(ctx.destination); current.onended = done; current.start(); });
+    btn.classList.remove("on");
+    if (mine !== token) return;
+    await new Promise((done) => setTimeout(done, 350));
+    if (mine !== token) return;
+  }
+  card.classList.remove("playing");
+}
+const h = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text) n.textContent = text; return n; };
+for (const v of VOICES) {
+  const card = h("section", "voice");
+  card.style.setProperty("--rc", `var(--${v.color})`);
+  const head = h("div", "voice-head"), left = h("div");
+  left.append(h("h2", "", v.name), h("p", "", v.blurb),
+    h("p", "check", `Automatic check: ${v.passed} of ${v.clips.length} samples passed, ${v.first} on the first take`));
+  const all = h("button", "btn", "Play all six");
+  all.type = "button";
+  head.append(left, all);
+  const grid = h("div", "clips"), pairs = [];
+  for (const c of v.clips) {
+    const b = h("button", "clip" + (c.text.length > 1 ? " wide" : ""));
+    b.type = "button";
+    b.append(h("span", "zh", c.text), h("span", "py", c.pinyin), h("span", "what", c.what));
+    if (!c.ok) b.append(h("span", "flag", "unchecked"));
+    b.addEventListener("click", () => play(card, [[c, b]]));
+    pairs.push([c, b]);
+    grid.append(b);
+  }
+  all.addEventListener("click", () => play(card, pairs));
+  card.append(head, grid);
+  document.getElementById("voices").append(card);
+}
+</script>

@@ -1,0 +1,83 @@
+{
+  "id": "body",
+  "title": "THE BODY",
+  "zh": "身",
+  "blurb": "Hands, eyes, feet and what goes wrong with them.",
+  "radicals": [
+    {
+      "id": "hand", "glyph": "扌", "full": "手", "fullPinyin": "shǒu", "name": "HAND", "color": "violet",
+      "cn": "提手旁", "cnPinyin": "tíshǒupáng", "cnLit": "lifting-hand side",
+      "pos": "left",
+      "origin": "手 is a hand with its fingers spread. On the left it slims down to three strokes, and the last one flicks upward.",
+      "clue": "things you do with your hands",
+      "ex": [
+        ["打", "dǎ", "to hit", "a hand strikes"],
+        ["拉", "lā", "to pull", "printed on doors all over China"],
+        ["推", "tuī", "to push", "on the other side of the same doors"],
+        ["抱", "bào", "to hug, to hold", "hands and arms wrap around"]
+      ],
+      "watch": "扌 is the busiest radical in everyday Chinese. Look-alike: 牜 (cow), as in 物 and 特, has an extra stroke at the top left.",
+      "decode": [["抓", "zhuā", "to grab"], ["扔", "rēng", "to throw"]]
+    },
+    {
+      "id": "eye", "glyph": "目", "full": "目", "fullPinyin": "mù", "name": "EYE", "color": "teal",
+      "cn": "目字旁", "cnPinyin": "mùzìpáng", "cnLit": "eye-character side",
+      "pos": "left",
+      "origin": "An eye, turned on its side so it stands tall. The two lines inside were once the pupil.",
+      "clue": "eyes and seeing",
+      "ex": [
+        ["看", "kàn", "to look", "a hand 手 shading the eye"],
+        ["眼", "yǎn", "eye", "the everyday word, 眼睛"],
+        ["睡", "shuì", "to sleep", "the eyes droop shut"],
+        ["眉", "méi", "eyebrow", "the line above the eye"]
+      ],
+      "watch": "Count the lines inside. 目 (eye) has two, 日 (sun) has one, and 自 (self) is an eye with a tick on top.",
+      "decode": [["盯", "dīng", "to stare"], ["眨", "zhǎ", "to blink"]]
+    },
+    {
+      "id": "flesh", "glyph": "月", "full": "肉", "fullPinyin": "ròu", "name": "BODY", "color": "pink",
+      "cn": "肉月旁", "cnPinyin": "ròuyuèpáng", "cnLit": "meat-moon side",
+      "pos": "left", "altPos": "bottom",
+      "origin": "肉 means meat or flesh. Written small it came to look exactly like 月, the moon, so the two now share one shape.",
+      "clue": "parts of the body",
+      "ex": [
+        ["脸", "liǎn", "face", "part of the body"],
+        ["腿", "tuǐ", "leg", "part of the body"],
+        ["脑", "nǎo", "brain", "part of the body"],
+        ["胖", "pàng", "fat", "plenty of flesh"]
+      ],
+      "watch": "The same shape is sometimes the real moon. A rough rule: on the left or at the bottom it is usually flesh (脸, 背). On the right it is usually the moon (明 bright, 期 a period of time).",
+      "decode": [["胸", "xiōng", "chest"], ["肝", "gān", "liver"]]
+    },
+    {
+      "id": "foot", "glyph": "⻊", "full": "足", "fullPinyin": "zú", "name": "FOOT", "color": "amber",
+      "cn": "足字旁", "cnPinyin": "zúzìpáng", "cnLit": "foot-character side",
+      "pos": "left",
+      "origin": "足 is a kneecap 口 above a foot. On the left its last stroke kicks up to make room for the rest of the character.",
+      "clue": "feet and moving on foot",
+      "ex": [
+        ["跑", "pǎo", "to run", "fast feet"],
+        ["跳", "tiào", "to jump", "feet leave the ground"],
+        ["踢", "tī", "to kick", "a foot hits the ball"],
+        ["路", "lù", "road", "where feet go"]
+      ],
+      "watch": "On its own, 足 means foot (足球, football) and also enough. Do not mix it up with 走 (to walk), which is a separate radical.",
+      "decode": [["踩", "cǎi", "to step on"], ["跪", "guì", "to kneel"]]
+    },
+    {
+      "id": "sick", "glyph": "疒", "full": null, "name": "SICKNESS", "color": "green",
+      "cn": "病字头", "cnPinyin": "bìngzìtóu", "cnLit": "top of the character 病",
+      "pos": "wrap-tl",
+      "origin": "The old picture is a person lying on a bed. It never stands alone: it only ever wraps the top and left of another part.",
+      "clue": "illness and pain",
+      "ex": [
+        ["病", "bìng", "illness, sick", "the radical is named after this one"],
+        ["疼", "téng", "to ache", "it hurts"],
+        ["痛", "tòng", "pain", "it hurts more"],
+        ["瘦", "shòu", "thin", "once a sign of poor health"]
+      ],
+      "watch": "Look-alike: 广 (a shelter), as in 店 (shop) and 床 (bed). 疒 has two extra dots on its left edge.",
+      "decode": [["痒", "yǎng", "itchy"], ["疤", "bā", "scar"]]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "people",
+  "title": "PEOPLE",
+  "zh": "人",
+  "blurb": "Who we are, what we say and how we feel.",
+  "radicals": [
+    {
+      "id": "person", "glyph": "亻", "full": "人", "fullPinyin": "rén", "name": "PERSON", "color": "teal",
+      "cn": "单人旁", "cnPinyin": "dānrénpáng", "cnLit": "single-person side",
+      "pos": "left",
+      "origin": "人 is a person walking, seen from the side. Squeezed onto the left of a character, the two legs fold up into 亻.",
+      "clue": "people and what people do",
+      "ex": [
+        ["你", "nǐ", "you", "a person: the one in front of me"],
+        ["他", "tā", "he", "a person: that other one"],
+        ["们", "men", "plural for people", "turns 我 (I) into 我们 (we)"],
+        ["休", "xiū", "to rest", "a person leaning on a tree 木"]
+      ],
+      "watch": "Hundreds of characters carry 亻, so the hint is broad. In 件 (jiàn, an item) or 化 (huà, to change) the person is hard to find.",
+      "decode": [["伴", "bàn", "companion"], ["仙", "xiān", "immortal being"]]
+    },
+    {
+      "id": "woman", "glyph": "女", "full": "女", "fullPinyin": "nǚ", "name": "WOMAN", "color": "pink",
+      "cn": "女字旁", "cnPinyin": "nǚzìpáng", "cnLit": "woman-character side",
+      "pos": "left",
+      "origin": "The oldest form shows a kneeling figure with crossed arms. As a radical it keeps its shape and gets a little narrower.",
+      "clue": "women, girls and family",
+      "ex": [
+        ["妈", "mā", "mom", "a woman, plus 马 for the sound"],
+        ["姐", "jiě", "older sister", "a woman in the family"],
+        ["她", "tā", "she", "他 with the person swapped for a woman"],
+        ["好", "hǎo", "good", "a woman with a child 子"]
+      ],
+      "watch": "女 can also sit at the bottom, as in 要 (yào, to want). Some old characters with 女 are unkind to women; they tell you about ancient attitudes, not about the language today.",
+      "decode": [["姑", "gū", "aunt"], ["婚", "hūn", "marriage"]]
+    },
+    {
+      "id": "mouth", "glyph": "口", "full": "口", "fullPinyin": "kǒu", "name": "MOUTH", "color": "amber",
+      "cn": "口字旁", "cnPinyin": "kǒuzìpáng", "cnLit": "mouth-character side",
+      "pos": "left",
+      "origin": "An open mouth, drawn as a box. It is one of the few radicals that still looks like its picture.",
+      "clue": "eating, speaking and sounds",
+      "ex": [
+        ["吃", "chī", "to eat", "food goes in the mouth"],
+        ["喝", "hē", "to drink", "so does a drink"],
+        ["唱", "chàng", "to sing", "sound comes out of it"],
+        ["叫", "jiào", "to call, to shout", "a loud mouth"]
+      ],
+      "watch": "口 also marks little spoken words with no meaning of their own, such as 吗, 吧 and 呢. The big box that wraps a whole character, as in 国 (country), is a different radical: 囗, an enclosure.",
+      "decode": [["咬", "yǎo", "to bite"], ["吹", "chuī", "to blow"]]
+    },
+    {
+      "id": "speech", "glyph": "讠", "full": "言", "fullPinyin": "yán", "name": "SPEECH", "color": "violet",
+      "cn": "言字旁", "cnPinyin": "yánzìpáng", "cnLit": "speech-character side",
+      "pos": "left",
+      "origin": "言 shows words rising out of a mouth 口. Simplified Chinese shrinks it to two quick strokes when it stands on the left.",
+      "clue": "talking and language",
+      "ex": [
+        ["说", "shuō", "to speak", "words out loud"],
+        ["话", "huà", "speech, words", "what you say"],
+        ["语", "yǔ", "language", "as in 汉语, Chinese"],
+        ["请", "qǐng", "to ask, please", "a polite request is spoken"]
+      ],
+      "watch": "讠 exists only on the left. Anywhere else the full form stays, as in 信 (xìn, a letter): a person 亻 standing by their word 言.",
+      "decode": [["谎", "huǎng", "a lie"], ["谈", "tán", "to chat, to discuss"]]
+    },
+    {
+      "id": "heart", "glyph": "忄", "alt": "心", "full": "心", "fullPinyin": "xīn", "name": "HEART", "color": "coral",
+      "cn": "竖心旁", "cnPinyin": "shùxīnpáng", "cnLit": "upright-heart side",
+      "pos": "left", "altPos": "bottom",
+      "origin": "心 is a drawing of the heart. On the left it stands up straight as 忄. At the bottom it keeps its full shape.",
+      "clue": "feelings and thoughts",
+      "ex": [
+        ["怕", "pà", "to fear", "a feeling"],
+        ["情", "qíng", "feeling, emotion", "the heart's own word"],
+        ["想", "xiǎng", "to think, to miss", "the full 心 sits at the bottom", "alt"],
+        ["忘", "wàng", "to forget", "lost 亡 from the heart", "alt"]
+      ],
+      "watch": "In Chinese the heart thinks as well as feels, so 心 covers the mind too: 想 (think), 忘 (forget), 意 (idea).",
+      "decode": [["恨", "hèn", "to hate"], ["怒", "nù", "anger", "alt"]]
+    }
+  ]
+}

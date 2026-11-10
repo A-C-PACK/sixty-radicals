@@ -1,0 +1,7 @@
+__pycache__/
+# built for the Artifact publish; dist/index.html is the same page as a full document
+dist/artifact.html
+# regenerable audio: raw TTS takes, audition samples, uncompressed clips (the mp3s are kept)
+voices/raw/
+voices/audition/
+src/audio/wav/

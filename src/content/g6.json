@@ -1,0 +1,83 @@
+{
+  "id": "tools",
+  "title": "TOOLS & TRAVEL",
+  "zh": "行",
+  "blurb": "Getting around, making things and paying for them.",
+  "radicals": [
+    {
+      "id": "walk", "glyph": "辶", "full": null, "name": "WALK", "color": "teal",
+      "cn": "走之底", "cnPinyin": "zǒuzhīdǐ", "cnLit": "the walking base",
+      "pos": "wrap-bl",
+      "origin": "A crossroads plus a foot: someone on the move. It wraps the left and bottom of a character like a road, and it is written last.",
+      "clue": "movement and distance",
+      "ex": [
+        ["进", "jìn", "to enter", "moving in"],
+        ["远", "yuǎn", "far", "a long walk"],
+        ["近", "jìn", "near", "a short walk"],
+        ["送", "sòng", "to deliver, to see off", "walking something over"]
+      ],
+      "watch": "Some of the most common words kept the road and lost the journey: 这 (zhè, this), 还 (hái, still), 边 (biān, side).",
+      "decode": [["追", "zhuī", "to chase"], ["逃", "táo", "to escape"]]
+    },
+    {
+      "id": "vehicle", "glyph": "车", "full": "车", "fullPinyin": "chē", "name": "VEHICLE", "color": "water",
+      "cn": "车字旁", "cnPinyin": "chēzìpáng", "cnLit": "vehicle-character side",
+      "pos": "left",
+      "origin": "The traditional form 車 is a chariot seen from above: an axle through a body with a wheel at each end. The simplified 车 is a quick sketch of it.",
+      "clue": "wheels and transport",
+      "ex": [
+        ["轮", "lún", "wheel", "what a vehicle rolls on"],
+        ["辆", "liàng", "counter for vehicles", "一辆车, one car"],
+        ["转", "zhuǎn", "to turn", "wheels go round"],
+        ["输", "shū", "to transport", "carrying by cart"]
+      ],
+      "watch": "Carts explain a few surprises: 轻 (qīng, light) was a light, fast chariot and 软 (ruǎn, soft) a cushioned one. 输 also means to lose a game.",
+      "decode": [["轨", "guǐ", "rail, track"], ["轿", "jiào", "sedan chair"]]
+    },
+    {
+      "id": "metal", "glyph": "钅", "full": "金", "fullPinyin": "jīn", "name": "METAL", "color": "amber",
+      "cn": "金字旁", "cnPinyin": "jīnzìpáng", "cnLit": "gold-character side",
+      "pos": "left",
+      "origin": "金 means gold, and metal in general: nuggets in the earth under a cover. Simplified Chinese writes it in five strokes on the left.",
+      "clue": "metals and things made of metal",
+      "ex": [
+        ["钱", "qián", "money", "coins are metal"],
+        ["银", "yín", "silver", "a metal, and 银行 is a bank"],
+        ["铁", "tiě", "iron", "a metal, and 地铁 is the subway"],
+        ["钟", "zhōng", "bell, clock", "a bronze bell told the time"]
+      ],
+      "watch": "错 (cuò, wrong) once meant to inlay gold in a criss-cross pattern. Criss-crossed became mixed up, and mixed up became wrong.",
+      "decode": [["针", "zhēn", "needle"], ["锅", "guō", "pot, wok"]]
+    },
+    {
+      "id": "knife", "glyph": "刂", "alt": "刀", "full": "刀", "fullPinyin": "dāo", "name": "KNIFE", "color": "coral",
+      "cn": "立刀旁", "cnPinyin": "lìdāopáng", "cnLit": "standing-knife side",
+      "pos": "right", "altPos": "bottom",
+      "origin": "刀 is a blade with a handle. On the right side of a character it stands upright as 刂. Elsewhere it keeps its full shape.",
+      "clue": "cutting and dividing",
+      "ex": [
+        ["刻", "kè", "to carve", "a blade cuts into wood or stone"],
+        ["刮", "guā", "to scrape, to shave", "a blade across a surface"],
+        ["切", "qiē", "to slice", "the full 刀 on the right", "alt"],
+        ["分", "fēn", "to divide", "a knife 刀 splitting something in two 八", "alt"]
+      ],
+      "watch": "In 到 (dào, to arrive) the knife is the sound part: dāo, dào. It is one of the few common radicals that stands on the right.",
+      "decode": [["剑", "jiàn", "sword"], ["刺", "cì", "to stab"]]
+    },
+    {
+      "id": "shell", "glyph": "贝", "full": "贝", "fullPinyin": "bèi", "name": "MONEY", "color": "lime",
+      "cn": "贝字旁", "cnPinyin": "bèizìpáng", "cnLit": "shell-character side",
+      "pos": "left", "altPos": "bottom",
+      "origin": "贝 is a cowrie shell. Three thousand years ago cowries were money in China, so the shell became the sign for wealth and trade.",
+      "clue": "money, value and trade",
+      "ex": [
+        ["贵", "guì", "expensive", "costs many shells"],
+        ["费", "fèi", "fee, to spend", "shells going out"],
+        ["货", "huò", "goods", "things for sale"],
+        ["购", "gòu", "to buy", "as in 购物, shopping"]
+      ],
+      "watch": "Two look-alikes: 页 (head, page), as in 顺 and 题, has a line and a tick on top. 见 (to see) ends in a hook to the right.",
+      "decode": [["赚", "zhuàn", "to earn"], ["赌", "dǔ", "to gamble"]]
+    }
+  ]
+}

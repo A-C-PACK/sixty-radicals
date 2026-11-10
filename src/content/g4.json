@@ -1,0 +1,83 @@
+{
+  "id": "living",
+  "title": "LIVING THINGS",
+  "zh": "生",
+  "blurb": "Trees, plants, beasts and bugs.",
+  "radicals": [
+    {
+      "id": "tree", "glyph": "木", "full": "木", "fullPinyin": "mù", "name": "TREE", "color": "green",
+      "cn": "木字旁", "cnPinyin": "mùzìpáng", "cnLit": "tree-character side",
+      "pos": "left", "altPos": "bottom",
+      "origin": "A trunk with branches above and roots below. On the left its last stroke shortens to a dot.",
+      "clue": "trees and things made of wood",
+      "ex": [
+        ["树", "shù", "tree", "the everyday word for a tree"],
+        ["林", "lín", "woods", "two trees make a wood"],
+        ["桌", "zhuō", "table", "wooden, with 木 underneath"],
+        ["椅", "yǐ", "chair", "wooden too"]
+      ],
+      "watch": "Look-alike: 禾 (grain), as in 秋 (autumn), is 木 with one extra stroke across the top. And 机 (jī, machine) carries wood because the first machines were wooden.",
+      "decode": [["桥", "qiáo", "bridge"], ["枝", "zhī", "branch"]]
+    },
+    {
+      "id": "grass", "glyph": "艹", "full": "草", "fullPinyin": "cǎo", "name": "GRASS", "color": "lime",
+      "cn": "草字头", "cnPinyin": "cǎozìtóu", "cnLit": "grass-character top",
+      "pos": "top",
+      "origin": "Two small shoots pushing out of the ground, joined into one line with two ticks. It always sits on top.",
+      "clue": "plants, flowers and herbs",
+      "ex": [
+        ["草", "cǎo", "grass", "the radical is named after it"],
+        ["花", "huā", "flower", "a plant in bloom"],
+        ["茶", "chá", "tea", "leaves from a bush"],
+        ["菜", "cài", "vegetable, dish", "plants you eat"]
+      ],
+      "watch": "药 (yào, medicine) has grass because medicine came from herbs. 蓝 (lán, blue) has it because blue dye came from the indigo plant.",
+      "decode": [["芽", "yá", "sprout"], ["蒜", "suàn", "garlic"]]
+    },
+    {
+      "id": "bamboo", "glyph": "⺮", "full": "竹", "fullPinyin": "zhú", "name": "BAMBOO", "color": "teal",
+      "cn": "竹字头", "cnPinyin": "zhúzìtóu", "cnLit": "bamboo-character top",
+      "pos": "top",
+      "origin": "竹 is two bamboo stalks with drooping leaves. On top of a character the stalks disappear and only the two leaf tufts stay.",
+      "clue": "bamboo and things once made from it",
+      "ex": [
+        ["筷", "kuài", "chopsticks", "cut from bamboo"],
+        ["笔", "bǐ", "pen, brush", "a bamboo handle over a tuft of hair 毛"],
+        ["篮", "lán", "basket", "woven from bamboo, as in 篮球 basketball"],
+        ["箱", "xiāng", "box, trunk", "bamboo boxes came first"]
+      ],
+      "watch": "Before paper, books were strips of bamboo tied together. That is why words about writing and order carry bamboo: 第 (number in a series), 答 (to answer), 等 (to rank, to wait). 笑 (xiào, to laugh) is harder to explain.",
+      "decode": [["笛", "dí", "flute"], ["筒", "tǒng", "tube"]]
+    },
+    {
+      "id": "animal", "glyph": "犭", "full": "犬", "fullPinyin": "quǎn", "name": "ANIMAL", "color": "amber",
+      "cn": "反犬旁", "cnPinyin": "fǎnquǎnpáng", "cnLit": "turned-dog side",
+      "pos": "left",
+      "origin": "犬 is an old word for dog. Stood up on its hind legs on the left of a character, it became 犭 and now marks beasts in general.",
+      "clue": "four-legged animals",
+      "ex": [
+        ["狗", "gǒu", "dog", "the modern word for dog"],
+        ["猫", "māo", "cat", "its sound part 苗 is read miáo, like a meow"],
+        ["猪", "zhū", "pig", "a farm animal"],
+        ["猴", "hóu", "monkey", "a wild one"]
+      ],
+      "watch": "Not every animal lives here. Horses 马, cows 牛, sheep 羊, birds 鸟 and fish 鱼 are radicals of their own. 犭 also marks wild behaviour: 狂 (crazy), 猛 (fierce).",
+      "decode": [["狼", "láng", "wolf"], ["猎", "liè", "to hunt"]]
+    },
+    {
+      "id": "bug", "glyph": "虫", "full": "虫", "fullPinyin": "chóng", "name": "BUG", "color": "coral",
+      "cn": "虫字旁", "cnPinyin": "chóngzìpáng", "cnLit": "bug-character side",
+      "pos": "left", "altPos": "bottom",
+      "origin": "The picture began as a snake with a big head. It grew to cover every small creature that is not a beast, a bird or a fish.",
+      "clue": "insects and small crawling creatures",
+      "ex": [
+        ["蚊", "wén", "mosquito", "a bug that bites"],
+        ["蜂", "fēng", "bee", "a bug that stings"],
+        ["蛇", "shé", "snake", "the original 虫"],
+        ["虾", "xiā", "shrimp", "small creatures of the water count too"]
+      ],
+      "watch": "虹 (hóng, rainbow) is in this family because people once pictured the rainbow as a great serpent arching across the sky.",
+      "decode": [["蚁", "yǐ", "ant"], ["蛙", "wā", "frog"]]
+    }
+  ]
+}

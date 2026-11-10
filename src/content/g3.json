@@ -1,0 +1,83 @@
+{
+  "id": "elements",
+  "title": "SKY & EARTH",
+  "zh": "天",
+  "blurb": "Water, fire, soil, sun and rain.",
+  "radicals": [
+    {
+      "id": "water", "glyph": "氵", "full": "水", "fullPinyin": "shuǐ", "name": "WATER", "color": "water",
+      "cn": "三点水", "cnPinyin": "sāndiǎnshuǐ", "cnLit": "three dots of water",
+      "pos": "left",
+      "origin": "水 is a stream with ripples on both sides. As a radical it shrinks to three drops on the left.",
+      "clue": "water and other liquids",
+      "ex": [
+        ["河", "hé", "river", "water that flows"],
+        ["海", "hǎi", "sea", "a lot of water"],
+        ["洗", "xǐ", "to wash", "you need water for it"],
+        ["汤", "tāng", "soup", "a liquid you eat"]
+      ],
+      "watch": "Count the drops. Three is water 氵. Two is ice 冫, as in 冰 (ice) and 冷 (cold). And in 法 (fǎ, law) the water is only history.",
+      "decode": [["汗", "hàn", "sweat"], ["湿", "shī", "wet"]]
+    },
+    {
+      "id": "fire", "glyph": "火", "alt": "灬", "full": "火", "fullPinyin": "huǒ", "name": "FIRE", "color": "coral",
+      "cn": "火字旁", "cnPinyin": "huǒzìpáng", "cnLit": "fire-character side",
+      "pos": "left", "altPos": "bottom",
+      "origin": "火 is a flame with two sparks. On the left it stays whole. Under a character it melts into four dots, 灬, like flames under a pot.",
+      "clue": "fire, heat and cooking",
+      "ex": [
+        ["烧", "shāo", "to burn", "fire at work"],
+        ["灯", "dēng", "lamp", "the first lamps were flames"],
+        ["热", "rè", "hot", "four flames underneath", "alt"],
+        ["煮", "zhǔ", "to boil", "a pot over the fire", "alt"]
+      ],
+      "watch": "Read a Chinese menu and you will meet this radical everywhere: 炒 stir-fried, 烤 roasted, 炸 deep-fried, 煮 boiled. Three dots standing on the left are water; four dots lying at the bottom are fire.",
+      "decode": [["烤", "kǎo", "to roast"], ["烟", "yān", "smoke"]]
+    },
+    {
+      "id": "earth", "glyph": "土", "full": "土", "fullPinyin": "tǔ", "name": "EARTH", "color": "amber",
+      "cn": "提土旁", "cnPinyin": "títǔpáng", "cnLit": "lifting-earth side",
+      "pos": "left", "altPos": "bottom",
+      "origin": "A mound of soil on the ground. On the left the bottom line tilts upward. At the bottom of a character it lies flat.",
+      "clue": "soil, ground and things built from it",
+      "ex": [
+        ["地", "dì", "ground, earth", "the soil under your feet"],
+        ["城", "chéng", "city", "cities had walls of packed earth"],
+        ["墙", "qiáng", "wall", "built from earth"],
+        ["坐", "zuò", "to sit", "two people 人 on the ground"]
+      ],
+      "watch": "Look-alike: 士 (scholar). In 土 the bottom line is the long one. In 士 the top line is longer.",
+      "decode": [["埋", "mái", "to bury"], ["坡", "pō", "slope"]]
+    },
+    {
+      "id": "sun", "glyph": "日", "full": "日", "fullPinyin": "rì", "name": "SUN", "color": "lime",
+      "cn": "日字旁", "cnPinyin": "rìzìpáng", "cnLit": "sun-character side",
+      "pos": "left", "altPos": "top",
+      "origin": "A circle with a dot in the middle, squared off over the centuries because brushes and chisels prefer straight lines.",
+      "clue": "the sun, light and time",
+      "ex": [
+        ["明", "míng", "bright", "sun and moon 月 together"],
+        ["早", "zǎo", "early, morning", "the sun is coming up"],
+        ["晚", "wǎn", "evening, late", "the sun is going down"],
+        ["晴", "qíng", "sunny", "a clear sky"]
+      ],
+      "watch": "日 also means day, so it shows up in time words: 时 (time), 昨 (yesterday), 星期日 (Sunday). Do not confuse it with 目 (eye), which has one more line inside.",
+      "decode": [["晒", "shài", "to dry in the sun"], ["暖", "nuǎn", "warm"]]
+    },
+    {
+      "id": "rain", "glyph": "雨", "full": "雨", "fullPinyin": "yǔ", "name": "RAIN", "color": "violet",
+      "cn": "雨字头", "cnPinyin": "yǔzìtóu", "cnLit": "rain-character top",
+      "pos": "top",
+      "origin": "Drops falling from a cloud under the sky. As a radical it flattens out and sits on top, like weather overhead.",
+      "clue": "weather that comes from the sky",
+      "ex": [
+        ["雪", "xuě", "snow", "falls from the sky"],
+        ["雷", "léi", "thunder", "arrives with the rain"],
+        ["雾", "wù", "fog", "water hanging in the air"],
+        ["霜", "shuāng", "frost", "cold weather on the ground"]
+      ],
+      "watch": "零 (líng, zero) first meant a light drizzle, then tiny leftovers, then nothing at all. Simplified Chinese also dropped the rain from 云 (cloud) and 电 (electricity, once lightning).",
+      "decode": [["露", "lù", "dew"], ["雹", "báo", "hail"]]
+    }
+  ]
+}

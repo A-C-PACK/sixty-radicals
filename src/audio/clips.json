@@ -1,0 +1,3392 @@
+{
+ "你": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "ni",
+  "tone": 3,
+  "heard": "这个字读作你。",
+  "contour": [
+   1.1,
+   0.3,
+   -2.9,
+   -2.2,
+   2.4
+  ],
+  "seconds": 0.77
+ },
+ "他": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "ta",
+  "tone": 1,
+  "heard": "这个字读作他",
+  "contour": [
+   4.1,
+   4.2,
+   4.0,
+   4.4,
+   5.1
+  ],
+  "seconds": 0.65
+ },
+ "们": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "men",
+  "tone": 5,
+  "heard": "这个字读作闷。",
+  "contour": [
+   2.9,
+   3.2,
+   3.1,
+   3.3,
+   4.2
+  ],
+  "seconds": 0.64
+ },
+ "休": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "xiu",
+  "tone": 1,
+  "heard": "这个字读作修",
+  "contour": [
+   5.3,
+   5.6,
+   5.8,
+   6.0,
+   6.9
+  ],
+  "seconds": 0.62
+ },
+ "伴": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "ban",
+  "tone": 4,
+  "heard": "这个字读作伴。",
+  "contour": [
+   6.9,
+   5.8,
+   3.3,
+   -0.7,
+   -4.2
+  ],
+  "seconds": 0.37
+ },
+ "仙": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "xian",
+  "tone": 1,
+  "heard": "这个字读作先",
+  "contour": [
+   5.6,
+   6.0,
+   6.3,
+   6.6,
+   7.5
+  ],
+  "seconds": 0.74
+ },
+ "人": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "ren",
+  "tone": 2,
+  "heard": "这个字读作人。",
+  "contour": [
+   -1.7,
+   -1.3,
+   -2.5,
+   -0.5,
+   3.9
+  ],
+  "seconds": 0.64
+ },
+ "单人旁": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "danrenpang",
+  "tone": null,
+  "heard": "单人旁",
+  "contour": null,
+  "seconds": 0.949
+ },
+ "妈": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "ma",
+  "tone": 1,
+  "heard": "这个字读作妈",
+  "contour": [
+   2.5,
+   4.0,
+   4.6,
+   5.0,
+   5.6
+  ],
+  "seconds": 0.54
+ },
+ "姐": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "jie",
+  "tone": 3,
+  "heard": "这个字读作解",
+  "contour": [
+   -1.0,
+   -3.4,
+   -5.2,
+   -2.6,
+   0.2
+  ],
+  "seconds": 0.7
+ },
+ "她": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "ta",
+  "tone": 1,
+  "heard": "这个字读作他",
+  "contour": [
+   5.2,
+   5.3,
+   5.3,
+   5.5,
+   6.4
+  ],
+  "seconds": 0.7
+ },
+ "好": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "hao",
+  "tone": 3,
+  "heard": "这个字读作好。",
+  "contour": [
+   -0.2,
+   -2.4,
+   -4.1,
+   -2.6,
+   2.0
+  ],
+  "seconds": 0.86
+ },
+ "姑": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "gu",
+  "tone": 1,
+  "heard": "这个字读作孤",
+  "contour": [
+   6.8,
+   4.7,
+   5.0,
+   5.1,
+   6.1
+  ],
+  "seconds": 0.4
+ },
+ "女": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "nü",
+  "tone": 3,
+  "heard": "这个字读作女。",
+  "contour": [
+   0.0,
+   -1.4,
+   -3.5,
+   -4.7,
+   0.4
+  ],
+  "seconds": 0.78
+ },
+ "女字旁": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "nüzipang",
+  "tone": null,
+  "heard": "女字旁",
+  "contour": null,
+  "seconds": 1.174
+ },
+ "吃": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "chi",
+  "tone": 1,
+  "heard": "这个字读作吃。",
+  "contour": [
+   5.5,
+   5.7,
+   5.9,
+   6.1,
+   7.4
+  ],
+  "seconds": 0.71
+ },
+ "喝": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "he",
+  "tone": 1,
+  "heard": "这个字读作喝。",
+  "contour": [
+   6.8,
+   7.0,
+   7.5,
+   7.8,
+   8.3
+  ],
+  "seconds": 0.6
+ },
+ "叫": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "jiao",
+  "tone": 4,
+  "heard": "这个字读作叫",
+  "contour": [
+   5.0,
+   3.0,
+   0.3,
+   -4.2,
+   -3.1
+  ],
+  "seconds": 0.6
+ },
+ "咬": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "yao",
+  "tone": 3,
+  "heard": "这个字读作咬。",
+  "contour": [
+   -0.5,
+   -0.6,
+   -3.2,
+   -4.6,
+   -2.1
+  ],
+  "seconds": 0.67
+ },
+ "吹": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "chui",
+  "tone": 1,
+  "heard": "这个字读作吹",
+  "contour": [
+   6.3,
+   6.4,
+   6.5,
+   6.7,
+   7.3
+  ],
+  "seconds": 0.71
+ },
+ "口": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "kou",
+  "tone": 3,
+  "heard": "这个字读作口。",
+  "contour": [
+   -0.6,
+   -3.1,
+   -4.8,
+   -3.5,
+   0.7
+  ],
+  "seconds": 0.83
+ },
+ "口字旁": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "kouzipang",
+  "tone": null,
+  "heard": "口字旁",
+  "contour": null,
+  "seconds": 1.331
+ },
+ "说": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "shuo",
+  "tone": 1,
+  "heard": "这个字读作说",
+  "contour": [
+   5.1,
+   5.0,
+   5.0,
+   5.0,
+   6.0
+  ],
+  "seconds": 0.71
+ },
+ "话": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "hua",
+  "tone": 4,
+  "heard": "这个字读作画。",
+  "contour": [
+   5.8,
+   4.3,
+   0.7,
+   -2.2,
+   1.1
+  ],
+  "seconds": 0.61
+ },
+ "语": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "yu",
+  "tone": 3,
+  "heard": "这个字读作雨。",
+  "contour": [
+   0.8,
+   -1.4,
+   -5.1,
+   -5.5,
+   0.8
+  ],
+  "seconds": 0.87
+ },
+ "请": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "qing",
+  "tone": 3,
+  "heard": "这个字读作请。",
+  "contour": [
+   -0.2,
+   -0.7,
+   -6.3,
+   -5.6,
+   -0.8
+  ],
+  "seconds": 0.75
+ },
+ "谎": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "huang",
+  "tone": 3,
+  "heard": "这个字读作黄。",
+  "contour": [
+   -0.3,
+   -2.2,
+   -3.2,
+   -2.4,
+   3.3
+  ],
+  "seconds": 0.98
+ },
+ "谈": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "tan",
+  "tone": 2,
+  "heard": "这个字读作谈",
+  "contour": [
+   -1.4,
+   -1.9,
+   -1.9,
+   1.0,
+   4.7
+  ],
+  "seconds": 0.67
+ },
+ "言": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "yan",
+  "tone": 2,
+  "heard": "这个字读作言。",
+  "contour": [
+   0.3,
+   0.1,
+   -1.0,
+   0.4,
+   6.4
+  ],
+  "seconds": 0.61
+ },
+ "言字旁": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "yanzipang",
+  "tone": null,
+  "heard": "言字旁",
+  "contour": null,
+  "seconds": 1.11
+ },
+ "怕": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "pa",
+  "tone": 4,
+  "heard": "这个字读作怕",
+  "contour": [
+   6.8,
+   4.8,
+   0.3,
+   -4.9,
+   -0.8
+  ],
+  "seconds": 0.6
+ },
+ "想": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "xiang",
+  "tone": 3,
+  "heard": "这个字读作想。",
+  "contour": [
+   0.5,
+   -2.7,
+   -4.0,
+   -3.4,
+   0.7
+  ],
+  "seconds": 0.94
+ },
+ "忘": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "wang",
+  "tone": 4,
+  "heard": "这个字读作忘",
+  "contour": [
+   6.5,
+   6.1,
+   2.6,
+   -2.5,
+   -1.9
+  ],
+  "seconds": 0.49
+ },
+ "恨": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "hen",
+  "tone": 4,
+  "heard": "这个字,独作,恨。",
+  "contour": [
+   6.1,
+   6.2,
+   0.5,
+   -4.9,
+   -5.4
+  ],
+  "seconds": 0.56
+ },
+ "怒": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "nu",
+  "tone": 4,
+  "heard": "这个字读作怒",
+  "contour": [
+   6.5,
+   7.6,
+   3.9,
+   -3.1,
+   -0.9
+  ],
+  "seconds": 0.59
+ },
+ "心": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "xin",
+  "tone": 1,
+  "heard": "这个字读作心。",
+  "contour": [
+   3.7,
+   3.6,
+   4.1,
+   4.5,
+   4.7
+  ],
+  "seconds": 0.69
+ },
+ "竖心旁": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "shuxinpang",
+  "tone": null,
+  "heard": "树心旁",
+  "contour": null,
+  "seconds": 1.359
+ },
+ "打": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "da",
+  "tone": 3,
+  "heard": "这个字读作 打",
+  "contour": [
+   0.9,
+   -3.7,
+   -5.6,
+   -3.5,
+   1.5
+  ],
+  "seconds": 0.51
+ },
+ "拉": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "la",
+  "tone": 1,
+  "heard": "这个字读作拉",
+  "contour": [
+   1.3,
+   3.1,
+   3.2,
+   3.5,
+   4.8
+  ],
+  "seconds": 0.5
+ },
+ "推": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "tui",
+  "tone": 1,
+  "heard": "这个字读做推",
+  "contour": [
+   5.6,
+   5.4,
+   5.6,
+   5.7,
+   7.0
+  ],
+  "seconds": 0.59
+ },
+ "抱": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "bao",
+  "tone": 4,
+  "heard": "这个字读作报。",
+  "contour": [
+   7.8,
+   6.3,
+   3.7,
+   -1.2,
+   -5.1
+  ],
+  "seconds": 0.45
+ },
+ "抓": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "zhua",
+  "tone": 1,
+  "heard": "这个字读作、抓",
+  "contour": [
+   5.0,
+   4.4,
+   4.4,
+   4.6,
+   5.1
+  ],
+  "seconds": 0.63
+ },
+ "手": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "shou",
+  "tone": 3,
+  "heard": "这个字,独作,守。",
+  "contour": [
+   0.1,
+   -3.2,
+   -5.2,
+   -4.2,
+   -0.6
+  ],
+  "seconds": 0.85
+ },
+ "提手旁": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "tishoupang",
+  "tone": null,
+  "heard": "提手旁",
+  "contour": null,
+  "seconds": 1.357
+ },
+ "看": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "kan",
+  "tone": 4,
+  "heard": "这个字读作看",
+  "contour": [
+   6.9,
+   5.6,
+   0.7,
+   -5.2,
+   -0.5
+  ],
+  "seconds": 0.63
+ },
+ "眼": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "yan",
+  "tone": 3,
+  "heard": "这个字读作演。",
+  "contour": [
+   -0.1,
+   -0.9,
+   -4.1,
+   -3.9,
+   -1.2
+  ],
+  "seconds": 0.68
+ },
+ "睡": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "shui",
+  "tone": 4,
+  "heard": "这个字读作睡。",
+  "contour": [
+   7.3,
+   6.2,
+   2.3,
+   -3.2,
+   -1.0
+  ],
+  "seconds": 0.85
+ },
+ "眉": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "mei",
+  "tone": 2,
+  "heard": "这个字读作没",
+  "contour": [
+   0.3,
+   0.8,
+   0.3,
+   1.1,
+   4.3
+  ],
+  "seconds": 0.72
+ },
+ "盯": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "ding",
+  "tone": 1,
+  "heard": "这个字读作丁",
+  "contour": [
+   4.0,
+   4.2,
+   4.5,
+   4.4,
+   6.0
+  ],
+  "seconds": 0.59
+ },
+ "眨": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "zha",
+  "tone": 3,
+  "heard": "这个字读作、诈。",
+  "contour": [
+   0.4,
+   -2.5,
+   -4.9,
+   -3.3,
+   1.5
+  ],
+  "seconds": 0.75
+ },
+ "目": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "mu",
+  "tone": 4,
+  "heard": "这个字读作木。",
+  "contour": [
+   7.4,
+   7.5,
+   3.7,
+   -2.7,
+   -2.0
+  ],
+  "seconds": 0.5
+ },
+ "目字旁": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "muzipang",
+  "tone": null,
+  "heard": "木字旁",
+  "contour": null,
+  "seconds": 1.02
+ },
+ "脸": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "lian",
+  "tone": 3,
+  "heard": "这个字读作脸。",
+  "contour": [
+   1.0,
+   -1.3,
+   -4.1,
+   -2.9,
+   1.6
+  ],
+  "seconds": 0.78
+ },
+ "腿": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "tui",
+  "tone": 3,
+  "heard": "这个字读作腿。",
+  "contour": [
+   0.7,
+   -1.6,
+   -4.1,
+   -3.1,
+   2.4
+  ],
+  "seconds": 0.72
+ },
+ "脑": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "nao",
+  "tone": 3,
+  "heard": "这个字读作脑。",
+  "contour": [
+   0.8,
+   -0.8,
+   -5.0,
+   -5.3,
+   2.0
+  ],
+  "seconds": 0.83
+ },
+ "胖": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "pang",
+  "tone": 4,
+  "heard": "这个字读作胖",
+  "contour": [
+   6.2,
+   5.1,
+   0.7,
+   -3.9,
+   -1.4
+  ],
+  "seconds": 0.64
+ },
+ "胸": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "xiong",
+  "tone": 1,
+  "heard": "这个字读作凶",
+  "contour": [
+   5.0,
+   5.0,
+   5.0,
+   5.7,
+   7.2
+  ],
+  "seconds": 0.63
+ },
+ "肝": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "gan",
+  "tone": 1,
+  "heard": "这个字读作肝",
+  "contour": [
+   6.3,
+   6.0,
+   6.5,
+   7.7,
+   9.3
+  ],
+  "seconds": 0.42
+ },
+ "肉": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "rou",
+  "tone": 4,
+  "heard": "这个字读作肉。",
+  "contour": [
+   4.2,
+   5.5,
+   1.9,
+   -2.3,
+   -3.3
+  ],
+  "seconds": 0.5
+ },
+ "肉月旁": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "rouyuepang",
+  "tone": null,
+  "heard": "肉月旁",
+  "contour": null,
+  "seconds": 1.112
+ },
+ "跑": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "pao",
+  "tone": 3,
+  "heard": "这个字读作跑。",
+  "contour": [
+   15.8,
+   -0.5,
+   -2.4,
+   -3.6,
+   1.7
+  ],
+  "seconds": 0.8
+ },
+ "跳": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "tiao",
+  "tone": 4,
+  "heard": "這個字讀作跳",
+  "contour": [
+   7.6,
+   5.2,
+   2.4,
+   -3.9,
+   -2.8
+  ],
+  "seconds": 0.63
+ },
+ "路": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "lu",
+  "tone": 4,
+  "heard": "这个字读作路",
+  "contour": [
+   6.3,
+   7.5,
+   4.6,
+   -2.3,
+   -3.0
+  ],
+  "seconds": 0.44
+ },
+ "踩": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "cai",
+  "tone": 3,
+  "heard": "这个字读作财",
+  "contour": [
+   0.3,
+   -1.9,
+   -3.1,
+   -3.2,
+   0.4
+  ],
+  "seconds": 0.78
+ },
+ "跪": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "gui",
+  "tone": 4,
+  "heard": "这个字读作贵",
+  "contour": [
+   6.6,
+   5.8,
+   2.4,
+   -3.0,
+   -2.4
+  ],
+  "seconds": 0.48
+ },
+ "足": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "zu",
+  "tone": 2,
+  "heard": "这个字读作足。",
+  "contour": [
+   -0.5,
+   -2.9,
+   -2.5,
+   1.8,
+   5.6
+  ],
+  "seconds": 0.6
+ },
+ "病": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "bing",
+  "tone": 4,
+  "heard": "这个字读作病",
+  "contour": [
+   5.9,
+   3.6,
+   -0.9,
+   -4.9,
+   -2.3
+  ],
+  "seconds": 0.49
+ },
+ "疼": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "teng",
+  "tone": 2,
+  "heard": "这个字读作疼。",
+  "contour": [
+   -0.9,
+   -2.2,
+   -1.5,
+   1.8,
+   7.0
+  ],
+  "seconds": 0.68
+ },
+ "痛": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "tong",
+  "tone": 4,
+  "heard": "这个字读作痛",
+  "contour": [
+   8.6,
+   6.9,
+   2.5,
+   -3.1,
+   -1.5
+  ],
+  "seconds": 0.56
+ },
+ "瘦": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "shou",
+  "tone": 4,
+  "heard": "这个字读作瘦",
+  "contour": [
+   8.2,
+   5.9,
+   0.8,
+   -2.9,
+   -1.4
+  ],
+  "seconds": 0.67
+ },
+ "痒": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "yang",
+  "tone": 3,
+  "heard": "这个字读作养。",
+  "contour": [
+   1.1,
+   -0.6,
+   -2.6,
+   -4.3,
+   1.3
+  ],
+  "seconds": 0.64
+ },
+ "疤": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "ba",
+  "tone": 1,
+  "heard": "这个字 独作 八",
+  "contour": [
+   4.4,
+   4.2,
+   4.2,
+   4.4,
+   5.3
+  ],
+  "seconds": 0.48
+ },
+ "病字头": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "bingzitou",
+  "tone": null,
+  "heard": "病字頭",
+  "contour": null,
+  "seconds": 0.873
+ },
+ "河": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "he",
+  "tone": 2,
+  "heard": "这个字读作和",
+  "contour": [
+   -0.9,
+   -1.6,
+   -0.6,
+   3.0,
+   7.0
+  ],
+  "seconds": 0.63
+ },
+ "海": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "hai",
+  "tone": 3,
+  "heard": "这个字读作海",
+  "contour": [
+   0.1,
+   -2.8,
+   -4.0,
+   -2.7,
+   0.9
+  ],
+  "seconds": 0.81
+ },
+ "洗": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "xi",
+  "tone": 3,
+  "heard": "这个字读作喜。",
+  "contour": [
+   0.4,
+   -2.6,
+   -5.3,
+   -3.1,
+   1.8
+  ],
+  "seconds": 0.95
+ },
+ "汤": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "tang",
+  "tone": 1,
+  "heard": "这个字读作汤。",
+  "contour": [
+   4.6,
+   4.9,
+   4.9,
+   5.3,
+   6.6
+  ],
+  "seconds": 0.54
+ },
+ "湿": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "shi",
+  "tone": 1,
+  "heard": "这个字读作诗",
+  "contour": [
+   5.5,
+   6.4,
+   6.9,
+   7.1,
+   8.1
+  ],
+  "seconds": 0.71
+ },
+ "水": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "shui",
+  "tone": 3,
+  "heard": "这个字读作水。",
+  "contour": [
+   0.9,
+   -2.1,
+   -5.6,
+   -4.5,
+   1.4
+  ],
+  "seconds": 0.83
+ },
+ "三点水": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "sandianshui",
+  "tone": null,
+  "heard": "三点水",
+  "contour": null,
+  "seconds": 1.359
+ },
+ "烧": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "shao",
+  "tone": 1,
+  "heard": "这个字读作烧",
+  "contour": [
+   5.5,
+   5.1,
+   5.0,
+   5.3,
+   6.3
+  ],
+  "seconds": 0.6
+ },
+ "灯": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "deng",
+  "tone": 1,
+  "heard": "这个字读作灯。",
+  "contour": [
+   4.2,
+   4.1,
+   4.0,
+   4.6,
+   5.5
+  ],
+  "seconds": 0.42
+ },
+ "热": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "re",
+  "tone": 4,
+  "heard": "这个字读作热。",
+  "contour": [
+   7.0,
+   8.9,
+   4.7,
+   -2.4,
+   -1.4
+  ],
+  "seconds": 0.6
+ },
+ "煮": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "zhu",
+  "tone": 3,
+  "heard": "这个字读作主",
+  "contour": [
+   0.5,
+   -2.8,
+   -4.8,
+   -2.8,
+   3.5
+  ],
+  "seconds": 0.76
+ },
+ "烤": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "kao",
+  "tone": 3,
+  "heard": "这个字读作、考",
+  "contour": [
+   1.9,
+   -0.8,
+   -1.9,
+   -3.1,
+   -0.3
+  ],
+  "seconds": 0.8
+ },
+ "烟": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "yan",
+  "tone": 1,
+  "heard": "这个字读作烟",
+  "contour": [
+   4.4,
+   5.1,
+   5.4,
+   6.3,
+   6.8
+  ],
+  "seconds": 0.56
+ },
+ "火": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "huo",
+  "tone": 3,
+  "heard": "这个字读作火",
+  "contour": [
+   -0.1,
+   -2.9,
+   -5.4,
+   -4.0,
+   0.5
+  ],
+  "seconds": 0.94
+ },
+ "火字旁": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "huozipang",
+  "tone": null,
+  "heard": "火字旁",
+  "contour": null,
+  "seconds": 0.947
+ },
+ "地": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "di",
+  "tone": 4,
+  "heard": "这个字读作地",
+  "contour": [
+   8.9,
+   6.8,
+   1.9,
+   -2.1,
+   0.1
+  ],
+  "seconds": 0.46
+ },
+ "城": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "cheng",
+  "tone": 2,
+  "heard": "这个字读作成",
+  "contour": [
+   0.7,
+   -0.4,
+   -0.6,
+   2.4,
+   6.4
+  ],
+  "seconds": 0.72
+ },
+ "墙": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "qiang",
+  "tone": 2,
+  "heard": "这个字读作墙。",
+  "contour": [
+   -1.3,
+   -2.0,
+   -2.8,
+   0.0,
+   6.1
+  ],
+  "seconds": 0.87
+ },
+ "坐": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "zuo",
+  "tone": 4,
+  "heard": "这个字,独作,做。",
+  "contour": [
+   6.7,
+   4.4,
+   0.6,
+   -4.6,
+   -3.4
+  ],
+  "seconds": 0.62
+ },
+ "埋": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "mai",
+  "tone": 2,
+  "heard": "这个字读做埋。",
+  "contour": [
+   -1.0,
+   -1.8,
+   -2.9,
+   -2.2,
+   2.1
+  ],
+  "seconds": 0.63
+ },
+ "坡": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "po",
+  "tone": 1,
+  "heard": "这个字读作泼",
+  "contour": [
+   5.5,
+   6.1,
+   6.1,
+   6.1,
+   6.9
+  ],
+  "seconds": 0.62
+ },
+ "土": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "tu",
+  "tone": 3,
+  "heard": "这个字读作土",
+  "contour": [
+   1.3,
+   -1.9,
+   -3.7,
+   -1.8,
+   2.1
+  ],
+  "seconds": 0.88
+ },
+ "提土旁": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "titupang",
+  "tone": null,
+  "heard": "踢土旁",
+  "contour": null,
+  "seconds": 1.359
+ },
+ "明": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "ming",
+  "tone": 2,
+  "heard": "这个字读作名。",
+  "contour": [
+   -0.1,
+   -0.8,
+   -2.1,
+   -1.2,
+   4.0
+  ],
+  "seconds": 0.55
+ },
+ "早": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "zao",
+  "tone": 3,
+  "heard": "这个字读作早。",
+  "contour": [
+   0.1,
+   -3.0,
+   -4.4,
+   -3.3,
+   0.3
+  ],
+  "seconds": 0.75
+ },
+ "晚": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "wan",
+  "tone": 3,
+  "heard": "这个字读作碗。",
+  "contour": [
+   1.2,
+   -0.2,
+   -2.3,
+   -2.1,
+   1.6
+  ],
+  "seconds": 0.81
+ },
+ "晴": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "qing",
+  "tone": 2,
+  "heard": "这个字读作情",
+  "contour": [
+   0.4,
+   -2.2,
+   -3.2,
+   0.0,
+   4.7
+  ],
+  "seconds": 0.69
+ },
+ "晒": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "shai",
+  "tone": 4,
+  "heard": "这个字读作晒。",
+  "contour": [
+   8.4,
+   6.2,
+   2.2,
+   -3.2,
+   -1.8
+  ],
+  "seconds": 0.61
+ },
+ "暖": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "nuan",
+  "tone": 3,
+  "heard": "这个字读作暖。",
+  "contour": [
+   1.3,
+   -0.4,
+   -3.4,
+   -2.7,
+   3.1
+  ],
+  "seconds": 0.76
+ },
+ "日": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "ri",
+  "tone": 4,
+  "heard": "这个字读作日",
+  "contour": [
+   5.6,
+   7.4,
+   5.0,
+   -1.1,
+   -3.8
+  ],
+  "seconds": 0.8
+ },
+ "日字旁": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "rizipang",
+  "tone": null,
+  "heard": "日字旁",
+  "contour": null,
+  "seconds": 1.26
+ },
+ "雷": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "lei",
+  "tone": 2,
+  "heard": "这个字读作雷",
+  "contour": [
+   0.4,
+   0.5,
+   0.3,
+   2.3,
+   7.0
+  ],
+  "seconds": 0.53
+ },
+ "雾": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "wu",
+  "tone": 4,
+  "heard": "这个字读作物",
+  "contour": [
+   5.4,
+   4.7,
+   1.5,
+   -3.4,
+   -2.4
+  ],
+  "seconds": 0.67
+ },
+ "霜": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "shuang",
+  "tone": 1,
+  "heard": "这个字读作双。",
+  "contour": [
+   5.0,
+   4.3,
+   4.2,
+   4.3,
+   6.0
+  ],
+  "seconds": 0.82
+ },
+ "露": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "lu",
+  "tone": 4,
+  "heard": "这个字读作路",
+  "contour": [
+   6.2,
+   8.6,
+   5.9,
+   0.1,
+   -0.7
+  ],
+  "seconds": 0.52
+ },
+ "雹": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "bao",
+  "tone": 2,
+  "heard": "这个字读作薄",
+  "contour": [
+   -0.6,
+   -1.7,
+   -1.9,
+   0.7,
+   4.7
+  ],
+  "seconds": 0.5
+ },
+ "雨": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "yu",
+  "tone": 3,
+  "heard": "这个字读作语",
+  "contour": [
+   0.4,
+   -1.7,
+   -5.4,
+   -3.8,
+   0.5
+  ],
+  "seconds": 0.76
+ },
+ "雨字头": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "yuzitou",
+  "tone": null,
+  "heard": "语字头",
+  "contour": null,
+  "seconds": 1.822
+ },
+ "树": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "shu",
+  "tone": 4,
+  "heard": "这个字读作数。",
+  "contour": [
+   8.8,
+   7.3,
+   3.8,
+   -1.5,
+   -4.0
+  ],
+  "seconds": 0.57
+ },
+ "桌": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "zhuo",
+  "tone": 1,
+  "heard": "这个字读作桌",
+  "contour": [
+   5.3,
+   5.5,
+   5.8,
+   5.9,
+   7.0
+  ],
+  "seconds": 0.59
+ },
+ "椅": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "yi",
+  "tone": 3,
+  "heard": "这个字读作已",
+  "contour": [
+   -1.9,
+   -3.7,
+   -5.8,
+   -3.9,
+   0.9
+  ],
+  "seconds": 0.65
+ },
+ "桥": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "qiao",
+  "tone": 2,
+  "heard": "这个字读作乔",
+  "contour": [
+   -0.4,
+   -1.8,
+   -2.5,
+   -1.3,
+   4.0
+  ],
+  "seconds": 0.71
+ },
+ "枝": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "zhi",
+  "tone": 1,
+  "heard": "这个字读作之",
+  "contour": [
+   4.6,
+   4.9,
+   5.2,
+   5.3,
+   5.8
+  ],
+  "seconds": 0.62
+ },
+ "木": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "mu",
+  "tone": 4,
+  "heard": "这个字读作木。",
+  "contour": [
+   6.6,
+   7.8,
+   6.5,
+   2.2,
+   -3.6
+  ],
+  "seconds": 0.43
+ },
+ "木字旁": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "muzipang",
+  "tone": null,
+  "heard": "木子旁",
+  "contour": null,
+  "seconds": 0.939
+ },
+ "花": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "hua",
+  "tone": 1,
+  "heard": "这个字读作花",
+  "contour": [
+   3.2,
+   2.6,
+   2.4,
+   2.9,
+   4.1
+  ],
+  "seconds": 0.61
+ },
+ "茶": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "cha",
+  "tone": 2,
+  "heard": "这个字读作茶。",
+  "contour": [
+   -0.7,
+   -2.5,
+   -3.7,
+   0.0,
+   3.3
+  ],
+  "seconds": 0.65
+ },
+ "菜": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "cai",
+  "tone": 4,
+  "heard": "这个字读作菜",
+  "contour": [
+   6.6,
+   5.3,
+   1.3,
+   -4.7,
+   -5.4
+  ],
+  "seconds": 0.63
+ },
+ "芽": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "ya",
+  "tone": 2,
+  "heard": "这个字读作牙。",
+  "contour": [
+   -1.1,
+   -2.3,
+   -4.7,
+   -3.0,
+   2.6
+  ],
+  "seconds": 0.59
+ },
+ "蒜": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "suan",
+  "tone": 4,
+  "heard": "这个字读作算",
+  "contour": [
+   7.0,
+   5.4,
+   2.2,
+   -3.4,
+   -0.8
+  ],
+  "seconds": 0.77
+ },
+ "草字头": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "caozitou",
+  "tone": null,
+  "heard": "草子头",
+  "contour": null,
+  "seconds": 0.955
+ },
+ "筷": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "kuai",
+  "tone": 4,
+  "heard": "这个字读作快",
+  "contour": [
+   5.4,
+   3.8,
+   0.6,
+   -2.4,
+   -2.5
+  ],
+  "seconds": 0.77
+ },
+ "笔": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "bi",
+  "tone": 3,
+  "heard": "这个字读作笔",
+  "contour": [
+   2.1,
+   -2.1,
+   -3.9,
+   -2.1,
+   3.4
+  ],
+  "seconds": 0.68
+ },
+ "篮": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "lan",
+  "tone": 2,
+  "heard": "这个字读作蓝",
+  "contour": [
+   0.8,
+   -0.5,
+   -1.7,
+   0.3,
+   5.8
+  ],
+  "seconds": 0.5
+ },
+ "笛": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "di",
+  "tone": 2,
+  "heard": "这个字读作敌。",
+  "contour": [
+   -1.3,
+   -2.5,
+   -2.4,
+   0.0,
+   4.1
+  ],
+  "seconds": 0.59
+ },
+ "筒": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "tong",
+  "tone": 3,
+  "heard": "这个字读作同",
+  "contour": [
+   0.3,
+   -2.4,
+   -2.8,
+   -2.0,
+   2.7
+  ],
+  "seconds": 0.79
+ },
+ "竹": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "zhu",
+  "tone": 2,
+  "heard": "这个字读作竹",
+  "contour": [
+   0.7,
+   -1.0,
+   -0.7,
+   1.4,
+   4.5
+  ],
+  "seconds": 0.73
+ },
+ "竹字头": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "zhuzitou",
+  "tone": null,
+  "heard": "竹子头",
+  "contour": null,
+  "seconds": 1.666
+ },
+ "狗": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "gou",
+  "tone": 3,
+  "heard": "这个字读作狗",
+  "contour": [
+   0.3,
+   -2.4,
+   -4.0,
+   -2.5,
+   3.4
+  ],
+  "seconds": 0.74
+ },
+ "猪": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "zhu",
+  "tone": 1,
+  "heard": "这个字读作猪",
+  "contour": [
+   5.3,
+   5.4,
+   5.4,
+   5.8,
+   7.5
+  ],
+  "seconds": 0.51
+ },
+ "狼": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "lang",
+  "tone": 2,
+  "heard": "这个字读作狼。",
+  "contour": [
+   0.3,
+   -1.2,
+   -2.6,
+   -0.4,
+   4.8
+  ],
+  "seconds": 0.6
+ },
+ "猎": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "lie",
+  "tone": 4,
+  "heard": "这个字读作猎",
+  "contour": [
+   5.7,
+   6.5,
+   3.5,
+   -1.9,
+   -3.7
+  ],
+  "seconds": 0.55
+ },
+ "反犬旁": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "fanquanpang",
+  "tone": null,
+  "heard": "反犬旁",
+  "contour": null,
+  "seconds": 1.278
+ },
+ "蚊": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "wen",
+  "tone": 2,
+  "heard": "这个字读作文。",
+  "contour": [
+   -0.8,
+   -0.6,
+   -2.2,
+   -0.2,
+   4.6
+  ],
+  "seconds": 0.52
+ },
+ "蜂": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "feng",
+  "tone": 1,
+  "heard": "这个字读作风",
+  "contour": [
+   5.4,
+   5.1,
+   5.4,
+   5.6,
+   7.1
+  ],
+  "seconds": 0.58
+ },
+ "蛇": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "she",
+  "tone": 2,
+  "heard": "这个字读作蛇",
+  "contour": [
+   -0.6,
+   -2.1,
+   -1.7,
+   0.5,
+   6.1
+  ],
+  "seconds": 0.72
+ },
+ "虾": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "xia",
+  "tone": 1,
+  "heard": "这个字读作,虾",
+  "contour": [
+   4.9,
+   4.9,
+   5.0,
+   5.6,
+   6.2
+  ],
+  "seconds": 0.71
+ },
+ "蚁": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "yi",
+  "tone": 3,
+  "heard": "这个字读作以",
+  "contour": [
+   -0.8,
+   -3.3,
+   -4.8,
+   -3.3,
+   2.3
+  ],
+  "seconds": 0.61
+ },
+ "蛙": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "wa",
+  "tone": 1,
+  "heard": "这个字读作蛙",
+  "contour": [
+   2.3,
+   2.9,
+   2.8,
+   3.7,
+   4.5
+  ],
+  "seconds": 0.45
+ },
+ "虫": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "chong",
+  "tone": 2,
+  "heard": "这个字读作虫",
+  "contour": [
+   -0.2,
+   -1.0,
+   -1.3,
+   1.2,
+   5.6
+  ],
+  "seconds": 0.73
+ },
+ "虫字旁": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "chongzipang",
+  "tone": null,
+  "heard": "虫子旁",
+  "contour": null,
+  "seconds": 1.119
+ },
+ "家": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "jia",
+  "tone": 1,
+  "heard": "这个字读作家",
+  "contour": [
+   5.9,
+   5.9,
+   5.8,
+   6.4,
+   7.7
+  ],
+  "seconds": 0.51
+ },
+ "室": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "shi",
+  "tone": 4,
+  "heard": "这个字读作是",
+  "contour": [
+   8.9,
+   8.2,
+   2.9,
+   -1.4,
+   -0.2
+  ],
+  "seconds": 0.6
+ },
+ "安": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "an",
+  "tone": 1,
+  "heard": "这个字,独作安。",
+  "contour": [
+   3.1,
+   3.8,
+   3.9,
+   4.0,
+   5.1
+  ],
+  "seconds": 0.54
+ },
+ "客": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "ke",
+  "tone": 4,
+  "heard": "这个字读作克",
+  "contour": [
+   8.1,
+   5.9,
+   3.8,
+   1.2,
+   1.3
+  ],
+  "seconds": 0.54
+ },
+ "宿": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "su",
+  "tone": 4,
+  "heard": "这个字读作素",
+  "contour": [
+   7.5,
+   5.7,
+   0.8,
+   -3.0,
+   -2.1
+  ],
+  "seconds": 0.66
+ },
+ "宫": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "gong",
+  "tone": 1,
+  "heard": "这个字读作公",
+  "contour": [
+   5.0,
+   5.1,
+   4.9,
+   5.2,
+   6.0
+  ],
+  "seconds": 0.4
+ },
+ "宝盖头": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "baogaitou",
+  "tone": null,
+  "heard": "保盖头",
+  "contour": null,
+  "seconds": 0.878
+ },
+ "间": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "jian",
+  "tone": 1,
+  "heard": "这个字读作尖。",
+  "contour": [
+   4.0,
+   4.4,
+   4.6,
+   5.5,
+   6.7
+  ],
+  "seconds": 0.66
+ },
+ "闯": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "chuang",
+  "tone": 3,
+  "heard": "这个字读作、闯。",
+  "contour": [
+   1.5,
+   -1.8,
+   -5.1,
+   -4.0,
+   1.2
+  ],
+  "seconds": 0.97
+ },
+ "闪": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "shan",
+  "tone": 3,
+  "heard": "这个字,独坐,闪。",
+  "contour": [
+   1.5,
+   -0.2,
+   -4.1,
+   -3.0,
+   0.4
+  ],
+  "seconds": 0.79
+ },
+ "闩": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "shuan",
+  "tone": 1,
+  "heard": "这个字读作栓",
+  "contour": [
+   4.1,
+   3.6,
+   3.6,
+   4.2,
+   6.8
+  ],
+  "seconds": 0.64
+ },
+ "闸": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "zha",
+  "tone": 2,
+  "heard": "这个字读作炸",
+  "contour": [
+   -0.3,
+   -1.8,
+   -1.3,
+   -0.9,
+   3.8
+  ],
+  "seconds": 0.54
+ },
+ "门": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "men",
+  "tone": 2,
+  "heard": "这个字,独座,门",
+  "contour": [
+   0.0,
+   -0.0,
+   -0.9,
+   0.1,
+   5.4
+  ],
+  "seconds": 0.66
+ },
+ "门字框": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "menzikuang",
+  "tone": null,
+  "heard": "门子矿",
+  "contour": null,
+  "seconds": 0.79
+ },
+ "饭": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "fan",
+  "tone": 4,
+  "heard": "这个字读作饭。",
+  "contour": [
+   7.5,
+   6.1,
+   1.5,
+   -3.8,
+   -2.6
+  ],
+  "seconds": 0.49
+ },
+ "饿": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "e",
+  "tone": 4,
+  "heard": "这个字读作恶",
+  "contour": [
+   6.2,
+   4.7,
+   1.3,
+   -3.7,
+   -3.4
+  ],
+  "seconds": 0.5
+ },
+ "饱": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "bao",
+  "tone": 3,
+  "heard": "这个字读作保。",
+  "contour": [
+   -0.2,
+   -4.0,
+   -5.6,
+   -3.6,
+   -1.1
+  ],
+  "seconds": 0.63
+ },
+ "饺": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "jiao",
+  "tone": 3,
+  "heard": "这个字读作脚。",
+  "contour": [
+   0.7,
+   -3.7,
+   -4.9,
+   -4.8,
+   1.0
+  ],
+  "seconds": 0.79
+ },
+ "饼": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "bing",
+  "tone": 3,
+  "heard": "这个字读作饼。",
+  "contour": [
+   0.9,
+   -2.1,
+   -3.8,
+   -4.9,
+   0.8
+  ],
+  "seconds": 0.64
+ },
+ "饥": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "ji",
+  "tone": 1,
+  "heard": "这个字读作鸡",
+  "contour": [
+   4.2,
+   4.9,
+   5.2,
+   5.4,
+   6.2
+  ],
+  "seconds": 0.55
+ },
+ "食": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "shi",
+  "tone": 2,
+  "heard": "这个字读作时",
+  "contour": [
+   -0.7,
+   -1.8,
+   -1.3,
+   1.4,
+   5.6
+  ],
+  "seconds": 0.75
+ },
+ "食字旁": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "shizipang",
+  "tone": null,
+  "heard": "十字旁",
+  "contour": null,
+  "seconds": 1.242
+ },
+ "衫": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "shan",
+  "tone": 1,
+  "heard": "这个字读作山。",
+  "contour": [
+   3.0,
+   2.9,
+   3.0,
+   3.6,
+   5.6
+  ],
+  "seconds": 0.72
+ },
+ "裤": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "ku",
+  "tone": 4,
+  "heard": "这个字读作酷。",
+  "contour": [
+   8.7,
+   7.7,
+   5.6,
+   1.0,
+   -3.4
+  ],
+  "seconds": 0.51
+ },
+ "裙": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "qun",
+  "tone": 2,
+  "heard": "这个字读作群。",
+  "contour": [
+   -0.7,
+   -1.1,
+   -1.6,
+   1.2,
+   4.0
+  ],
+  "seconds": 0.63
+ },
+ "袜": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "wa",
+  "tone": 4,
+  "heard": "这个字读作哇",
+  "contour": [
+   6.2,
+   5.6,
+   3.8,
+   -0.7,
+   -1.4
+  ],
+  "seconds": 0.56
+ },
+ "袖": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "xiu",
+  "tone": 4,
+  "heard": "这个字读作秀",
+  "contour": [
+   7.3,
+   6.0,
+   3.4,
+   -2.6,
+   -4.2
+  ],
+  "seconds": 0.62
+ },
+ "袍": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "pao",
+  "tone": 2,
+  "heard": "这个字读作跑",
+  "contour": [
+   -1.6,
+   -2.1,
+   -2.5,
+   2.7,
+   6.8
+  ],
+  "seconds": 0.7
+ },
+ "衣": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "yi",
+  "tone": 1,
+  "heard": "这个字读作一。",
+  "contour": [
+   4.1,
+   4.4,
+   4.8,
+   5.3,
+   6.5
+  ],
+  "seconds": 0.57
+ },
+ "衣字旁": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "yizipang",
+  "tone": null,
+  "heard": "一字旁",
+  "contour": null,
+  "seconds": 1.117
+ },
+ "线": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "xian",
+  "tone": 4,
+  "heard": "这个字读作现",
+  "contour": [
+   7.1,
+   5.4,
+   0.8,
+   -3.2,
+   -1.3
+  ],
+  "seconds": 0.66
+ },
+ "绳": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "sheng",
+  "tone": 2,
+  "heard": "这个字读作绳",
+  "contour": [
+   0.4,
+   -1.0,
+   -1.8,
+   1.0,
+   6.5
+  ],
+  "seconds": 0.78
+ },
+ "结": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "jie",
+  "tone": 2,
+  "heard": "这个字读作结",
+  "contour": [
+   -0.3,
+   -1.5,
+   -2.2,
+   -0.1,
+   5.1
+  ],
+  "seconds": 0.69
+ },
+ "红": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "hong",
+  "tone": 2,
+  "heard": "这个字读作红",
+  "contour": [
+   -0.1,
+   -1.0,
+   -0.1,
+   1.3,
+   5.2
+  ],
+  "seconds": 0.58
+ },
+ "织": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "zhi",
+  "tone": 1,
+  "heard": "这个字读作之",
+  "contour": [
+   4.6,
+   5.6,
+   6.0,
+   6.0,
+   7.3
+  ],
+  "seconds": 0.56
+ },
+ "丝": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "si",
+  "tone": 1,
+  "heard": "这个字读作斯。",
+  "contour": [
+   5.9,
+   6.2,
+   6.8,
+   7.1,
+   8.4
+  ],
+  "seconds": 0.78
+ },
+ "绞丝旁": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "jiaosipang",
+  "tone": null,
+  "heard": "角丝旁",
+  "contour": null,
+  "seconds": 1.114
+ },
+ "进": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "jin",
+  "tone": 4,
+  "heard": "这个字读作进",
+  "contour": [
+   7.6,
+   6.0,
+   1.0,
+   -3.7,
+   -2.0
+  ],
+  "seconds": 0.55
+ },
+ "远": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "yuan",
+  "tone": 3,
+  "heard": "这个字读作远。",
+  "contour": [
+   1.7,
+   0.4,
+   -2.1,
+   -2.5,
+   2.6
+  ],
+  "seconds": 0.84
+ },
+ "近": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "jin",
+  "tone": 4,
+  "heard": "这个字读作近",
+  "contour": [
+   7.3,
+   5.4,
+   0.7,
+   -2.2,
+   -1.4
+  ],
+  "seconds": 0.53
+ },
+ "送": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "song",
+  "tone": 4,
+  "heard": "这个字读作送",
+  "contour": [
+   9.0,
+   7.3,
+   2.5,
+   -2.3,
+   -0.2
+  ],
+  "seconds": 0.6
+ },
+ "追": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "zhui",
+  "tone": 1,
+  "heard": "这个字读作追",
+  "contour": [
+   5.8,
+   6.3,
+   6.7,
+   6.9,
+   8.5
+  ],
+  "seconds": 0.56
+ },
+ "逃": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "tao",
+  "tone": 2,
+  "heard": "这个字读作陶",
+  "contour": [
+   0.6,
+   -0.5,
+   -0.9,
+   1.5,
+   7.1
+  ],
+  "seconds": 0.63
+ },
+ "走之底": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "zouzhidi",
+  "tone": null,
+  "heard": "走之底",
+  "contour": null,
+  "seconds": 1.278
+ },
+ "轮": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "lun",
+  "tone": 2,
+  "heard": "这个字读作伦",
+  "contour": [
+   -0.2,
+   0.3,
+   -0.5,
+   0.6,
+   5.9
+  ],
+  "seconds": 0.68
+ },
+ "辆": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "liang",
+  "tone": 4,
+  "heard": "這個字讀作亮",
+  "contour": [
+   6.0,
+   7.5,
+   4.4,
+   -4.1,
+   -1.2
+  ],
+  "seconds": 0.54
+ },
+ "输": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "shu",
+  "tone": 1,
+  "heard": "这个字读作书",
+  "contour": [
+   6.1,
+   6.0,
+   5.7,
+   6.5,
+   7.5
+  ],
+  "seconds": 0.67
+ },
+ "轨": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "gui",
+  "tone": 3,
+  "heard": "这个字读作鬼",
+  "contour": [
+   1.1,
+   -1.6,
+   -5.7,
+   -5.4,
+   -0.9
+  ],
+  "seconds": 0.63
+ },
+ "轿": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "jiao",
+  "tone": 4,
+  "heard": "这个字,独作,叫。",
+  "contour": [
+   5.9,
+   4.8,
+   2.0,
+   -3.9,
+   -0.3
+  ],
+  "seconds": 0.71
+ },
+ "车": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "che",
+  "tone": 1,
+  "heard": "这个字读作车",
+  "contour": [
+   5.0,
+   5.3,
+   5.4,
+   5.6,
+   6.4
+  ],
+  "seconds": 0.66
+ },
+ "车字旁": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "chezipang",
+  "tone": null,
+  "heard": "车子旁",
+  "contour": null,
+  "seconds": 0.951
+ },
+ "钱": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "qian",
+  "tone": 2,
+  "heard": "这个字读作钱",
+  "contour": [
+   -0.6,
+   -2.1,
+   -2.9,
+   -0.3,
+   3.9
+  ],
+  "seconds": 0.72
+ },
+ "银": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "yin",
+  "tone": 2,
+  "heard": "这个字读作银。",
+  "contour": [
+   -0.9,
+   -1.4,
+   -1.8,
+   -1.2,
+   4.1
+  ],
+  "seconds": 0.56
+ },
+ "铁": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "tie",
+  "tone": 3,
+  "heard": "这个字读作铁。",
+  "contour": [
+   0.5,
+   -2.2,
+   -5.5,
+   -5.5,
+   -3.7
+  ],
+  "seconds": 0.79
+ },
+ "钟": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "zhong",
+  "tone": 1,
+  "heard": "这个字独作中",
+  "contour": [
+   5.6,
+   5.2,
+   5.4,
+   5.7,
+   6.5
+  ],
+  "seconds": 0.52
+ },
+ "针": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "zhen",
+  "tone": 1,
+  "heard": "这个字,独作,真。",
+  "contour": [
+   5.0,
+   6.0,
+   5.5,
+   6.2,
+   7.8
+  ],
+  "seconds": 0.44
+ },
+ "锅": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "guo",
+  "tone": 1,
+  "heard": "这个字读作锅",
+  "contour": [
+   5.2,
+   5.8,
+   5.8,
+   5.8,
+   6.4
+  ],
+  "seconds": 0.57
+ },
+ "金": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "jin",
+  "tone": 1,
+  "heard": "这个字读作金",
+  "contour": [
+   4.3,
+   5.0,
+   5.4,
+   6.2,
+   7.0
+  ],
+  "seconds": 0.55
+ },
+ "金字旁": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "jinzipang",
+  "tone": null,
+  "heard": "金字旁",
+  "contour": null,
+  "seconds": 1.027
+ },
+ "刻": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "ke",
+  "tone": 4,
+  "heard": "这个字读作克",
+  "contour": [
+   7.3,
+   4.5,
+   0.7,
+   -3.6,
+   -1.5
+  ],
+  "seconds": 0.58
+ },
+ "刮": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "gua",
+  "tone": 1,
+  "heard": "这个字读作瓜",
+  "contour": [
+   5.4,
+   5.0,
+   4.9,
+   5.0,
+   5.9
+  ],
+  "seconds": 0.55
+ },
+ "分": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "fen",
+  "tone": 1,
+  "heard": "这个字读作分",
+  "contour": [
+   5.3,
+   4.7,
+   4.8,
+   5.1,
+   6.3
+  ],
+  "seconds": 0.64
+ },
+ "剑": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "jian",
+  "tone": 4,
+  "heard": "这个字读作贱。",
+  "contour": [
+   5.4,
+   4.3,
+   0.6,
+   -5.0,
+   -2.8
+  ],
+  "seconds": 0.65
+ },
+ "刺": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "ci",
+  "tone": 4,
+  "heard": "这个字读作次",
+  "contour": [
+   7.8,
+   7.0,
+   3.9,
+   1.5,
+   -0.4
+  ],
+  "seconds": 0.53
+ },
+ "刀": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "dao",
+  "tone": 1,
+  "heard": "这个字读作、刀",
+  "contour": [
+   4.2,
+   3.9,
+   4.2,
+   4.4,
+   5.5
+  ],
+  "seconds": 0.43
+ },
+ "立刀旁": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "lidaopang",
+  "tone": null,
+  "heard": "立刀旁",
+  "contour": null,
+  "seconds": 1.272
+ },
+ "贵": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "gui",
+  "tone": 4,
+  "heard": "这个字读作贵。",
+  "contour": [
+   6.9,
+   5.2,
+   1.1,
+   -4.3,
+   -3.7
+  ],
+  "seconds": 0.49
+ },
+ "费": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "fei",
+  "tone": 4,
+  "heard": "这个字,独作,肺。",
+  "contour": [
+   7.4,
+   6.1,
+   2.4,
+   -3.9,
+   -4.1
+  ],
+  "seconds": 0.54
+ },
+ "货": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "huo",
+  "tone": 4,
+  "heard": "这个字读作货。",
+  "contour": [
+   10.3,
+   8.5,
+   6.6,
+   -3.3,
+   -3.3
+  ],
+  "seconds": 0.62
+ },
+ "购": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "gou",
+  "tone": 4,
+  "heard": "这个字读作够",
+  "contour": [
+   8.3,
+   8.0,
+   5.9,
+   1.1,
+   -1.5
+  ],
+  "seconds": 0.39
+ },
+ "赚": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "zhuan",
+  "tone": 4,
+  "heard": "这个字读作转",
+  "contour": [
+   7.0,
+   5.8,
+   2.7,
+   -1.8,
+   -2.7
+  ],
+  "seconds": 0.64
+ },
+ "赌": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "du",
+  "tone": 3,
+  "heard": "这个字读作读。",
+  "contour": [
+   0.5,
+   -2.8,
+   -2.9,
+   -0.6,
+   2.9
+  ],
+  "seconds": 0.58
+ },
+ "贝": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "bei",
+  "tone": 4,
+  "heard": "这个字读作背",
+  "contour": [
+   6.8,
+   4.6,
+   -0.4,
+   -4.0,
+   0.4
+  ],
+  "seconds": 0.65
+ },
+ "贝字旁": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "beizipang",
+  "tone": null,
+  "heard": "被子旁",
+  "contour": null,
+  "seconds": 0.866
+ },
+ "吗": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "ma",
+  "tone": 5,
+  "heard": "这个字读作吗?",
+  "contour": [
+   3.7,
+   4.8,
+   5.0,
+   5.1,
+   6.0
+  ],
+  "seconds": 0.57
+ },
+ "蚂": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "ma",
+  "tone": 3,
+  "heard": "这个字读作马",
+  "contour": [
+   1.7,
+   -0.1,
+   -5.6,
+   -4.3,
+   1.0
+  ],
+  "seconds": 0.6
+ },
+ "婚": {
+  "speaker": "serena",
+  "seed": 23,
+  "pinyin": "hun",
+  "tone": 1,
+  "heard": "这个字读作婚",
+  "contour": [
+   5.2,
+   5.2,
+   5.1,
+   5.6,
+   6.5
+  ],
+  "seconds": 0.63
+ },
+ "唱": {
+  "speaker": "serena",
+  "seed": 23,
+  "pinyin": "chang",
+  "tone": 4,
+  "heard": "这个字读作唱。",
+  "contour": [
+   3.9,
+   3.4,
+   -0.7,
+   -5.3,
+   -3.5
+  ],
+  "seconds": 0.62
+ },
+ "扔": {
+  "speaker": "serena",
+  "seed": 23,
+  "pinyin": "reng",
+  "tone": 1,
+  "heard": "这个字读作扔",
+  "contour": [
+   -0.7,
+   1.9,
+   2.1,
+   2.4,
+   2.7
+  ],
+  "seconds": 0.65
+ },
+ "汗": {
+  "speaker": "serena",
+  "seed": 23,
+  "pinyin": "han",
+  "tone": 4,
+  "heard": "这个字读作汉",
+  "contour": [
+   8.2,
+   7.3,
+   3.1,
+   -3.7,
+   -2.9
+  ],
+  "seconds": 0.54
+ },
+ "雪": {
+  "speaker": "serena",
+  "seed": 23,
+  "pinyin": "xue",
+  "tone": 3,
+  "heard": "这个字读作雪。",
+  "contour": [
+   -1.0,
+   -3.3,
+   -6.0,
+   -4.8,
+   -1.6
+  ],
+  "seconds": 0.72
+ },
+ "草": {
+  "speaker": "serena",
+  "seed": 23,
+  "pinyin": "cao",
+  "tone": 3,
+  "heard": "这个字读作草。",
+  "contour": [
+   -1.4,
+   -2.7,
+   -6.5,
+   -3.7,
+   1.7
+  ],
+  "seconds": 0.82
+ },
+ "箱": {
+  "speaker": "serena",
+  "seed": 23,
+  "pinyin": "xiang",
+  "tone": 1,
+  "heard": "这个字读作香",
+  "contour": [
+   4.2,
+   2.8,
+   2.6,
+   3.3,
+   4.0
+  ],
+  "seconds": 0.68
+ },
+ "猫": {
+  "speaker": "serena",
+  "seed": 23,
+  "pinyin": "mao",
+  "tone": 1,
+  "heard": "这个字读作猫",
+  "contour": [
+   5.3,
+   5.9,
+   6.0,
+   6.6,
+   7.8
+  ],
+  "seconds": 0.46
+ },
+ "猴": {
+  "speaker": "serena",
+  "seed": 23,
+  "pinyin": "hou",
+  "tone": 2,
+  "heard": "这个字读作猴。",
+  "contour": [
+   -1.0,
+   -1.1,
+   -1.9,
+   -0.3,
+   4.1
+  ],
+  "seconds": 0.7
+ },
+ "犬": {
+  "speaker": "serena",
+  "seed": 23,
+  "pinyin": "quan",
+  "tone": 3,
+  "heard": "这个字读作犬。",
+  "contour": [
+   -0.8,
+   -3.9,
+   -6.3,
+   -4.5,
+   -0.2
+  ],
+  "seconds": 0.78
+ },
+ "转": {
+  "speaker": "serena",
+  "seed": 23,
+  "pinyin": "zhuan",
+  "tone": 3,
+  "heard": "这个字读作传",
+  "contour": [
+   4.0,
+   2.8,
+   0.1,
+   -6.7,
+   -4.4
+  ],
+  "seconds": 0.64
+ },
+ "情": {
+  "speaker": "serena",
+  "seed": 37,
+  "pinyin": "qing",
+  "tone": 2,
+  "heard": "这个字读作情",
+  "contour": [
+   0.9,
+   -0.2,
+   -1.2,
+   -0.0,
+   3.8
+  ],
+  "seconds": 0.73
+ },
+ "林": {
+  "speaker": "serena",
+  "seed": 37,
+  "pinyin": "lin",
+  "tone": 2,
+  "heard": "这个字读作林",
+  "contour": [
+   -0.1,
+   -1.5,
+   -2.9,
+   -2.3,
+   3.5
+  ],
+  "seconds": 0.51
+ },
+ "切": {
+  "speaker": "serena",
+  "seed": 37,
+  "pinyin": "qie",
+  "tone": 1,
+  "heard": "这个字读作切",
+  "contour": [
+   5.1,
+   4.7,
+   4.7,
+   4.8,
+   5.1
+  ],
+  "seconds": 0.6
+ },
+ "足字旁": {
+  "speaker": "serena",
+  "seed": 41,
+  "pinyin": "zuzipang",
+  "tone": null,
+  "heard": "足字旁",
+  "contour": null,
+  "seconds": 1.039
+ },
+ "踢": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "ti",
+  "tone": 1,
+  "heard": "这个字读作T",
+  "contour": [
+   5.1,
+   4.9,
+   5.1,
+   5.3,
+   5.9
+  ],
+  "seconds": 0.6
+ },
+ "闭": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "bi",
+  "tone": 4,
+  "heard": "这个字读作B",
+  "contour": [
+   7.3,
+   4.2,
+   0.1,
+   -2.9,
+   -2.2
+  ],
+  "seconds": 0.53
+ },
+ "缝": {
+  "speaker": "serena",
+  "seed": 11,
+  "pinyin": "feng",
+  "tone": 2,
+  "heard": "这个字读作缝",
+  "contour": [
+   1.1,
+   -0.4,
+   -0.7,
+   1.7,
+   5.4
+  ],
+  "seconds": 0.6
+ }
+}

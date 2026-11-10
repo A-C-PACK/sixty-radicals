@@ -1,0 +1,83 @@
+{
+  "id": "home",
+  "title": "HOME",
+  "zh": "家",
+  "blurb": "A roof, a door, dinner and something to wear.",
+  "radicals": [
+    {
+      "id": "roof", "glyph": "宀", "full": null, "name": "ROOF", "color": "amber",
+      "cn": "宝盖头", "cnPinyin": "bǎogàitóu", "cnLit": "the lid on the character 宝",
+      "pos": "top",
+      "origin": "The outline of a house: a ridge on top and two walls coming down. It is never used alone and always sits on top.",
+      "clue": "houses and what is kept indoors",
+      "ex": [
+        ["家", "jiā", "home, family", "a pig 豕 under the roof: a household with food"],
+        ["室", "shì", "room", "a space under a roof"],
+        ["安", "ān", "peace, safe", "a woman 女 at home"],
+        ["客", "kè", "guest", "someone staying under your roof"]
+      ],
+      "watch": "Two look-alikes. 冖 (a cover) has no dot on top: 写 (to write). 穴 (a cave) has two extra legs: 空 (empty), 窗 (window).",
+      "decode": [["宿", "sù", "to stay overnight"], ["宫", "gōng", "palace"]]
+    },
+    {
+      "id": "door", "glyph": "门", "full": "门", "fullPinyin": "mén", "name": "DOOR", "color": "teal",
+      "cn": "门字框", "cnPinyin": "ménzìkuàng", "cnLit": "door-character frame",
+      "pos": "frame",
+      "origin": "The traditional form 門 is a pair of swinging saloon doors. The simplified 门 keeps the frame, and the rest of the character stands in the doorway.",
+      "clue": "doors, gates and passing through",
+      "ex": [
+        ["间", "jiān", "room, between", "sunlight 日 through a gap in the door"],
+        ["闭", "bì", "to shut", "to close the door"],
+        ["闯", "chuǎng", "to burst in", "a horse 马 charging through the gate"],
+        ["闪", "shǎn", "to dodge, a flash", "a person 人 glimpsed in a doorway"]
+      ],
+      "watch": "In 问 (wèn, to ask) and 闻 (wén, to hear) the door is the sound part: mén, wèn, wén. The meaning is carried by what stands inside, a mouth 口 and an ear 耳.",
+      "decode": [["闩", "shuān", "door bolt"], ["闸", "zhá", "floodgate"]]
+    },
+    {
+      "id": "food", "glyph": "饣", "full": "食", "fullPinyin": "shí", "name": "FOOD", "color": "coral",
+      "cn": "食字旁", "cnPinyin": "shízìpáng", "cnLit": "food-character side",
+      "pos": "left",
+      "origin": "食 is a lid over a full bowl of grain. Simplified Chinese writes it in three strokes when it stands on the left.",
+      "clue": "food and eating",
+      "ex": [
+        ["饭", "fàn", "cooked rice, meal", "the daily bowl"],
+        ["饿", "è", "hungry", "wanting food"],
+        ["饱", "bǎo", "full", "had enough food"],
+        ["饺", "jiǎo", "dumpling", "as in 饺子"]
+      ],
+      "watch": "馆 (guǎn) first meant an inn that fed travellers. Now it names many public buildings: 饭馆 (restaurant), and also 图书馆 (library).",
+      "decode": [["饼", "bǐng", "flatbread, biscuit"], ["饥", "jī", "starving"]]
+    },
+    {
+      "id": "clothes", "glyph": "衤", "full": "衣", "fullPinyin": "yī", "name": "CLOTHES", "color": "pink",
+      "cn": "衣字旁", "cnPinyin": "yīzìpáng", "cnLit": "clothes-character side",
+      "pos": "left",
+      "origin": "衣 is a robe with a collar and two wide sleeves. On the left it folds up into five strokes.",
+      "clue": "clothing and cloth",
+      "ex": [
+        ["衫", "shān", "shirt", "as in 衬衫"],
+        ["裤", "kù", "trousers", "as in 裤子"],
+        ["裙", "qún", "skirt", "as in 裙子"],
+        ["袜", "wà", "sock", "as in 袜子"]
+      ],
+      "watch": "The classic mix-up: 衤 (clothes) has two short strokes on its right side. 礻 (spirit, altar) has only one, as in 礼 (ceremony) and 神 (god).",
+      "decode": [["袖", "xiù", "sleeve"], ["袍", "páo", "robe"]]
+    },
+    {
+      "id": "silk", "glyph": "纟", "full": "丝", "fullPinyin": "sī", "name": "SILK", "color": "violet",
+      "cn": "绞丝旁", "cnPinyin": "jiǎosīpáng", "cnLit": "twisted-silk side",
+      "pos": "left",
+      "origin": "A twisted skein of silk thread with its loose ends hanging down. Simplified Chinese writes the ends as one rising stroke.",
+      "clue": "thread, cloth and tying",
+      "ex": [
+        ["线", "xiàn", "thread, line", "a single strand"],
+        ["绳", "shéng", "rope", "many strands twisted"],
+        ["结", "jié", "knot, to tie", "what you do with thread"],
+        ["红", "hóng", "red", "the colour of dyed silk"]
+      ],
+      "watch": "Colours came from dyed silk, so 红 (red), 绿 (green) and 紫 (purple) all carry it. In 给 (gěi, to give) and 经 (jīng, to pass through) the thread is hard to see now.",
+      "decode": [["织", "zhī", "to weave"], ["缝", "féng", "to sew"]]
+    }
+  ]
+}
