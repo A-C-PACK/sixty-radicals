@@ -1,0 +1,83 @@
+{
+  "id": "creatures",
+  "title": "CREATURES",
+  "zh": "兽",
+  "blurb": "The five animals that earned a radical of their own.",
+  "radicals": [
+    {
+      "id": "horse", "glyph": "马", "full": "马", "fullPinyin": "mǎ", "name": "HORSE", "color": "amber",
+      "cn": "马字旁", "cnPinyin": "mǎzìpáng", "cnLit": "horse-character side",
+      "pos": "left", "altPos": "bottom",
+      "origin": "A horse seen from the side. The old form had an eye, a mane and four legs. The simplified one keeps the outline and a single line for the legs.",
+      "clue": "horses, riding and speed",
+      "ex": [
+        ["骑", "qí", "to ride", "on a horse then, on a bicycle now"],
+        ["驾", "jià", "to drive", "at first: to harness a horse to a cart"],
+        ["驴", "lǘ", "donkey", "the horse's small cousin"],
+        ["驼", "tuó", "camel", "as in 骆驼, a horse-like animal with a hump"]
+      ],
+      "watch": "马 is also the sound part of some of the first characters you learn: 妈 (mom) and 吗 (the question word). There it sits on the right and lends its sound. As the radical it sits on the left or underneath and gives the meaning.",
+      "decode": [["骡", "luó", "mule"], ["驰", "chí", "to gallop"]]
+    },
+    {
+      "id": "cow", "glyph": "牜", "alt": "牛", "full": "牛", "fullPinyin": "niú", "name": "COW", "color": "coral",
+      "cn": "牛字旁", "cnPinyin": "niúzìpáng", "cnLit": "cow-character side",
+      "pos": "left", "altPos": "bottom",
+      "origin": "牛 is the head of an ox seen from the front, with its horns on top. On the left of a character it leans over and its last stroke lifts.",
+      "clue": "cattle and herding",
+      "ex": [
+        ["牧", "mù", "to herd", "a hand with a stick drives the cattle"],
+        ["物", "wù", "thing", "cattle were once the most valuable things a family owned"],
+        ["特", "tè", "special", "at first a bull, the one that stood out from the herd"],
+        ["牢", "láo", "pen, prison", "an ox 牛 kept under a roof 宀", "alt"]
+      ],
+      "watch": "Look-alike: 扌 (hand) has no tick at the top left. 牜 has one: the ox's horn. 告 (to tell) and 件 (item) contain 牛 but are filed under mouth and person.",
+      "decode": [["犊", "dú", "calf"], ["牲", "shēng", "livestock"]]
+    },
+    {
+      "id": "sheep", "glyph": "羊", "full": "羊", "fullPinyin": "yáng", "name": "SHEEP", "color": "lime",
+      "cn": "羊字旁", "cnPinyin": "yángzìpáng", "cnLit": "sheep-character side",
+      "pos": "top", "altPos": "left",
+      "origin": "A sheep's head seen from the front: two horns on top and the face below. On top of a character its tail is cut short.",
+      "clue": "sheep, and things once thought good",
+      "ex": [
+        ["群", "qún", "herd, crowd", "sheep keep together"],
+        ["美", "měi", "beautiful", "a big 大 sheep was a fine sight"],
+        ["羞", "xiū", "shy, ashamed", "at first: to offer up a lamb"],
+        ["羡", "xiàn", "to envy", "mouth watering over someone else's roast lamb"]
+      ],
+      "watch": "The sheep hint is often an old-fashioned one: a fat sheep meant good things. 羊 also lends its sound, yáng, to 洋 (ocean), 样 (kind, way) and 养 (to raise). In those it is not the radical.",
+      "decode": [["羔", "gāo", "lamb"], ["羚", "líng", "antelope"]]
+    },
+    {
+      "id": "bird", "glyph": "鸟", "full": "鸟", "fullPinyin": "niǎo", "name": "BIRD", "color": "water",
+      "cn": "鸟字旁", "cnPinyin": "niǎozìpáng", "cnLit": "bird-character side",
+      "pos": "right", "altPos": "bottom",
+      "origin": "A bird in profile. The dot is its eye. Take the dot away and you get 乌, a crow: so black that its eye does not show.",
+      "clue": "birds",
+      "ex": [
+        ["鸡", "jī", "chicken", "the bird of the farmyard"],
+        ["鸭", "yā", "duck", "the bird of the pond"],
+        ["鹅", "é", "goose", "its sound part 我 is read wǒ"],
+        ["鹰", "yīng", "eagle, hawk", "the bird underneath, the sound part on top"]
+      ],
+      "watch": "Look-alike: 马 (horse) has an open top and no dot. 岛 (island) has a bird sitting on it but is filed under mountain.",
+      "decode": [["鸽", "gē", "pigeon"], ["鸦", "yā", "crow"]]
+    },
+    {
+      "id": "fish", "glyph": "鱼", "full": "鱼", "fullPinyin": "yú", "name": "FISH", "color": "teal",
+      "cn": "鱼字旁", "cnPinyin": "yúzìpáng", "cnLit": "fish-character side",
+      "pos": "left", "altPos": "bottom",
+      "origin": "A fish standing on its tail: the head on top, the scaly body in the middle, and a flat line where the tail fins used to be.",
+      "clue": "fish and creatures of the water",
+      "ex": [
+        ["鲜", "xiān", "fresh", "fish 鱼 and lamb 羊, both best eaten fresh"],
+        ["鲸", "jīng", "whale", "not a fish, but it lives like one"],
+        ["鲨", "shā", "shark", "as in 鲨鱼"],
+        ["鳄", "è", "crocodile", "as in 鳄鱼"]
+      ],
+      "watch": "The fish family takes in water creatures that are not fish at all: whales, crocodiles, squid. 渔 (to go fishing) puts water in front of 鱼 and is filed under water.",
+      "decode": [["鲤", "lǐ", "carp"], ["鱿", "yóu", "squid"]]
+    }
+  ]
+}

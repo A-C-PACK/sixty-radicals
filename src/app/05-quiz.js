@@ -29,7 +29,7 @@ function quizShell(title, body) {
   const bar = el("div.quiz-meter", el("div.quiz-fill"));
   const count = el("span.quiz-count");
   const view = el("div.quiz.wrap",
-    el("div.quiz-top", el("a.back", { href: "#the-thirty" }, "← Leave"), el("span.eyebrow", title), count),
+    el("div.quiz-top", el("a.back", { href: "#the-sixty" }, "← Leave"), el("span.eyebrow", title), count),
     bar, body);
   return { view, setProgress: (i, n) => { $(".quiz-fill", bar).style.width = `${(Math.min(i, n) / n) * 100}%`; count.textContent = i < n ? `${i + 1} / ${n}` : "Retry"; } };
 }
@@ -86,7 +86,7 @@ function quizView({ title, questions, onDone, again, nextLink, extra }) {
         el("div.done-btns",
           nextLink || null,
           el("button.btn" + (nextLink ? ".ghost" : ".primary"), { type: "button", onclick: again }, "Another round"),
-          el("a.btn.ghost", { href: "#the-thirty" }, "Back to the thirty")),
+          el("a.btn.ghost", { href: "#the-sixty" }, "Back to the sixty")),
         extra?.()));
     window.scrollTo({ top: 0 });
   };
@@ -120,9 +120,9 @@ function sprintView() {
   const intro = el("div.done",
     el("p.eyebrow", "60-second decode"),
     el("h1", "READ THE ", el("span.red", "RADICAL")),
-    el("p.sub", "You get characters from all thirty families, most of them never taught here. Pick the meaning the radical points to. A right answer scores one. A miss costs you a second while the answer shows."),
+    el("p.sub", "You get characters from all sixty families, most of them never taught here. Pick the meaning the radical points to. A right answer scores one. A miss costs you a second while the answer shows."),
     el("p.done-score", state.sprint ? `Your best: ${state.sprint}` : "No score yet"),
-    el("div.done-btns", el("button.btn.primary", { type: "button", onclick: () => start() }, "Start the clock"), el("a.btn.ghost", { href: "#the-thirty" }, "Not now")));
+    el("div.done-btns", el("button.btn.primary", { type: "button", onclick: () => start() }, "Start the clock"), el("a.btn.ghost", { href: "#the-sixty" }, "Not now")));
   const tick = () => {
     const left = Math.max(0, ends - Date.now());
     fill.style.width = `${(left / (SECONDS * 1000)) * 100}%`;
@@ -166,7 +166,7 @@ function sprintView() {
       el("p.done-score", best ? "A new best." : `Your best: ${state.sprint}`),
       rows.length ? el("p.sub", "The ones that got away. The radical is in colour.") : el("p.sub", "Not a single miss."),
       el("div.res-list", rows),
-      el("div.done-btns", el("button.btn.primary", { type: "button", onclick: () => render(true) }, "Go again"), el("a.btn.ghost", { href: "#the-thirty" }, "Back to the thirty"))));
+      el("div.done-btns", el("button.btn.primary", { type: "button", onclick: () => render(true) }, "Go again"), el("a.btn.ghost", { href: "#the-sixty" }, "Back to the sixty"))));
   };
   shell.view.querySelector(".q").replaceWith(intro);
   count.textContent = `${SECONDS}s`;

@@ -284,7 +284,7 @@ function buildGame(g) {
       el("span.built-ch", hanzi(t.ch)), el("span.pick-py", py(t.py)), el("span.pick-mean", t.mean))));
     msg.className = "build-msg";
     msg.textContent = "Each one is a radical in its usual place plus a second part, which most often hints at the sound.";
-    foot.replaceChildren(el("a.btn.primary", { href: "#the-thirty" }, "Back to the thirty"),
+    foot.replaceChildren(el("a.btn.primary", { href: "#the-sixty" }, "Back to the sixty"),
       el("button.btn.ghost", { type: "button", onclick: () => { slips = 0; round(0); } }, "Build them again"));
     blip("win");
   }
@@ -309,7 +309,7 @@ function gameLinks(g, only) {
 function gameView(kind, g) {
   const game = GAMES[g.id], isHunt = kind === "hunt";
   return el("div.game.wrap",
-    el("div.quiz-top", el("a.back", { href: "#the-thirty" }, "← Leave"), el("span.eyebrow", `Set ${GROUPS.indexOf(g) + 1} · ${g.title}`), el("span.quiz-count")),
+    el("div.quiz-top", el("a.back", { href: "#the-sixty" }, "← Leave"), el("span.eyebrow", `Set ${GROUPS.indexOf(g) + 1} · ${g.title}`), el("span.quiz-count")),
     el("div.game-head",
       el("h1", isHunt ? "RADICAL " : "BUILD A ", el("span.red", isHunt ? "HUNT" : "CHARACTER")),
       el("p.sub", isHunt ? `One ${game.scene.noun}, ${COUNT_WORD[game.scene.hunts.length]} hunts. The aim is to spot radicals in something you would really read.`

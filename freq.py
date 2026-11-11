@@ -18,7 +18,7 @@ for line in open(C / "dictionary.txt", encoding="utf8"):
     D[d["character"]] = d
 # fold variant forms into one family
 FOLD = {"水": "氵", "人": "亻", "手": "扌", "心": "忄", "言": "讠", "食": "饣", "衣": "衤", "金": "钅", "刀": "刂", "犬": "犭",
-        "艸": "艹", "竹": "⺮", "火": "灬", "糸": "纟", "辵": "辶", "肉": "月", "玉": "王", "示": "礻", "足": "⻊", "网": "罒"}
+        "艸": "艹", "竹": "⺮", "火": "灬", "糸": "纟", "辵": "辶", "肉": "月", "玉": "王", "示": "礻", "足": "⻊", "网": "罒", "攴": "攵", "阜": "阝", "邑": "阝"}
 N = int(sys.argv[1]) if len(sys.argv) > 1 else 2500
 top = [c for c, _ in freq.most_common() if c in D][:N]
 fam = collections.defaultdict(list)
@@ -28,9 +28,14 @@ for c in top:
 rank = sorted(fam.items(), key=lambda kv: -len(kv[1]))
 for i, (r, cs) in enumerate(rank[:70], 1):
     print(f"{i:2d} {r} {len(cs):3d}  {''.join(cs[:40])}")
-MINE = "亻女口讠忄扌目月⻊疒氵灬土日雨木艹⺮犭虫宀门饣衤纟辶车钅刂贝"
+# flesh is ⺼ here: the dictionary keeps body characters under ⺼ and moon ones under 月
+FIRST = "亻女口讠忄扌目⺼⻊疒氵灬土日雨木艹⺮犭虫宀门饣衤纟辶车钅刂贝"
+# the second thirty (阝 counts once in the list but is taught as two radicals, hill and town)
+MINE = FIRST + "山石田阝冫广厂穴囗马牛羊鸟鱼禾米酉皿巾彳走力攵弓子页耳礻王"
 got = sum(len(fam.get(r, [])) for r in MINE)
-print(f"chosen 30 head {got} of the top {N} = {got / N:.1%}")
+first = sum(len(fam.get(r, [])) for r in FIRST)
+print(f"first 30 head {first} of the top {N} = {first / N:.1%}")
+print(f"all 60 head {got} of the top {N} = {got / N:.1%}")
 for r in MINE:
     print(r, len(fam.get(r, [])), end="; ")
 print()

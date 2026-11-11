@@ -1,0 +1,83 @@
+{
+  "id": "action",
+  "title": "ACTION",
+  "zh": "动",
+  "blurb": "Going, hurrying, pushing, striking and pulling.",
+  "radicals": [
+    {
+      "id": "step", "glyph": "彳", "full": null, "name": "STEP", "color": "teal",
+      "cn": "双人旁", "cnPinyin": "shuāngrénpáng", "cnLit": "double-person side",
+      "pos": "left",
+      "origin": "The left half of 行, a crossroads. It looks like the person radical 亻 with one more stroke on top, which is why teachers call it the double person.",
+      "clue": "going along a road",
+      "ex": [
+        ["往", "wǎng", "to go toward", "heading down the road"],
+        ["径", "jìng", "path", "a small road"],
+        ["征", "zhēng", "long journey, march", "a long way to go on foot"],
+        ["待", "dài", "to wait, to treat", "stopping by the road until someone comes"]
+      ],
+      "watch": "One stroke apart: 亻 (person) has one slanted stroke on top, 彳 has two. The hint has faded in its two commonest members, 很 (very) and 得 (to get).",
+      "decode": [["徒", "tú", "on foot; a follower"], ["徘", "pái", "to pace up and down"]]
+    },
+    {
+      "id": "run", "glyph": "走", "full": "走", "fullPinyin": "zǒu", "name": "RUN", "color": "coral",
+      "cn": "走字旁", "cnPinyin": "zǒuzìpáng", "cnLit": "side of the character 走",
+      "pos": "wrap-bl",
+      "origin": "A person swinging their arms above a foot 止. In old Chinese 走 meant to run. Today it is the everyday word for to walk.",
+      "clue": "hurrying and getting ahead",
+      "ex": [
+        ["起", "qǐ", "to get up, to start", "up on your feet"],
+        ["赶", "gǎn", "to hurry, to catch", "running for the bus"],
+        ["超", "chāo", "to overtake, super", "running past the others"],
+        ["越", "yuè", "to cross over, to exceed", "getting to the other side"]
+      ],
+      "watch": "Three radicals travel on foot. ⻊ (foot) stands on the left: 跑, 跳. 辶 (walk) wraps the bottom left in one smooth line: 进, 远. 走 wraps the same corner but keeps its whole shape.",
+      "decode": [["趟", "tàng", "a trip there and back"], ["赴", "fù", "to go to, to attend"]]
+    },
+    {
+      "id": "strength", "glyph": "力", "full": "力", "fullPinyin": "lì", "name": "STRENGTH", "color": "amber",
+      "cn": "力字旁", "cnPinyin": "lìzìpáng", "cnLit": "strength-character side",
+      "pos": "right", "altPos": "bottom",
+      "origin": "A strong arm bent at the elbow. Others see a plough, the tool that took the most strength of all.",
+      "clue": "effort and force",
+      "ex": [
+        ["动", "dòng", "to move", "it takes force to move something"],
+        ["助", "zhù", "to help", "lending your strength"],
+        ["努", "nǔ", "to strive", "as in 努力, hard-working"],
+        ["劳", "láo", "labour, toil", "hard work"]
+      ],
+      "watch": "Look-alike: 刀 (knife) has nothing poking out at the top. In 力 the slanted stroke crosses through. 男 (man) has 力 underneath but is filed under field.",
+      "decode": [["勤", "qín", "hard-working"], ["劲", "jìn", "strength, energy"]]
+    },
+    {
+      "id": "strike", "glyph": "攵", "full": null, "name": "STRIKE", "color": "violet",
+      "cn": "反文旁", "cnPinyin": "fǎnwénpáng", "cnLit": "turned-文 side",
+      "pos": "right",
+      "origin": "A hand holding a stick, ready to tap or strike. It is named after 文 (writing), which it resembles, but it has a slanted stroke at the top left where 文 has a dot.",
+      "clue": "doing something to something: hitting, changing, setting right",
+      "ex": [
+        ["放", "fàng", "to put, to let go", "driving something away with a stick"],
+        ["收", "shōu", "to collect, to receive", "gathering things in"],
+        ["改", "gǎi", "to change, to correct", "setting something right"],
+        ["教", "jiào", "teaching, to teach", "a child 子 and a teacher's stick. As a verb by itself it is read jiāo"]
+      ],
+      "watch": "The hint is broad: an action with a result. Look-alike: 夂 has one stroke fewer and sits at the top or bottom of a character, as in 冬 (winter).",
+      "decode": [["敲", "qiāo", "to knock"], ["攻", "gōng", "to attack"]]
+    },
+    {
+      "id": "bow", "glyph": "弓", "full": "弓", "fullPinyin": "gōng", "name": "BOW", "color": "green",
+      "cn": "弓字旁", "cnPinyin": "gōngzìpáng", "cnLit": "bow-character side",
+      "pos": "left",
+      "origin": "An archer's bow with the string taken off, which is why it curls back on itself.",
+      "clue": "bows, bending and stretching",
+      "ex": [
+        ["张", "zhāng", "to stretch open", "drawing a bow opens it wide. Also the counting word for flat things"],
+        ["弯", "wān", "bent, a bend", "curved like a bow"],
+        ["引", "yǐn", "to pull, to lead", "a bow and its string, pulled back"],
+        ["强", "qiáng", "strong", "a bow that takes strength to draw"]
+      ],
+      "watch": "Think of what a bow does: it bends, stretches and springs back. 弟 (younger brother) is filed here for its shape alone. 弹 is a pellet when read dàn, and to pluck or to bounce when read tán.",
+      "decode": [["弦", "xián", "bowstring, string"], ["弧", "hú", "arc, curve"]]
+    }
+  ]
+}

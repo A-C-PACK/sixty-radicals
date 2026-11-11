@@ -1,0 +1,83 @@
+{
+  "id": "treasures",
+  "title": "PEOPLE & TREASURES",
+  "zh": "宝",
+  "blurb": "A child, a head, an ear, and the two things once held most precious.",
+  "radicals": [
+    {
+      "id": "child", "glyph": "子", "full": "子", "fullPinyin": "zǐ", "name": "CHILD", "color": "pink",
+      "cn": "子字旁", "cnPinyin": "zǐzìpáng", "cnLit": "child-character side",
+      "pos": "left", "altPos": "bottom",
+      "origin": "A baby wrapped in a blanket: a big head, and two arms held out to be picked up.",
+      "clue": "children and offspring",
+      "ex": [
+        ["孩", "hái", "child", "the everyday word, 孩子"],
+        ["孙", "sūn", "grandchild", "the small 小 child of your child"],
+        ["学", "xué", "to learn", "a child under a roof, being taught"],
+        ["字", "zì", "written character", "a child 子 under a roof 宀: characters were said to multiply like children"]
+      ],
+      "watch": "子 is also a common ending for nouns, with no child in it: 桌子 (table), 杯子 (cup). And 好 (good), a woman with her child, is filed under woman.",
+      "decode": [["孤", "gū", "orphaned, alone"], ["孕", "yùn", "pregnant"]]
+    },
+    {
+      "id": "head", "glyph": "页", "full": "页", "fullPinyin": "yè", "name": "HEAD", "color": "teal",
+      "cn": "页字旁", "cnPinyin": "yèzìpáng", "cnLit": "side of the character 页",
+      "pos": "right",
+      "origin": "A kneeling person with an enormous head. As a word 页 now means a page, but as a radical it still means the head.",
+      "clue": "the head, the face and the neck",
+      "ex": [
+        ["顶", "dǐng", "top", "the crown of the head"],
+        ["额", "é", "forehead", "the front of the head"],
+        ["领", "lǐng", "neck, collar, to lead", "what holds the head up"],
+        ["顾", "gù", "to look back, to look after", "turning your head to check"]
+      ],
+      "watch": "The head comes first, so the hint stretches to what comes first: 题 (title, topic), 预 (in advance), 顺 (in order). Look-alike: 贝 (money) is the same shape without the two strokes on top.",
+      "decode": [["颈", "jǐng", "neck"], ["颊", "jiá", "cheek"]]
+    },
+    {
+      "id": "ear", "glyph": "耳", "full": "耳", "fullPinyin": "ěr", "name": "EAR", "color": "amber",
+      "cn": "耳字旁", "cnPinyin": "ěrzìpáng", "cnLit": "ear-character side",
+      "pos": "left", "altPos": "bottom",
+      "origin": "An ear, drawn with its folds. The everyday word is 耳朵.",
+      "clue": "ears and hearing",
+      "ex": [
+        ["聪", "cōng", "clever", "quick ears: 聪明 is sharp of hearing and of mind"],
+        ["聋", "lóng", "deaf", "ears that do not hear"],
+        ["聊", "liáo", "to chat", "talk needs a listener"],
+        ["耻", "chǐ", "shame", "the feeling that makes your ears burn"]
+      ],
+      "watch": "The commonest hearing words moved away: 听 (to listen) is written with a mouth, and 闻 (to hear, to smell) keeps its ear inside a door. The two radicals nicknamed ears, ⻖ and ⻏, have nothing to do with hearing.",
+      "decode": [["聆", "líng", "to listen closely"], ["聂", "niè", "to whisper"]]
+    },
+    {
+      "id": "spirit", "glyph": "礻", "alt": "示", "full": "示", "fullPinyin": "shì", "name": "SPIRIT", "color": "violet",
+      "cn": "示字旁", "cnPinyin": "shìzìpáng", "cnLit": "side of the character 示",
+      "pos": "left", "altPos": "bottom",
+      "origin": "示 is an altar: a stone table with an offering on it. On the left of a character it slims down to 礻.",
+      "clue": "gods, worship and blessings",
+      "ex": [
+        ["神", "shén", "god, spirit", "what the altar is for"],
+        ["福", "fú", "good fortune", "the character pasted on doors at New Year"],
+        ["祝", "zhù", "to wish well", "at first: to pray"],
+        ["祭", "jì", "to make an offering", "the full 示 sits at the bottom", "alt"]
+      ],
+      "watch": "One dot apart: 礻 (spirit) has one dot on its right side, 衤 (clothes) has two. 社 (society) began as the shrine of the village god, and 礼 (manners, a gift) as a ceremony.",
+      "decode": [["祈", "qí", "to pray"], ["祥", "xiáng", "lucky, a good sign"]]
+    },
+    {
+      "id": "jade", "glyph": "王", "full": "玉", "fullPinyin": "yù", "name": "JADE", "color": "green",
+      "cn": "王字旁", "cnPinyin": "wángzìpáng", "cnLit": "king-character side",
+      "pos": "left",
+      "origin": "玉 is jade: three discs on a string. As a radical it loses its dot and looks exactly like 王, a king, with the bottom stroke tilted up.",
+      "clue": "jade, gems and precious things",
+      "ex": [
+        ["珠", "zhū", "pearl, bead", "a small round gem"],
+        ["珍", "zhēn", "precious, rare", "valued like jade"],
+        ["环", "huán", "ring, loop", "at first a ring of jade"],
+        ["球", "qiú", "ball", "at first a round jade bead"]
+      ],
+      "watch": "It is named after the king, but it nearly always means jade. The hint has worn away in some very common members: 现 (now), 玩 (to play), 班 (class). 理 (reason) once meant cutting jade along its grain.",
+      "decode": [["琼", "qióng", "fine jade"], ["琥", "hǔ", "amber"]]
+    }
+  ]
+}

@@ -10,11 +10,12 @@ GROUPS.forEach((g, gi) => g.radicals.forEach((r, ri) => {
 }));
 const RAD = Object.fromEntries(RADS.map((r) => [r.id, r]));
 const POS_LABEL = { left: "on the left", right: "on the right", top: "on top", bottom: "at the bottom",
-  "wrap-tl": "wrapping the top and left", "wrap-bl": "wrapping the left and bottom", frame: "framing the character" };
-// 草 and 丝 are the everyday words; the radical's own old form is no longer used on its own.
+  "wrap-tl": "wrapping the top and left", "wrap-bl": "wrapping the left and bottom", frame: "framing the character",
+  box: "all the way around" };
+// 草, 丝 and 冰 are the everyday words; the radical's own old form is no longer used on its own.
 /** The shape the radical takes in this example: a few radicals have a second form (心 for 忄, 灬 for 火, 刀 for 刂). */
 const formOf = (r, item) => (item[item.length - 1] === "alt" && r.alt ? r.alt : r.glyph);
-const FULL_IS_WORD = new Set(["grass", "silk"]);
+const FULL_IS_WORD = new Set(["grass", "silk", "ice"]);
 
 // ---------------------------------------------------------------- small helpers
 const $ = (sel, root = document) => root.querySelector(sel);
@@ -61,6 +62,7 @@ const sample = (list) => list[Math.floor(Math.random() * list.length)];
 
 // ---------------------------------------------------------------- saved progress
 // Kept in this browser only. Everything works without it.
+// The key keeps its first name so that progress made when the site taught thirty radicals carries over.
 const STORE_KEY = "thirty-radicals-v1";
 const fresh = () => ({ rad: {}, best: {}, sprint: 0, sound: true, intro: 0, hunt: {}, built: {} });
 let state = fresh();
@@ -85,6 +87,8 @@ function record(id, ok) {
 // While a stroke is being drawn, a fat line runs along its centre line, clipped to the outline.
 let uid = 0;
 const STROKE_S = 0.28;
+// The two ear radicals are one shape. Shown alone, each leans to the side it is found on, which is the only way to tell them apart.
+const LEAN = { "⻖": -170, "⻏": 170 };
 
 /**
  * hanzi("河", { size, anim, whole, center, delay })
@@ -104,7 +108,7 @@ function hanzi(ch, opt = {}) {
   let shift = "";
   if (opt.center) {
     const b = bounds(ch);
-    shift = ` translate(${Math.round(512 - (b.x0 + b.x1) / 2)},${Math.round(388 - (b.y0 + b.y1) / 2)})`;
+    shift = ` translate(${Math.round(512 - (b.x0 + b.x1) / 2) + (LEAN[ch] || 0)},${Math.round(388 - (b.y0 + b.y1) / 2)})`;
   }
   root.setAttribute("transform", "scale(1,-1) translate(0,-900)" + shift);
   svg.append(root);

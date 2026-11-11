@@ -2,7 +2,8 @@
 function posDiagram(pos) {
   const bars = { left: [[0, 0, 36, 100]], right: [[64, 0, 36, 100]], top: [[0, 0, 100, 34]], bottom: [[0, 66, 100, 34]],
     "wrap-tl": [[0, 0, 100, 28], [0, 0, 28, 100]], "wrap-bl": [[0, 0, 28, 100], [0, 72, 100, 28]],
-    frame: [[0, 0, 100, 24], [0, 0, 24, 100], [76, 0, 24, 100]] }[pos];
+    frame: [[0, 0, 100, 24], [0, 0, 24, 100], [76, 0, 24, 100]],
+    box: [[0, 0, 100, 22], [0, 0, 22, 100], [78, 0, 22, 100], [0, 78, 100, 22]] }[pos];
   const svg = document.createElementNS(SVGNS, "svg");
   svg.setAttribute("viewBox", "-4 -4 108 108");
   svg.setAttribute("class", "pos");
@@ -58,7 +59,7 @@ function radPanel(r) {
     fullRow, altRow,
     el("div.panel-row.where", posDiagram(r.pos), el("span", `Usually ${POS_LABEL[r.pos]}`, r.altPos && !r.alt ? `, sometimes ${POS_LABEL[r.altPos]}` : "")),
     el("div.panel-row.cn", el("span.kai", [...r.cn].map((c) => hanzi(c))), py(r.cnPinyin), listenBtn(r.cn),
-      el("span.dim", `what teachers call it: “${r.cnLit}”`)),
+      el("span.dim", rich(`what teachers call it: “${r.cnLit}”`))),
     el("div.panel-btns", replayBtn, traceBtn));
 }
 
@@ -89,7 +90,7 @@ function lessonView(r) {
     const first = level(r.id) === 0;
     record(r.id, ok);
     refreshBar();
-    if (first) toast(`${r.name} learned. ${learnedCount()} of 30.`);
+    if (first) toast(`${r.name} learned. ${learnedCount()} of ${RADS.length}.`);
     after.hidden = false;
     after.querySelector("a").focus({ preventScroll: true });
     after.scrollIntoView({ block: "nearest", behavior: reduceMotion() ? "auto" : "smooth" });
@@ -102,7 +103,7 @@ function lessonView(r) {
 
   return el("div.lesson.wrap", { style: radStyle(r) },
     el("div.lesson-top",
-      el("a.back", { href: "#the-thirty" }, "← All thirty"),
+      el("a.back", { href: "#the-sixty" }, "← All sixty"),
       el("div.lesson-set", el("span.eyebrow", `${g.title} · ${r.ri + 1} of ${g.radicals.length}`), dots),
       el("div.lesson-arrows",
         prev ? el("a.btn.small", { href: "#r-" + prev.id, "aria-label": `Previous: ${prev.name}` }, "←") : null,

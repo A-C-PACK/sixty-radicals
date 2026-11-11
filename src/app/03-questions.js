@@ -5,13 +5,22 @@
 // so a question always has exactly one defensible answer.
 const CLOSE = [["mouth", "speech", "food"], ["hand", "knife", "foot"], ["foot", "walk", "vehicle"], ["water", "rain"], ["fire", "sun"],
   ["tree", "grass", "bamboo"], ["animal", "bug"], ["flesh", "sick", "person", "woman", "heart", "eye"], ["roof", "door", "earth"],
-  ["clothes", "silk"], ["metal", "shell", "knife"], ["earth", "tree", "metal"], ["hand", "silk"], ["person", "foot", "walk"]];
+  ["clothes", "silk"], ["metal", "shell", "knife"], ["earth", "tree", "metal"], ["hand", "silk"], ["person", "foot", "walk"],
+  // the second thirty
+  ["mountain", "stone", "hill", "cliff", "earth", "cave"], ["stone", "metal", "jade", "shell"], ["stone", "dish", "metal", "bamboo"],
+  ["hill", "town"], ["mouth", "enclosure"], ["town", "enclosure", "earth", "roof", "shelter", "cliff", "door", "cave"],
+  ["ice", "rain", "water"], ["animal", "bug", "horse", "cow", "sheep", "bird", "fish"], ["fish", "water"], ["cave", "animal", "bird"],
+  ["horse", "vehicle"], ["field", "cow", "earth", "grain"], ["grain", "rice", "grass", "tree", "bamboo", "field"],
+  ["rice", "food", "mouth", "wine", "dish", "water"], ["cloth", "clothes", "silk"], ["step", "run", "walk", "foot", "vehicle", "person", "horse"],
+  ["strength", "hand", "strike", "bow", "knife"], ["bow", "silk"], ["bow", "animal"], ["child", "woman", "person", "flesh"],
+  ["head", "flesh", "eye", "ear"], ["ear", "mouth", "speech"], ["spirit", "person", "shelter"]];
 const clash = (a, b) => a === b || CLOSE.some((set) => set.includes(a) && set.includes(b));
 const others = (r) => RADS.filter((o) => !clash(r.id, o.id));
 const lower = (r) => r.name.toLowerCase();
 /** Wrong answers for a recognition question: the radical's own set and anything already met come first. */
 function rivals(r) {
-  const fair = RADS.filter((o) => o.id !== r.id && o.name !== r.name);
+  // a twin is the same shape in another place (the two ears, the small box and the big one): never a fair wrong answer
+  const fair = RADS.filter((o) => o.id !== r.id && o.name !== r.name && o.id !== r.twin);
   const near = fair.filter((o) => o.group === r.group || level(o.id) > 0);
   return [...pick(near, 3), ...pick(fair.filter((o) => !near.includes(o)), 3)].slice(0, 3);
 }
@@ -23,7 +32,9 @@ function qMeaning(r) {
   const wrong = rivals(r);
   return { rad: r, kind: "meaning",
     prompt: "What does this radical hint at?",
-    stage: () => el("div.q-glyph", { style: radStyle(r) }, hanzi(r.glyph, { whole: true, center: true, anim: true })),
+    // a twin cannot be told from its look-alike by shape alone, so the question says where it is found
+    stage: () => [el("div.q-glyph", { style: radStyle(r) }, hanzi(r.glyph, { whole: true, center: true, anim: true })),
+      r.twin ? el("p.q-where", { style: radStyle(r) }, posDiagram(r.pos), `Found ${POS_LABEL[r.pos]}`) : null],
     options: shuffle([r, ...wrong]).map((o) => ({ ok: o.id === r.id, node: () => o.name, cls: "word" })),
     explain: () => rich(`${r.glyph} is ${lower(r)}: ${r.clue}.`) };
 }

@@ -68,6 +68,8 @@
 .q-again { margin-bottom: 8px; color: var(--c-amber); font-weight: 700; font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; }
 .q-stage { display: flex; flex-direction: column; align-items: center; gap: 4px; margin: 20px 0 6px; }
 .q-glyph { width: 150px; height: 150px; }
+.q-where { display: flex; align-items: center; gap: 10px; margin: 2px 0 0; color: var(--muted); font-size: 0.95rem; }
+.q-where .pos { width: 30px; height: 30px; }
 .q-glyph.big { display: flex; flex-direction: column; align-items: center; width: auto; height: auto; }
 .q-glyph.big > .hz { width: 170px; height: 170px; }
 .q-py { font-family: var(--f-py); font-weight: 500; color: var(--muted); font-size: 1.15rem; }

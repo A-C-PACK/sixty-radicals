@@ -9,7 +9,7 @@ EXTRA = "妈马吗蚂女口虫部首学会"
 
 
 def groups():
-    return [json.loads((ROOT / "src" / "content" / f"g{i}.json").read_text()) for i in range(1, 7)]
+    return [json.loads((ROOT / "src" / "content" / f"g{i}.json").read_text()) for i in range(1, 13)]
 
 
 def wanted():

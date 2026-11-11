@@ -192,7 +192,7 @@ def syllable(p):
 # whisper writes a lone "ti" or "bi" as the letter it sounds like
 LETTERS = {"T": {"ti"}, "B": {"bi"}}
 # read alone, these come out in their other reading, so a character with the wanted sound is spoken instead
-SPOKEN_AS = {"缝": "逢"}
+SPOKEN_AS = {"缝": "逢", "厦": "霎"}
 
 
 def readings(c):
@@ -216,7 +216,8 @@ def site_items():
             if r["full"]:
                 items.setdefault(r["full"], syllable(r["fullPinyin"]))
             name = lazy_pinyin(r["cn"], style=Style.NORMAL, v_to_u=True)
-            assert "".join(name) == syllable(r["cnPinyin"])[0], (r["cn"], name, r["cnPinyin"])
+            # zuǒ'ěrpáng: the apostrophe only marks where one syllable ends
+            assert "".join(name) == syllable(r["cnPinyin"].replace("'", ""))[0], (r["cn"], name, r["cnPinyin"])
             items[r["cn"]] = (name, None)
     for ch, p in (("吗", "ma"), ("蚂", "mǎ")):          # the radical-swap demo on the home page
         items.setdefault(ch, syllable(p))

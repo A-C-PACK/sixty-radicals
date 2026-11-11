@@ -2,7 +2,7 @@
 
     python3 build.py            # -> docs/index.html (the public page, served by GitHub Pages) and dist/artifact.html (the Artifact)
 
-Content lives in src/content/g1..g6.json (lessons) and games.json (one hunt scene and three
+Content lives in src/content/g1..g12.json (lessons) and games.json (one hunt scene and three
 build rounds per set), styles in src/css/*.css, scripts in src/app/*.js (concatenated in name order). Stroke outlines for every Chinese character that appears
 anywhere in the content are fetched once into cache/hw (see fetch.py) and inlined, so the
 page draws its own characters and needs no Chinese font.
@@ -14,12 +14,14 @@ import re
 from fetch import EXTRA, HW, ROOT, get, groups
 
 SRC, DIST, DOCS = ROOT / "src", ROOT / "dist", ROOT / "docs"
-ABOUT = "Learn the 30 most useful Chinese radicals: stroke-drawn lessons, quizzes, radical hunts, character building, a 60-second decode sprint and Mandarin audio."
+ABOUT = "Learn the 60 most useful Chinese radicals: stroke-drawn lessons, quizzes, radical hunts, character building, a 60-second decode sprint and Mandarin audio."
 ICON = ("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23F2452F'/%3E"
         "%3Cpath d='M18 20h28M18 32h28M18 44h28M32 14v36' stroke='%23F7F2E8' stroke-width='6' stroke-linecap='round' fill='none'/%3E%3C/svg%3E")
 CJK = re.compile(r"[⺀-⿟㐀-鿿]")
+# The dictionary writes both ear radicals as 阝. On the left it is ⻖ (hill), on the right ⻏ (town).
+ear = lambda decomposition: "⻖" if decomposition.startswith("⿰阝") else "⻏"
 # Radical forms with no entry of their own in the stroke data: cut out of a character that carries them.
-DERIVED = {"⻊": "跑"}
+DERIVED = {"⻊": "跑", "牜": "物", "⻖": "院", "⻏": "都"}
 FONTS = ("https://fonts.googleapis.com/css2?family=Anton&family=Lexend:wght@400;500&family=Noto+Sans:wght@500;700"
          "&family=Outfit:wght@400;500;700&display=swap")
 
@@ -46,7 +48,10 @@ def components(chars):
     for line in (ROOT / "cache" / "dictionary.txt").read_text().splitlines():
         d = json.loads(line)
         decomp[d["character"]] = [c for c in d["decomposition"] if CJK.match(c)]
-    alias = {"足": "⻊", "⺼": "月", "言": "讠", "食": "饣", "金": "钅", "糸": "纟", "衣": "衤", "犬": "犭", "手": "扌", "水": "氵"}
+        if "阝" in decomp[d["character"]]:
+            decomp[d["character"]].append(ear(d["decomposition"]))
+    alias = {"足": "⻊", "⺼": "月", "言": "讠", "食": "饣", "金": "钅", "糸": "纟", "衣": "衤", "犬": "犭", "手": "扌", "水": "氵",
+             "攴": "攵"}
 
     def walk(c, seen):
         for part in decomp.get(c, []):
@@ -63,7 +68,7 @@ def components(chars):
     return out
 
 
-POSITIONS = ("left", "right", "top", "bottom", "wrap-tl", "wrap-bl", "frame")
+POSITIONS = ("left", "right", "top", "bottom", "wrap-tl", "wrap-bl", "frame", "box")
 
 
 def games(gs):
@@ -75,8 +80,8 @@ def games(gs):
     rads = [r for g in gs for r in g["radicals"]]
     by_id = {r["id"]: r for r in rads}
     assert list(content) == [g["id"] for g in gs], "games.json needs one entry per set, in order"
-    # which of the thirty a character is filed under. The dictionary keeps body characters under ⺼ and moon ones under 月.
-    shape = {"⺼": "flesh"}
+    # which of the sixty a character is filed under. The dictionary keeps body characters under ⺼ and moon ones under 月.
+    shape = {"⺼": "flesh", "攴": "strike"}
     for r in rads:
         for form in (r["glyph"], r.get("alt"), r.get("full")):
             if form and not (r["id"] == "flesh" and form == "月"):
@@ -86,6 +91,11 @@ def games(gs):
         d = json.loads(line)
         filed[d["character"]] = d["radical"]
         pinyin[d["character"]] = d["pinyin"]
+        if d["radical"] == "阝" and d["character"] != "阝":
+            filed[d["character"]] = ear(d["decomposition"])
+        # the cow leans over on the left (牜) and keeps its full shape underneath (牛); the dictionary writes 牛 for both
+        elif d["radical"] == "牛" and d["decomposition"].startswith("⿰牛"):
+            filed[d["character"]] = "牜"
     odd, unfair = [], []
 
     def sound(c, p):
@@ -125,6 +135,9 @@ def games(gs):
                 # the shape is in there somewhere without being the radical: the learner deserves a reason, not "no X in Y"
                 elif any(f in inside[c] for f in forms):
                     unfair.append(f"{gid}/{h['rad']}: {c} holds the shape and needs a trap")
+                # a look-alike twin (the other ear, the big box for the small one) is the likeliest wrong tap of all
+                elif r.get("twin") and shape.get(filed.get(c)) == r["twin"]:
+                    unfair.append(f"{gid}/{h['rad']}: {c} carries the look-alike {r['twin']} and needs a trap")
         assert len(game["builds"]) == 3, gid
         for b in game["builds"]:
             r = by_id[b["rad"]]

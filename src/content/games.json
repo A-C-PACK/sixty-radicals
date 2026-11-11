@@ -43,7 +43,7 @@
   "builds": [
    {"ch": "妈", "py": "mā", "mean": "mom", "rad": "woman", "pos": "left",
     "radOpts": ["woman", "person", "mouth", "heart"], "posOpts": ["left", "right", "top", "bottom"],
-    "radNotes": {"person": "亻 is for people in general. Another of the thirty is narrower: women and family."},
+    "radNotes": {"person": "亻 is for people in general. Another radical is narrower: women and family."},
     "posNote": "女 stands on the left and narrows a little to make room.",
     "parts": [["马", "mǎ", "horse"], ["且", "qiě", "moreover", "姐", "jiě", "older sister"], ["也", "yě", "also", "她", "tā", "she"]],
     "done": "女 says a woman. 马 mǎ lends its sound: mā."},
@@ -431,6 +431,459 @@
     "posNote": "贝 often sits underneath, as in 贵 and 费. It can also stand on the left, as in 购.",
     "parts": [["化", "huà", "to change"], ["弗", "fú", "not (old word)", "费", "fèi", "fee"], ["加", "jiā", "to add", "贺", "hè", "to congratulate"]],
     "done": "贝 says trade. 化 huà lends its sound: huò, as it did in 花 huā."}
+  ]
+ },
+ "land": {
+  "scene": {
+   "zh": "山路", "en": "Mountain trail", "kind": "list", "noun": "trail noticeboard", "where": "on the board",
+   "sections": [
+    {"label": "On the trail", "rows": [
+     {"zh": "山峰", "en": "Summit"},
+     {"zh": "悬崖危险", "en": "Danger: cliff edge"},
+     {"zh": "小心岩石", "en": "Watch out for rocks"},
+     {"zh": "冰面路滑", "en": "Ice: slippery path"},
+     {"zh": "陡坡慢走", "en": "Steep slope: walk slowly"},
+     {"zh": "碎石路", "en": "Gravel path"},
+     {"zh": "河岸", "en": "River bank"}
+    ]},
+    {"label": "In the village", "rows": [
+     {"zh": "古矿", "en": "Old mine"},
+     {"zh": "石碑", "en": "Stone tablet"},
+     {"zh": "砖塔", "en": "Brick pagoda"},
+     {"zh": "邮局", "en": "Post office"},
+     {"zh": "阳光小院", "en": "Sunshine Courtyard cafe"}
+    ]},
+    {"label": "At the cafe", "rows": [
+     {"zh": "冷面", "en": "Cold noodles", "tag": "¥20"},
+     {"zh": "冻酸奶", "en": "Frozen yoghurt", "tag": "¥15"},
+     {"zh": "凉茶", "en": "Cooling herbal tea", "tag": "¥8"}
+    ]}
+   ],
+   "hunts": [
+    {"rad": "mountain", "hint": "It can stand on the left or sit on top.", "targets": {
+      "峰": ["fēng", "peak", "The very top of a mountain."],
+      "崖": ["yá", "cliff", "A mountain with a sheer drop. Here 山 sits on top."],
+      "岩": ["yán", "rock, crag", "Mountain 山 over stone 石: the rock a mountain is made of."],
+      "岸": ["àn", "bank, shore", "Where the land rises out of the water."]},
+     "traps": {}},
+    {"rad": "stone", "targets": {
+      "碎": ["suì", "broken to bits", "碎石 is crushed stone: gravel."],
+      "矿": ["kuàng", "a mine, ore", "Where rock is dug out for what is in it."],
+      "碑": ["bēi", "stone tablet", "A standing stone with words cut into it."],
+      "砖": ["zhuān", "brick", "A stone made by people."]},
+     "traps": {"岩": "There is a whole 石 in 岩, underneath. But dictionaries file 岩 under the part on top, 山 MOUNTAIN."}},
+    {"rad": "hill", "hint": "The ear has to be on the left.", "targets": {
+      "险": ["xiǎn", "danger", "A steep slope is a risky place."],
+      "陡": ["dǒu", "steep", "What a hillside is when it is hard to climb."],
+      "阳": ["yáng", "sun, sunny", "At first: the sunny side of the hill."],
+      "院": ["yuàn", "courtyard", "Ground closed in by walls of earth."]},
+     "traps": {"邮": "Look at which side the ear is on. In 邮 it stands on the right, and that makes it ⻏ TOWN: post goes from town to town."}},
+    {"rad": "ice", "hint": "Count the dots: two, not three.", "targets": {
+      "冰": ["bīng", "ice", "Ice 冫 beside water 水."],
+      "冷": ["lěng", "cold", "The everyday word for cold. 冷面 is a dish of cold noodles."],
+      "冻": ["dòng", "to freeze", "Frozen hard."],
+      "凉": ["liáng", "cool", "Pleasantly cold. 凉茶 is a herbal tea drunk to cool down."]},
+     "traps": {
+      "滑": "滑 has three drops, so it is 氵 WATER: slippery when wet.",
+      "河": "河 has three drops, so it is 氵 WATER. Ice has only two."}}
+   ]
+  },
+  "builds": [
+   {"ch": "界", "py": "jiè", "mean": "boundary, world", "rad": "field", "pos": "top",
+    "radOpts": ["field", "earth", "mountain", "stone"], "posOpts": ["left", "right", "top", "bottom"],
+    "radNotes": {"earth": "土 is soil and ground in general. The lines between one plot and the next belong to the farmland."},
+    "posNote": "田 sits on top here, as it does in 男 and 思.",
+    "parts": [["介", "jiè", "to lie between"], ["力", "lì", "strength", "男", "nán", "man"], ["心", "xīn", "heart", "思", "sī", "to think"]],
+    "done": "田 says fields, and the edges between them. 介 jiè lends its whole sound: jiè."},
+   {"ch": "冷", "py": "lěng", "mean": "cold", "rad": "ice", "pos": "left",
+    "radOpts": ["ice", "water", "rain", "mountain"], "posOpts": ["left", "right", "top", "bottom"],
+    "radNotes": {"water": "氵 has three drops and stays liquid. Cold takes one drop away.", "rain": "雨 is for weather that falls from the sky. Cold itself has a smaller sign."},
+    "posNote": "冫 always stands on the left: two dots where water has three.",
+    "parts": [["令", "lìng", "an order"], ["东", "dōng", "east", "冻", "dòng", "to freeze"], ["京", "jīng", "capital city", "凉", "liáng", "cool"]],
+    "done": "冫 says cold. 令 lìng lends a rough sound: lěng."},
+   {"ch": "防", "py": "fáng", "mean": "to guard against", "rad": "hill", "pos": "left",
+    "radOpts": ["hill", "town", "earth", "mountain"], "posOpts": ["left", "right", "top", "wrap-tl"],
+    "radNotes": {"town": "The shape is the same, but TOWN names places on the map. A wall of earth to shelter behind is HILL.", "earth": "土 is soil and ground in general. A bank or wall built up from it takes another radical."},
+    "posNote": "On the left the ear is ⻖ HILL. The same ear on the right would be ⻏ TOWN.",
+    "parts": [["方", "fāng", "square, direction"], ["完", "wán", "finished", "院", "yuàn", "courtyard"], ["日", "rì", "sun", "阳", "yáng", "sun, sunny"]],
+    "done": "⻖ says a bank of earth, here one built to keep trouble out. 方 fāng lends its sound: fáng."}
+  ]
+ },
+ "town": {
+  "scene": {
+   "zh": "地图", "en": "Town map", "kind": "list", "noun": "town map", "where": "on the map",
+   "sections": [
+    {"label": "Places", "rows": [
+     {"zh": "邮局", "en": "Post office"},
+     {"zh": "医院", "en": "Hospital"},
+     {"zh": "书店", "en": "Bookshop"},
+     {"zh": "图书馆", "en": "Library"},
+     {"zh": "国家公园", "en": "National park"},
+     {"zh": "庙", "en": "Temple"},
+     {"zh": "市政府", "en": "City hall"},
+     {"zh": "餐厅", "en": "Restaurant"},
+     {"zh": "大厦", "en": "Tower block"},
+     {"zh": "工厂", "en": "Factory"},
+     {"zh": "车库", "en": "Car park"},
+     {"zh": "公厕", "en": "Public toilets"},
+     {"zh": "回收站", "en": "Recycling point"}
+    ]},
+    {"label": "Streets", "rows": [
+     {"zh": "广场", "en": "The square"},
+     {"zh": "北郊路", "en": "North Suburb Road"},
+     {"zh": "东部大街", "en": "East District Avenue"},
+     {"zh": "邻里中心", "en": "Neighbourhood centre"},
+     {"zh": "入口", "en": "Way in"}
+    ]}
+   ],
+   "hunts": [
+    {"rad": "town", "hint": "The ear has to be on the right.", "targets": {
+      "邮": ["yóu", "post, mail", "Letters travel from town to town."],
+      "郊": ["jiāo", "suburbs", "The edge of town."],
+      "部": ["bù", "part, district", "At first the name of a district. 东部 is the eastern part."],
+      "邻": ["lín", "neighbour", "The people in your part of town."]},
+     "traps": {"院": "Look at which side the ear is on. In 院 it stands on the left, and that makes it ⻖ HILL: a yard inside earth walls."}},
+    {"rad": "shelter", "hint": "A dot on top, then a roof with one wall.", "targets": {
+      "店": ["diàn", "shop", "A roofed place to sell from."],
+      "庙": ["miào", "temple", "A hall for worship."],
+      "府": ["fǔ", "government office", "A large official building. 政府 is the government."],
+      "库": ["kù", "storehouse", "A shelter for carts 车. 车库 is a garage."]},
+     "traps": {
+      "厅": "No dot on top of 厅. Without the dot it is 厂 CLIFF.",
+      "厦": "No dot on top of 厦. Without the dot it is 厂 CLIFF.",
+      "厕": "No dot on top of 厕. Without the dot it is 厂 CLIFF.",
+      "厂": "厂 has no dot on top. It is CLIFF, standing alone as the word for a factory."}},
+    {"rad": "cliff", "hint": "No dot on top.", "targets": {
+      "厅": ["tīng", "hall, main room", "A big sheltered room. 餐厅 is a dining hall."],
+      "厦": ["shà", "tall building", "大厦 is a tower block."],
+      "厕": ["cè", "toilet", "The smallest room."]},
+     "traps": {
+      "店": "店 has a dot on top. With the dot it is 广 SHELTER.",
+      "庙": "庙 has a dot on top. With the dot it is 广 SHELTER.",
+      "府": "府 has a dot on top. With the dot it is 广 SHELTER.",
+      "库": "库 has a dot on top. With the dot it is 广 SHELTER.",
+      "广": "广 has a dot on top. It is SHELTER, standing alone as the word for wide."}},
+    {"rad": "enclosure", "hint": "The box has to hold the rest of the character inside it.", "targets": {
+      "图": ["tú", "picture, map", "A drawing inside its frame."],
+      "国": ["guó", "country", "Jade 玉 kept safe inside its borders."],
+      "园": ["yuán", "garden, park", "A fenced piece of land."],
+      "回": ["huí", "to return", "One box inside another: going round and coming back."]},
+     "traps": {"口": "口 by itself is the small box, MOUTH: here an opening, the way in. ENCLOSURE is the big frame with something inside it."}}
+   ]
+  },
+  "builds": [
+   {"ch": "空", "py": "kōng", "mean": "empty, sky", "rad": "cave", "pos": "top",
+    "radOpts": ["cave", "roof", "shelter", "cliff"], "posOpts": ["left", "top", "bottom", "wrap-tl"],
+    "radNotes": {"roof": "宀 is for what goes on indoors. An empty hollow has the same top with two legs added."},
+    "posNote": "穴 always sits on top, like the roof it grew from.",
+    "parts": [["工", "gōng", "work"], ["牙", "yá", "tooth", "穿", "chuān", "to pass through"], ["乍", "zhà", "suddenly", "窄", "zhǎi", "narrow"]],
+    "done": "穴 says a hollow with nothing in it. 工 gōng lends its sound: kōng."},
+   {"ch": "店", "py": "diàn", "mean": "shop", "rad": "shelter", "pos": "wrap-tl",
+    "radOpts": ["shelter", "cliff", "roof", "door"], "posOpts": ["left", "top", "wrap-tl", "box"],
+    "radNotes": {"cliff": "Close. 厂 has no dot on top. Buildings put up for a purpose take the one with the dot.", "roof": "宀 covers both sides and is for home life. A shop is open at the front."},
+    "posNote": "广 covers the top and runs down the left side.",
+    "parts": [["占", "zhàn", "to occupy"], ["木", "mù", "wood", "床", "chuáng", "bed"], ["车", "chē", "cart", "库", "kù", "storehouse"]],
+    "done": "广 says a building. 占 zhàn lends a rough sound: diàn."},
+   {"ch": "园", "py": "yuán", "mean": "garden, park", "rad": "enclosure", "pos": "box",
+    "radOpts": ["enclosure", "mouth", "door", "roof"], "posOpts": ["top", "wrap-tl", "wrap-bl", "box"],
+    "radNotes": {"mouth": "口 is the small box, for mouths and sounds. Land with a fence around it needs the big one.", "door": "门 is open at the bottom. A garden is closed in on every side."},
+    "posNote": "囗 goes all the way around and the other part sits inside.",
+    "parts": [["元", "yuán", "first, the yuan"], ["木", "mù", "tree", "困", "kùn", "trapped, sleepy"], ["玉", "yù", "jade", "国", "guó", "country"]],
+    "done": "囗 says closed in on every side. 元 yuán lends its whole sound: yuán."}
+  ]
+ },
+ "creatures": {
+  "scene": {
+   "zh": "动物园", "en": "Zoo", "kind": "list", "noun": "zoo guide", "where": "in the guide",
+   "sections": [
+    {"label": "Animals", "rows": [
+     {"zh": "骆驼", "en": "Camels"},
+     {"zh": "驴", "en": "Donkeys"},
+     {"zh": "鸡鸭鹅", "en": "Chickens, ducks and geese"},
+     {"zh": "鹰", "en": "Eagles"},
+     {"zh": "鸽子", "en": "Pigeons"},
+     {"zh": "鲸鱼", "en": "Whales"},
+     {"zh": "鳄鱼", "en": "Crocodiles"},
+     {"zh": "羊群", "en": "Flock of sheep"},
+     {"zh": "奶牛", "en": "Dairy cows"}
+    ]},
+    {"label": "Things to do", "rows": [
+     {"zh": "骑马", "en": "Horse riding"},
+     {"zh": "鸟岛", "en": "Bird Island"},
+     {"zh": "鲤鱼池", "en": "Carp pond"},
+     {"zh": "牧场", "en": "The farm"},
+     {"zh": "动物表演", "en": "Animal show"},
+     {"zh": "特别活动", "en": "Special events"},
+     {"zh": "新鲜牛奶", "en": "Fresh milk"}
+    ]}
+   ],
+   "hunts": [
+    {"rad": "horse", "targets": {
+      "骆": ["luò", "camel", "First half of 骆驼, camel: a beast you ride, like a horse."],
+      "驼": ["tuó", "camel, hump", "Second half of 骆驼. Both halves carry 马."],
+      "驴": ["lǘ", "donkey", "The horse's small cousin."],
+      "骑": ["qí", "to ride", "What you do on a horse."]},
+     "traps": {}},
+    {"rad": "bird", "hint": "It usually stands on the right. Look underneath as well.", "targets": {
+      "鸡": ["jī", "chicken", "A bird of the farmyard."],
+      "鸭": ["yā", "duck", "A bird of the pond."],
+      "鹅": ["é", "goose", "A bigger bird of the pond."],
+      "鹰": ["yīng", "eagle", "A bird of prey. Here 鸟 sits underneath."],
+      "鸽": ["gē", "pigeon", "A bird of the city."]},
+     "traps": {"岛": "There is a bird in 岛, with its legs tucked away: a bird resting on a mountain in the sea. Dictionaries file it under 山 MOUNTAIN."}},
+    {"rad": "fish", "targets": {
+      "鲸": ["jīng", "whale", "Not a fish, but it lives like one."],
+      "鳄": ["è", "crocodile", "Not a fish either. For the people who made the character, it lived in the water."],
+      "鲤": ["lǐ", "carp", "The fish of ponds and New Year pictures."],
+      "鲜": ["xiān", "fresh", "Fish 鱼 and sheep 羊: both best eaten fresh."]},
+     "traps": {}},
+    {"rad": "cow", "hint": "On the left the cow leans over and loses a stroke end: 牜.", "targets": {
+      "牧": ["mù", "to herd", "Driving cattle with a stick in the hand 攵. 牧场 is a farm for grazing."],
+      "物": ["wù", "thing, creature", "At first a kind of cow. Now it is any thing at all, and 动物 is a moving thing: an animal."],
+      "特": ["tè", "special", "At first a bull, the one that stands out in the herd."]},
+     "traps": {}}
+   ]
+  },
+  "builds": [
+   {"ch": "美", "py": "měi", "mean": "beautiful", "rad": "sheep", "pos": "top",
+    "radOpts": ["sheep", "cow", "woman", "eye"], "posOpts": ["left", "right", "top", "bottom"],
+    "radNotes": {"woman": "女 gives 好, good. Beauty was first measured in sheep."},
+    "posNote": "On top, 羊 loses the end of its tail to make room for the part below.",
+    "parts": [["大", "dà", "big"], ["丑", "chǒu", "ugly", "羞", "xiū", "shy, ashamed"], ["次", "cì", "next, a time", "羡", "xiàn", "to envy"]],
+    "done": "A sheep 羊 over big 大: to a herder, a big fat sheep was a beautiful sight. Two meanings joined, with no sound part."},
+   {"ch": "鸡", "py": "jī", "mean": "chicken", "rad": "bird", "pos": "right",
+    "radOpts": ["bird", "bug", "fish", "animal"], "posOpts": ["left", "right", "top", "bottom"],
+    "radNotes": {"animal": "犭 is for beasts on four legs. Anything with feathers has its own radical."},
+    "posNote": "鸟 usually stands on the right, as in 鸭 and 鹅.",
+    "parts": [["又", "yòu", "again"], ["甲", "jiǎ", "shell, first", "鸭", "yā", "duck"], ["我", "wǒ", "I, me", "鹅", "é", "goose"]],
+    "done": "鸟 says a bird. 又 is only shorthand here, standing in for a longer part that once gave the sound."},
+   {"ch": "鲜", "py": "xiān", "mean": "fresh", "rad": "fish", "pos": "left",
+    "radOpts": ["fish", "water", "food", "grass"], "posOpts": ["left", "right", "top", "bottom"],
+    "radNotes": {"water": "氵 is for liquids. Fresh was first said of what is caught in the water.", "food": "饣 is for meals and eating. Start from the animal, before it is cooked."},
+    "posNote": "鱼 stands on the left and flattens its tail into one stroke.",
+    "parts": [["羊", "yáng", "sheep"], ["京", "jīng", "capital city", "鲸", "jīng", "whale"], ["里", "lǐ", "inside, village", "鲤", "lǐ", "carp"]],
+    "done": "Fish 鱼 and sheep 羊, both best eaten fresh. Two meanings joined, with no sound part."}
+  ]
+ },
+ "farm": {
+  "scene": {
+   "zh": "购物单", "en": "Shopping list", "kind": "list", "noun": "shopping list", "where": "on the list",
+   "sections": [
+    {"label": "Food", "rows": [
+     {"zh": "大米", "en": "Rice"},
+     {"zh": "面粉", "en": "Flour"},
+     {"zh": "白糖", "en": "White sugar"},
+     {"zh": "蛋糕", "en": "Cake"},
+     {"zh": "八宝粥", "en": "Eight-treasure porridge"},
+     {"zh": "啤酒", "en": "Beer"},
+     {"zh": "米醋", "en": "Rice vinegar"},
+     {"zh": "酱油", "en": "Soy sauce"},
+     {"zh": "酸奶", "en": "Yoghurt"},
+     {"zh": "西瓜", "en": "Watermelon"}
+    ]},
+    {"label": "For the house", "rows": [
+     {"zh": "盘子", "en": "Plates"},
+     {"zh": "饭盒", "en": "Lunch box"},
+     {"zh": "花盆", "en": "Flowerpot"},
+     {"zh": "锅盖", "en": "Pan lid"},
+     {"zh": "毛巾", "en": "Towel"},
+     {"zh": "桌布", "en": "Tablecloth"},
+     {"zh": "帽子", "en": "Hat"},
+     {"zh": "窗帘", "en": "Curtains"},
+     {"zh": "皮带", "en": "Belt"}
+    ]}
+   ],
+   "hunts": [
+    {"rad": "rice", "targets": {
+      "粉": ["fěn", "powder, flour", "Grain ground fine."],
+      "糖": ["táng", "sugar", "The first sweets were boiled down from grain."],
+      "糕": ["gāo", "cake", "Made from rice flour."],
+      "粥": ["zhōu", "porridge", "Rice boiled soft. Here 米 sits in the middle."]},
+     "traps": {}},
+    {"rad": "wine", "hint": "Look for the line inside the jar.", "targets": {
+      "酒": ["jiǔ", "alcohol", "Liquid 氵 from the jar. Dictionaries file it under the jar."],
+      "醋": ["cù", "vinegar", "Wine left to turn sour."],
+      "酱": ["jiàng", "thick sauce", "Fermented in a jar. Here 酉 sits underneath."],
+      "酸": ["suān", "sour", "The taste of something fermented. 酸奶 is sour milk: yoghurt."]},
+     "traps": {"西": "西 is empty inside. 酉 has one more line across the middle: the wine in the jar. 西 means west, and 西瓜 is the melon from the west."}},
+    {"rad": "dish", "hint": "It always sits at the bottom.", "targets": {
+      "盘": ["pán", "plate, tray", "Something flat to serve on."],
+      "盒": ["hé", "box", "A container that closes."],
+      "盆": ["pén", "basin, pot", "A deep, open container."],
+      "盖": ["gài", "lid, to cover", "What goes on top of the dish."]},
+     "traps": {}},
+    {"rad": "cloth", "hint": "On the left, underneath, or in the middle of the bottom.", "targets": {
+      "布": ["bù", "cloth", "The everyday word for fabric."],
+      "帽": ["mào", "hat", "Cloth for the head."],
+      "帘": ["lián", "curtain", "Cloth hung across an opening."],
+      "带": ["dài", "belt, to bring", "A belt with its tied ends hanging down."]},
+     "traps": {}}
+   ]
+  },
+  "builds": [
+   {"ch": "秋", "py": "qiū", "mean": "autumn", "rad": "grain", "pos": "left",
+    "radOpts": ["grain", "tree", "grass", "sun"], "posOpts": ["left", "right", "top", "bottom"],
+    "radNotes": {"tree": "Close. 木 has a flat top. The season is named for the crop, with its drooping head.", "sun": "日 marks time in 时 and 早. The farm year goes by the crop."},
+    "posNote": "禾 stands on the left and pulls in its last stroke.",
+    "parts": [["火", "huǒ", "fire"], ["中", "zhōng", "middle", "种", "zhǒng", "seed, kind"], ["且", "qiě", "moreover", "租", "zū", "to rent"]],
+    "done": "Grain 禾 the colour of fire 火: harvest time. Two meanings joined, with no sound part."},
+   {"ch": "糖", "py": "táng", "mean": "sugar, candy", "rad": "rice", "pos": "left",
+    "radOpts": ["rice", "food", "mouth", "grain"], "posOpts": ["left", "right", "top", "bottom"],
+    "radNotes": {"food": "饣 is for meals and eating. Sugar was first boiled down from grain, so it takes the grain itself.", "grain": "禾 is the crop standing in the field. What is made from the harvest takes another radical."},
+    "posNote": "米 stands on the left and pulls in its last stroke.",
+    "parts": [["唐", "táng", "the Tang dynasty"], ["分", "fēn", "to divide", "粉", "fěn", "powder, flour"], ["立", "lì", "to stand", "粒", "lì", "a single grain"]],
+    "done": "米 says it is made from grain. 唐 táng lends its whole sound: táng."},
+   {"ch": "盒", "py": "hé", "mean": "box", "rad": "dish", "pos": "bottom",
+    "radOpts": ["dish", "mouth", "roof", "bamboo"], "posOpts": ["left", "right", "top", "bottom"],
+    "radNotes": {"mouth": "There is a 口 in this one, inside the sound part. The meaning is the container underneath."},
+    "posNote": "皿 always sits at the bottom and holds up the rest like a tray.",
+    "parts": [["合", "hé", "to close, to join"], ["分", "fēn", "to divide", "盆", "pén", "basin, pot"], ["舟", "zhōu", "boat", "盘", "pán", "plate, tray"]],
+    "done": "皿 says a container. 合 hé lends its whole sound, and its meaning too: a box is a dish that closes."}
+  ]
+ },
+ "action": {
+  "scene": {
+   "zh": "跑步队", "en": "Running club chat", "kind": "chat", "noun": "team chat", "where": "in the chat",
+   "sections": [
+    {"label": "Morning run", "rows": [
+     {"tag": "Coach", "zh": "起来! 我们去跑步.", "en": "Up you get! We are going for a run."},
+     {"tag": "Li", "zh": "不行, 我很累.", "en": "I can't. I am so tired."},
+     {"tag": "Coach", "zh": "加油! 努力!", "en": "Come on! Put your back into it!"},
+     {"tag": "Coach", "zh": "往左, 走小径.", "en": "Turn left and take the path."},
+     {"tag": "Wang", "zh": "我赶上你了!", "en": "I have caught up with you!"},
+     {"tag": "Li", "zh": "他超过我了.", "en": "He has passed me."},
+     {"tag": "Coach", "zh": "别放弃. 动起来!", "en": "Do not give up. Get moving!"},
+     {"tag": "Wang", "zh": "你越来越快了.", "en": "You are getting faster and faster."},
+     {"tag": "Li", "zh": "我得了第一!", "en": "I came first!"},
+     {"tag": "Coach", "zh": "收队! 明天改时间.", "en": "That is it for today! Tomorrow the time changes."},
+     {"tag": "Li", "zh": "谢谢教练帮助我.", "en": "Thank you for helping me, Coach."}
+    ]}
+   ],
+   "hunts": [
+    {"rad": "step", "hint": "Two slanted strokes on top, not one.", "targets": {
+      "很": ["hěn", "very", "One of the commonest characters of all. The road in it faded long ago."],
+      "往": ["wǎng", "toward", "Heading off down the road."],
+      "径": ["jìng", "path", "A small road."],
+      "得": ["dé", "to get", "At first: to go out and come back with something. 得了第一 is to take first place."]},
+     "traps": {
+      "行": "行 is the whole crossroads that 彳 was cut from. It has a radical entry of its own.",
+      "你": "Count the strokes on top. 你 has one, so it is 亻 PERSON. 彳 has two.",
+      "他": "Count the strokes on top. 他 has one, so it is 亻 PERSON. 彳 has two.",
+      "们": "Count the strokes on top. 们 has one, so it is 亻 PERSON. 彳 has two."}},
+    {"rad": "run", "hint": "Its last stroke stretches out under the other part.", "targets": {
+      "起": ["qǐ", "to get up, to start", "Up on your feet."],
+      "赶": ["gǎn", "to hurry, to catch", "赶上 is to catch up."],
+      "超": ["chāo", "to overtake", "Running past the others. 超过 is to pass."],
+      "越": ["yuè", "to cross over, more and more", "Getting past a line. 越来越快 is faster and faster."]},
+     "traps": {}},
+    {"rad": "strength", "hint": "On the right, underneath, and once on the left.", "targets": {
+      "加": ["jiā", "to add", "Strength 力 added to words 口. 加油, add oil, is how you cheer someone on."],
+      "努": ["nǔ", "to strive", "努力 is to try hard. Here 力 sits underneath."],
+      "动": ["dòng", "to move", "It takes force to move something."],
+      "助": ["zhù", "to help", "Lending your strength."]},
+     "traps": {"别": "There is a 力 in 别, tucked into the bottom of its left half. The radical is the knife on the right, 刂: to part, to cut away."}},
+    {"rad": "strike", "targets": {
+      "放": ["fàng", "to put, to let go", "放弃 is to let go and give up."],
+      "收": ["shōu", "to collect, to gather in", "收队 is calling the team in."],
+      "改": ["gǎi", "to change, to correct", "Setting something right."],
+      "教": ["jiào", "teaching", "A child 子 and a teacher's stick. 教练 is a coach."]},
+     "traps": {}}
+   ]
+  },
+  "builds": [
+   {"ch": "张", "py": "zhāng", "mean": "to stretch open", "rad": "bow", "pos": "left",
+    "radOpts": ["bow", "hand", "silk", "strength"], "posOpts": ["left", "right", "top", "bottom"],
+    "radNotes": {"hand": "扌 would do for pulling in general. This word began with one thing that is drawn open.", "strength": "力 is for effort and force. This word began with the thing the force is used on."},
+    "posNote": "弓 stands on the left, tall and narrow.",
+    "parts": [["长", "zhǎng", "to grow; also cháng, long"], ["虽", "suī", "although", "强", "qiáng", "strong"], ["瓜", "guā", "melon", "弧", "hú", "arc, curve"]],
+    "done": "弓 says a bow, drawn wide open. 长 zhǎng lends its sound: zhāng."},
+   {"ch": "放", "py": "fàng", "mean": "to put, to let go", "rad": "strike", "pos": "right",
+    "radOpts": ["strike", "hand", "step", "strength"], "posOpts": ["left", "right", "top", "bottom"],
+    "radNotes": {"hand": "扌 is for what the hand does directly. 攵 is a hand with a stick: doing something to something."},
+    "posNote": "攵 nearly always stands on the right.",
+    "parts": [["方", "fāng", "square, direction"], ["正", "zhèng", "upright, correct", "政", "zhèng", "government"], ["工", "gōng", "work", "攻", "gōng", "to attack"]],
+    "done": "攵 says something is done to something: here, sending it off. 方 fāng lends its sound: fàng."},
+   {"ch": "起", "py": "qǐ", "mean": "to get up, to start", "rad": "run", "pos": "wrap-bl",
+    "radOpts": ["run", "foot", "walk", "step"], "posOpts": ["left", "bottom", "wrap-tl", "wrap-bl"],
+    "radNotes": {"foot": "⻊ is for what feet do on the spot: jump, kick, step on. Getting up and going takes another.", "walk": "辶 is one smooth line, for distance and travel. This one keeps the whole of 走."},
+    "posNote": "走 stands on the left and stretches its last stroke out under the other part.",
+    "parts": [["己", "jǐ", "oneself"], ["干", "gàn", "to do", "赶", "gǎn", "to hurry, to catch"], ["召", "zhào", "to summon", "超", "chāo", "to overtake"]],
+    "done": "走 says getting on your feet. 己 jǐ lends its sound: qǐ."}
+  ]
+ },
+ "treasures": {
+  "scene": {
+   "zh": "博物馆", "en": "Museum", "kind": "list", "noun": "museum guide", "where": "in the guide",
+   "sections": [
+    {"label": "On show", "rows": [
+     {"zh": "珍珠项链", "en": "Pearl necklace"},
+     {"zh": "玉环", "en": "Jade ring"},
+     {"zh": "玻璃球", "en": "Glass ball"},
+     {"zh": "神像", "en": "Statue of a god"},
+     {"zh": "福字", "en": "The character for good fortune"}
+    ]},
+    {"label": "Signs", "rows": [
+     {"zh": "礼品店", "en": "Gift shop"},
+     {"zh": "职员通道", "en": "Staff only"},
+     {"zh": "联系我们", "en": "Contact us"}
+    ]},
+    {"label": "For visitors", "wide": true, "rows": [
+     {"zh": "参观请预约.", "en": "Please book your visit ahead."},
+     {"zh": "孩子免费, 学生半价.", "en": "Children free, students half price."},
+     {"zh": "耳机在前台领取.", "en": "Collect your headphones at the front desk."},
+     {"zh": "请顺着箭头走.", "en": "Please follow the arrows."},
+     {"zh": "禁止拍照, 请勿大声聊天.", "en": "No photos. Please do not chat loudly."},
+     {"zh": "祝您参观愉快!", "en": "Enjoy your visit!"}
+    ]}
+   ],
+   "hunts": [
+    {"rad": "jade", "hint": "It looks like 王, a king, standing on the left.", "targets": {
+      "珍": ["zhēn", "precious, rare", "Valued like jade."],
+      "珠": ["zhū", "pearl, bead", "A small round gem. 珍珠 is a pearl."],
+      "环": ["huán", "ring, loop", "At first a ring of jade."],
+      "玻": ["bō", "glass", "First half of 玻璃, glass: once as rare as a gem."],
+      "璃": ["lí", "glass", "Second half of 玻璃. Both halves carry the jade."],
+      "球": ["qiú", "ball", "At first a round jade bead."]},
+     "traps": {}},
+    {"rad": "spirit", "hint": "One dot on the right side, not two. Look underneath as well.", "targets": {
+      "神": ["shén", "god, spirit", "What the altar is for."],
+      "福": ["fú", "good fortune", "A blessing. This is the character pasted on doors at New Year."],
+      "礼": ["lǐ", "gift, manners", "At first a ceremony at the altar. 礼品 is a gift."],
+      "禁": ["jìn", "to forbid", "At first what the spirits did not allow. Here the full 示 sits underneath."],
+      "祝": ["zhù", "to wish well", "At first: to pray."]},
+     "traps": {}},
+    {"rad": "head", "targets": {
+      "项": ["xiàng", "back of the neck, item", "项链 is a neck chain."],
+      "预": ["yù", "in advance", "The head goes first. 预约 is to book ahead."],
+      "领": ["lǐng", "collar, to lead, to collect", "The neck holds the head up. 领取 is to collect something."],
+      "顺": ["shùn", "along, in order", "Heads all facing the same way, like water in a stream 川."]},
+     "traps": {"费": "The bottom of 费 is 贝 SHELL: money. 页 has two more strokes on top."}},
+    {"rad": "ear", "targets": {
+      "职": ["zhí", "duty, job", "At first: to listen and remember. 职员 is a member of staff."],
+      "联": ["lián", "to join", "At first an ear tied on with thread. 联系 is to get in touch."],
+      "聊": ["liáo", "to chat", "Talk needs a listener."]},
+     "traps": {"取": "There is a whole ear in 取: at first, a hand 又 taking an ear. But dictionaries file it under the hand, 又."}}
+   ]
+  },
+  "builds": [
+   {"ch": "孩", "py": "hái", "mean": "child", "rad": "child", "pos": "left",
+    "radOpts": ["child", "woman", "person", "mouth"], "posOpts": ["left", "right", "top", "bottom"],
+    "radNotes": {"person": "亻 is for people in general. The young have a radical of their own.", "woman": "女 is for women and the family. The young have a radical of their own."},
+    "posNote": "子 stands on the left and tilts its long stroke upward.",
+    "parts": [["亥", "hài", "the pig of the zodiac"], ["小", "xiǎo", "small", "孙", "sūn", "grandchild"], ["瓜", "guā", "melon", "孤", "gū", "orphaned, alone"]],
+    "done": "子 says a child. 亥 hài lends its sound: hái."},
+   {"ch": "领", "py": "lǐng", "mean": "collar, to lead", "rad": "head", "pos": "right",
+    "radOpts": ["head", "flesh", "eye", "shell"], "posOpts": ["left", "right", "top", "bottom"],
+    "radNotes": {"flesh": "月 names the parts of the body lower down. The head and neck have a radical of their own.", "shell": "Close. 贝 is money. 页 has two more strokes on top, and it is a head."},
+    "posNote": "页 always stands on the right.",
+    "parts": [["令", "lìng", "an order"], ["丁", "dīng", "nail", "顶", "dǐng", "top"], ["川", "chuān", "river", "顺", "shùn", "along, in order"]],
+    "done": "页 says the head and neck. 令 lìng lends its sound: lǐng."},
+   {"ch": "珠", "py": "zhū", "mean": "pearl, bead", "rad": "jade", "pos": "left",
+    "radOpts": ["jade", "stone", "metal", "shell"], "posOpts": ["left", "right", "top", "bottom"],
+    "radNotes": {"stone": "石 is for rock and hard things. Gems are filed with the most precious stone of all.", "metal": "钅 is for metals. Pearls and gems go with jade.", "shell": "A pearl does come out of a shell, but 贝 is for money and trade."},
+    "posNote": "王 stands on the left, with its bottom stroke tilted up.",
+    "parts": [["朱", "zhū", "vermilion red"], ["求", "qiú", "to seek", "球", "qiú", "ball"], ["不", "bù", "not", "环", "huán", "ring, loop"]],
+    "done": "王 says a gem. 朱 zhū lends its whole sound: zhū."}
   ]
  }
 }

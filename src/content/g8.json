@@ -1,0 +1,83 @@
+{
+  "id": "town",
+  "title": "TOWN & SHELTER",
+  "zh": "住",
+  "blurb": "Towns, buildings, caves and walls all the way around.",
+  "radicals": [
+    {
+      "id": "town", "glyph": "⻏", "full": "邑", "fullPinyin": "yì", "name": "TOWN", "color": "coral", "twin": "hill",
+      "cn": "右耳旁", "cnPinyin": "yòu'ěrpáng", "cnLit": "right-ear side",
+      "pos": "right",
+      "origin": "邑 is an old word for a walled town: the wall 口 on top, the people below. As a radical it shrinks to the same ear-shaped hook as hill, but it always stands on the RIGHT.",
+      "clue": "towns, districts and places on the map",
+      "ex": [
+        ["邮", "yóu", "post, mail", "letters travel from town to town"],
+        ["邻", "lín", "neighbour", "the people in your part of town"],
+        ["郊", "jiāo", "suburbs", "the edge of town"],
+        ["部", "bù", "part, department", "at first the name of a district"]
+      ],
+      "watch": "Left ear means hill (院, 阳). Right ear means town. The best-known member is 都: read dū it is a capital city, as in 首都, and read dōu it is the everyday word for all. 那 (that) began as a place name too.",
+      "decode": [["邦", "bāng", "nation, state"], ["郡", "jùn", "county"]]
+    },
+    {
+      "id": "shelter", "glyph": "广", "full": "广", "fullPinyin": "guǎng", "name": "SHELTER", "color": "amber",
+      "cn": "广字旁", "cnPinyin": "guǎngzìpáng", "cnLit": "side of the character 广",
+      "pos": "wrap-tl",
+      "origin": "A building open at the front: a roof with one wall. As a word, 广 now means wide.",
+      "clue": "buildings and big roofed spaces",
+      "ex": [
+        ["店", "diàn", "shop", "a roofed place to sell from"],
+        ["床", "chuáng", "bed", "wood 木 furniture kept indoors"],
+        ["库", "kù", "storehouse", "a shelter for carts 车"],
+        ["庙", "miào", "temple", "a hall for worship"]
+      ],
+      "watch": "Two look-alikes. 疒 (sickness) has two extra dots on its left edge. 厂 (cliff) has no dot on top. And 宀 (roof) covers both sides, where 广 has only one wall.",
+      "decode": [["廊", "láng", "corridor, porch"], ["府", "fǔ", "mansion, government office"]]
+    },
+    {
+      "id": "cliff", "glyph": "厂", "full": "厂", "fullPinyin": "chǎng", "name": "CLIFF", "color": "violet",
+      "cn": "厂字旁", "cnPinyin": "chǎngzìpáng", "cnLit": "side of the character 厂",
+      "pos": "wrap-tl",
+      "origin": "A rock face with an overhang that people once sheltered under. As a word, 厂 now means factory, as in 工厂.",
+      "clue": "cliffs, and rooms sheltered like one",
+      "ex": [
+        ["厅", "tīng", "hall, main room", "the big room of a house"],
+        ["厨", "chú", "kitchen", "the room for cooking"],
+        ["厕", "cè", "toilet", "the smallest room"],
+        ["原", "yuán", "source, original", "a spring 泉 running out from under a cliff"]
+      ],
+      "watch": "厂 is 广 (shelter) without the dot, and the two overlap in meaning. A few common characters carry 厂 for its shape alone: 历 (history) and 压 (to press).",
+      "decode": [["厦", "shà", "tall building"], ["厢", "xiāng", "side room"]]
+    },
+    {
+      "id": "cave", "glyph": "穴", "full": "穴", "fullPinyin": "xué", "name": "CAVE", "color": "teal",
+      "cn": "穴字头", "cnPinyin": "xuézìtóu", "cnLit": "cave-character top",
+      "pos": "top",
+      "origin": "A roof 宀 over an opening 八: the mouth of a cave, or a home dug into the earth.",
+      "clue": "holes, openings and empty space",
+      "ex": [
+        ["空", "kōng", "empty, sky", "nothing inside"],
+        ["窗", "chuāng", "window", "a hole in the wall to let in light"],
+        ["穿", "chuān", "to pass through, to wear", "getting dressed is putting your arms through holes"],
+        ["窄", "zhǎi", "narrow", "a tight opening"]
+      ],
+      "watch": "Look-alike: 宀 (roof) is the same top without the two legs. Roof plus 八 is a cave. 帘 (curtain) has 穴 on top but is filed under cloth, the part underneath.",
+      "decode": [["窝", "wō", "den, lair"], ["窟", "kū", "cave, hole"]]
+    },
+    {
+      "id": "enclosure", "glyph": "囗", "full": null, "name": "ENCLOSURE", "color": "pink", "twin": "mouth",
+      "cn": "国字框", "cnPinyin": "guózìkuàng", "cnLit": "frame of the character 国",
+      "pos": "box",
+      "origin": "A wall drawn all the way around. It never stands alone: something always sits inside it.",
+      "clue": "borders and things closed in",
+      "ex": [
+        ["国", "guó", "country", "jade 玉 kept safe inside its borders"],
+        ["园", "yuán", "garden, park", "a fenced piece of land"],
+        ["围", "wéi", "to surround", "closed in on every side"],
+        ["困", "kùn", "trapped, sleepy", "a tree 木 with no room to grow"]
+      ],
+      "watch": "Look-alike: 口 (mouth) is small and sits beside or under the other parts. 囗 is big and holds the rest of the character inside it. 回 (to return) is one box inside another.",
+      "decode": [["囚", "qiú", "prisoner"], ["圈", "quān", "circle, ring"]]
+    }
+  ]
+}

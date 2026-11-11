@@ -1,7 +1,7 @@
 // ---------------------------------------------------------------- top bar, routes, start-up
 function refreshBar() {
   const n = learnedCount(), m = masteredCount();
-  $("#bar-count").replaceChildren(...el("span", el("strong", String(n)), " / 30", m ? el("span.count-gold", ` · ${m} mastered`) : null).childNodes);
+  $("#bar-count").replaceChildren(...el("span", el("strong", String(n)), ` / ${RADS.length}`, m ? el("span.count-gold", ` · ${m} mastered`) : null).childNodes);
 }
 
 function route() {
@@ -13,7 +13,7 @@ function route() {
   if (gg) return { kind: "game", make: () => gameView(gm[1], gg) };
   if (h === "review") return { kind: "quiz", make: reviewView };
   if (h === "sprint") return { kind: "quiz", make: sprintView };
-  return { kind: "home", make: homeView, anchor: ["how", "the-thirty", "play"].includes(h) ? h : null };
+  return { kind: "home", make: homeView, anchor: ["how", "the-sixty", "play"].includes(h) ? h : h === "the-thirty" ? "the-sixty" : null };
 }
 
 let lastKind = null;

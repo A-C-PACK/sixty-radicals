@@ -1,18 +1,20 @@
-# Thirty Radicals
+# Sixty Radicals
 
-A single-page website that teaches a Chinese learner the 30 most useful simplified-character radicals: what each one means, where it sits in a character, and how to use it to guess the meaning of characters never seen before.
+A single-page website that teaches a Chinese learner the 60 most useful simplified-character radicals: what each one means, where it sits in a character, and how to use it to guess the meaning of characters never seen before.
 
-**Visit it: https://a-c-pack.github.io/thirty-radicals/**
+**Visit it: https://a-c-pack.github.io/sixty-radicals/**
 
-The page is `docs/index.html`, one self-contained file (about 2.4 MB) served by GitHub Pages. It can also be opened straight from disk, and needs an internet connection only for the web fonts and the Hanzi Writer script used for tracing.
+The page is `docs/index.html`, one self-contained file (about 5.4 MB) served by GitHub Pages. It can also be opened straight from disk, and needs an internet connection only for the web fonts and the Hanzi Writer script used for tracing.
 
 ## What is in it
 
-- Six themed sets of five radicals. Each lesson gives the radical's origin, its usual position, the name teachers use for it, a memory clue, four example characters, a "watch out" note, a question on an unseen character, and stroke tracing.
+- Twelve themed sets of five radicals. Each lesson gives the radical's origin, its usual position, the name teachers use for it, a memory clue, four example characters, a "watch out" note, a question on an unseen character, and stroke tracing.
 - Set quizzes with five question types (meaning, shape, spot the radical, decode, family), a mixed review weighted towards weak radicals, and a 60-second decode sprint.
-- Two games at the end of every set. In **Radical hunt** you read a family chat, a clinic form, a weather forecast, zoo signs, a menu or station signs, and tap every character that carries a given radical. In **Build a character** you start from a meaning and pick the radical, where it sits, and the part that finishes it.
-- Mandarin pronunciation for all 208 taught characters, the 30 radical names and the characters the games teach (278 clips).
+- Two games at the end of every set. In **Radical hunt** you read a piece of everyday text (a family chat, a clinic form, a menu, a town map, a shopping list, a museum guide) and tap every character that carries a given radical. In **Build a character** you start from a meaning and pick the radical, where it sits, and the part that finishes it.
+- Mandarin pronunciation for all 412 taught characters, the 60 radical names and the characters the games teach (532 clips).
 - Progress is kept in the browser's local storage.
+
+The site began as Thirty Radicals. Sets 7 to 12 were added later, and progress saved under the old name carries over.
 
 ## Building
 
@@ -22,7 +24,7 @@ python3 build.py        # -> docs/index.html (the public page)
 
 | Path | What it is |
 | --- | --- |
-| `src/content/g1..g6.json` | The lesson content, one file per set |
+| `src/content/g1..g12.json` | The lesson content, one file per set |
 | `src/content/games.json` | The hunt scene and build round for each set. The build checks it against the dictionary, so no tap in a hunt is marked wrong unfairly |
 | `src/app/*.js`, `src/css/*.css`, `src/page.html` | Scripts, styles and page shell, inlined by the build |
 | `src/audio/mp3/`, `clips.json`, `manifest.json` | Pronunciation clips and the record of how each was checked |
@@ -33,6 +35,8 @@ python3 build.py        # -> docs/index.html (the public page)
 | `voices/audition_page.*` | Builds the page used to choose the voice |
 
 Characters are drawn from stroke outlines rather than a font, so the page looks the same on every device.
+
+Two pairs of radicals look alike and are told apart by position: the ear-shaped hook is HILL on the left of a character and TOWN on the right, and the box is MOUTH when small and ENCLOSURE when it holds the rest of the character. The content marks each pair with `twin`, and the quizzes and hunts never set one against the other on shape alone.
 
 ## Pronunciation clips
 

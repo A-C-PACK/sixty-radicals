@@ -1,0 +1,83 @@
+{
+  "id": "farm",
+  "title": "FARM & TABLE",
+  "zh": "农",
+  "blurb": "What grows in the field and what it turns into.",
+  "radicals": [
+    {
+      "id": "grain", "glyph": "禾", "full": "禾", "fullPinyin": "hé", "name": "GRAIN", "color": "lime",
+      "cn": "禾木旁", "cnPinyin": "hémùpáng", "cnLit": "grain-tree side",
+      "pos": "left", "altPos": "top",
+      "origin": "A stalk of ripe grain with its heavy head bending over. That bent stroke on top is all that separates it from 木, a tree.",
+      "clue": "crops, harvests and what was paid in grain",
+      "ex": [
+        ["种", "zhǒng", "seed, kind", "what the next crop grows from. Read zhòng, it means to plant"],
+        ["秋", "qiū", "autumn", "grain 禾 the colour of fire 火: harvest time"],
+        ["稻", "dào", "rice plant", "rice while it is still growing"],
+        ["租", "zū", "to rent", "rent was once paid in grain"]
+      ],
+      "watch": "Look-alike: 木 (tree) has a flat top. 禾 has a slanted stroke above it, the drooping head of grain. 和 (and) and 利 (profit) contain 禾 but are filed under mouth and knife.",
+      "decode": [["穗", "suì", "top of a grain stalk"], ["秧", "yāng", "seedling"]]
+    },
+    {
+      "id": "rice", "glyph": "米", "full": "米", "fullPinyin": "mǐ", "name": "RICE", "color": "amber",
+      "cn": "米字旁", "cnPinyin": "mǐzìpáng", "cnLit": "rice-character side",
+      "pos": "left",
+      "origin": "Grains of rice scattered around a cross, as if spilled on a table. 米 is rice after the harvest and before the pot.",
+      "clue": "rice, flour and food made from grain",
+      "ex": [
+        ["粉", "fěn", "powder, flour", "grain ground fine"],
+        ["糖", "táng", "sugar, candy", "the first sweets were boiled down from grain"],
+        ["糕", "gāo", "cake", "made from rice flour"],
+        ["粥", "zhōu", "porridge", "rice boiled soft"]
+      ],
+      "watch": "Chinese has a word for each stage. 稻 is rice in the field (grain radical). 米 is the raw grain. 饭 is rice cooked and served (food radical). 米 is also the word for a metre.",
+      "decode": [["粮", "liáng", "grain, provisions"], ["粒", "lì", "a single grain"]]
+    },
+    {
+      "id": "wine", "glyph": "酉", "full": "酉", "fullPinyin": "yǒu", "name": "WINE JAR", "color": "violet",
+      "cn": "酉字旁", "cnPinyin": "yǒuzìpáng", "cnLit": "side of the character 酉",
+      "pos": "left", "altPos": "right",
+      "origin": "A clay wine jar with a narrow neck. The line inside shows how full it is.",
+      "clue": "alcohol and things brewed or fermented",
+      "ex": [
+        ["酒", "jiǔ", "alcohol", "liquid 氵 from the jar"],
+        ["醉", "zuì", "drunk", "too much from the jar"],
+        ["醋", "cù", "vinegar", "wine left to turn"],
+        ["酸", "suān", "sour", "the taste of something fermented"]
+      ],
+      "watch": "Look-alike: 西 (west) is empty inside. 酉 has one more line across the middle: the wine in the jar. 酒 has water on its left, but dictionaries file it under the jar.",
+      "decode": [["酿", "niàng", "to brew"], ["酱", "jiàng", "thick sauce, paste"]]
+    },
+    {
+      "id": "dish", "glyph": "皿", "full": "皿", "fullPinyin": "mǐn", "name": "DISH", "color": "teal",
+      "cn": "皿字底", "cnPinyin": "mǐnzìdǐ", "cnLit": "dish-character bottom",
+      "pos": "bottom",
+      "origin": "A wide bowl on a stand, seen from the side. It always sits at the bottom and holds up the rest of the character like a tray.",
+      "clue": "containers: bowls, plates and boxes",
+      "ex": [
+        ["盘", "pán", "plate, tray", "something flat to serve on"],
+        ["盆", "pén", "basin, pot", "something deep to wash in"],
+        ["盒", "hé", "box", "a container that closes: 合 means to shut"],
+        ["盖", "gài", "lid, to cover", "what goes on top of the dish"]
+      ],
+      "watch": "Look-alike: 四 (four) has two curved legs inside and no base line. 皿 has two straight lines and a long base that sticks out at both ends.",
+      "decode": [["盏", "zhǎn", "small cup"], ["盂", "yú", "wide bowl"]]
+    },
+    {
+      "id": "cloth", "glyph": "巾", "full": "巾", "fullPinyin": "jīn", "name": "CLOTH", "color": "pink",
+      "cn": "巾字旁", "cnPinyin": "jīnzìpáng", "cnLit": "cloth-character side",
+      "pos": "left", "altPos": "bottom",
+      "origin": "A piece of cloth hanging from a belt. 毛巾 is a towel and 围巾 is a scarf.",
+      "clue": "a piece of cloth and things made from one",
+      "ex": [
+        ["布", "bù", "cloth", "the everyday word for fabric"],
+        ["帽", "mào", "hat", "cloth for the head"],
+        ["带", "dài", "belt, to bring", "a cloth belt with its tied ends hanging down"],
+        ["帘", "lián", "curtain", "cloth hung across an opening 穴"]
+      ],
+      "watch": "巾 is a flat piece of cloth. Finished clothing has its own radical, 衤 (裤, 衬), and thread has 纟. 常 (often) is filed here too, with no cloth in sight.",
+      "decode": [["帆", "fān", "sail"], ["帕", "pà", "handkerchief"]]
+    }
+  ]
+}

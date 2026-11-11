@@ -35,7 +35,7 @@
       "decode": [["姑", "gū", "aunt"], ["婚", "hūn", "marriage"]]
     },
     {
-      "id": "mouth", "glyph": "口", "full": "口", "fullPinyin": "kǒu", "name": "MOUTH", "color": "amber",
+      "id": "mouth", "glyph": "口", "full": "口", "fullPinyin": "kǒu", "name": "MOUTH", "color": "amber", "twin": "enclosure",
       "cn": "口字旁", "cnPinyin": "kǒuzìpáng", "cnLit": "mouth-character side",
       "pos": "left",
       "origin": "An open mouth, drawn as a box. It is one of the few radicals that still looks like its picture.",

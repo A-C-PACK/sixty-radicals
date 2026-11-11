@@ -1,4 +1,4 @@
-// ---------------------------------------------------------------- home: hero, how radicals work, the thirty
+// ---------------------------------------------------------------- home: hero, how radicals work, the sixty
 const cssVar = (name) => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
 
 /** The wall of characters behind the hero: texture, not meant to be read. */
@@ -64,15 +64,15 @@ function hero() {
   const canvas = el("canvas.wall", { "aria-hidden": "true" });
   const cta = next
     ? el("a.btn.primary", { href: "#r-" + next.id }, done ? `Continue with ${next.name}` : "Start with the first radical")
-    : el("a.btn.primary", { href: "#review" }, "Practise all thirty");
+    : el("a.btn.primary", { href: "#review" }, "Practise all sixty");
   const sec = el("section.hero",
     canvas,
     el("div.hero-shade"),
     el("div.wrap.hero-in",
       el("div.hero-text",
         el("p.eyebrow", el("span.kai", hanzi("部"), hanzi("首")), py("bùshǒu"), " · the building blocks of Chinese"),
-        el("h1", "30 RADICALS.", el("br"), el("span.red", "THOUSANDS"), " OF CHARACTERS."),
-        el("p.lede", "Chinese characters are built from parts. One part, the radical, hints at the meaning. Learn the thirty that matter most and every new character arrives with a clue."),
+        el("h1", "60 RADICALS.", el("br"), el("span.red", "THOUSANDS"), " OF CHARACTERS."),
+        el("p.lede", "Chinese characters are built from parts. One part, the radical, hints at the meaning. Learn the sixty that matter most and every new character arrives with a clue."),
         el("div.hero-cta", cta, el("a.btn.ghost", { href: "#how" }, "How radicals work"))),
       heroDemo()));
   requestAnimationFrame(() => paintWall(canvas));
@@ -198,8 +198,8 @@ function footer() {
   return el("footer.foot",
     el("div.wrap.foot-in",
       el("div",
-        el("h4", "Why these thirty"),
-        el("p", "They were picked for two things: how many everyday characters they appear in, and how dependable the hint is. Together they are the dictionary radical of about 58% of the 2,500 most-used simplified characters. Frequent radicals with a weak hint, such as 阝, were left out in favour of clearer ones like food and rain.")),
+        el("h4", "Why these sixty"),
+        el("p", "They were picked for two things: how many everyday characters they appear in, and how dependable the hint is. The first thirty are the dictionary radical of about 58% of the 2,500 most-used simplified characters. All sixty together cover about 75%. The first six sets hold the clearest hints. The last six add radicals that are just as common but ask for a little more care, such as the two that share one ear-shaped hook.")),
       el("div",
         el("h4", "How the site teaches"),
         el("p", "Five radicals at a time, each with its picture, its position and four familiar characters. Then you recall them, spot them inside characters, and use them on characters you have not met. Missed questions come back. Each set ends with two games: a radical hunt through something you would really read, and a round of building characters from their parts. A red seal means three right answers in a row.")),
@@ -214,11 +214,11 @@ function homeView() {
   return el("div.home",
     hero(),
     howSection(),
-    el("section.band#the-thirty",
+    el("section.band#the-sixty",
       el("div.wrap",
         el("p.eyebrow", `${total} learned · ${gold} mastered`),
-        el("h2", "THE ", el("span.red", "THIRTY")),
-        el("p.sub", "Six sets of five. Open a radical to learn it, then practise the set."),
+        el("h2", "THE ", el("span.red", "SIXTY")),
+        el("p.sub", "Twelve sets of five. Open a radical to learn it, then practise the set."),
         GROUPS.map(groupBand))),
     playSection(),
     footer());

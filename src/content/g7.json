@@ -1,0 +1,83 @@
+{
+  "id": "land",
+  "title": "THE LAND",
+  "zh": "地",
+  "blurb": "Mountains, rocks, fields, hillsides and ice.",
+  "radicals": [
+    {
+      "id": "mountain", "glyph": "山", "full": "山", "fullPinyin": "shān", "name": "MOUNTAIN", "color": "green",
+      "cn": "山字旁", "cnPinyin": "shānzìpáng", "cnLit": "mountain-character side",
+      "pos": "left", "altPos": "top",
+      "origin": "Three peaks in a row, the tallest in the middle. It has hardly changed in three thousand years.",
+      "clue": "mountains and high, rocky ground",
+      "ex": [
+        ["岛", "dǎo", "island", "a bird 鸟 resting on a mountain in the sea"],
+        ["岸", "àn", "shore, bank", "where the land rises out of the water"],
+        ["峰", "fēng", "peak", "the very top of a mountain"],
+        ["岭", "lǐng", "mountain ridge", "a line of mountains"]
+      ],
+      "watch": "山 moves around: on the left in 峰, on top in 岸, underneath in 岛. Wherever it sits, think high ground. 出 (to go out) looks like two mountains stacked up, but it is not one of the family.",
+      "decode": [["崖", "yá", "cliff"], ["峡", "xiá", "gorge"]]
+    },
+    {
+      "id": "stone", "glyph": "石", "full": "石", "fullPinyin": "shí", "name": "STONE", "color": "teal",
+      "cn": "石字旁", "cnPinyin": "shízìpáng", "cnLit": "stone-character side",
+      "pos": "left",
+      "origin": "A rock 口 lying at the foot of a cliff 厂. The everyday word for a stone is 石头.",
+      "clue": "rock, minerals and hard things",
+      "ex": [
+        ["碗", "wǎn", "bowl", "the first bowls were carved from stone"],
+        ["砖", "zhuān", "brick", "a stone made by people"],
+        ["硬", "yìng", "hard", "hard as rock"],
+        ["破", "pò", "broken, to break", "even stone cracks"]
+      ],
+      "watch": "Look-alike: 右 (right) has the same box, but its top stroke crosses the long one. In 石 the top stroke stops where they meet.",
+      "decode": [["矿", "kuàng", "a mine, ore"], ["碑", "bēi", "stone monument"]]
+    },
+    {
+      "id": "field", "glyph": "田", "full": "田", "fullPinyin": "tián", "name": "FIELD", "color": "lime",
+      "cn": "田字旁", "cnPinyin": "tiánzìpáng", "cnLit": "field-character side",
+      "pos": "top", "altPos": "left",
+      "origin": "Farmland seen from above: four plots with raised paths between them.",
+      "clue": "farmland and what it is used for",
+      "ex": [
+        ["男", "nán", "male, man", "strength 力 at work in the field"],
+        ["界", "jiè", "boundary, world", "the lines between one field and the next"],
+        ["畜", "chù", "livestock", "animals kept on the farm"],
+        ["画", "huà", "to draw, picture", "at first it meant marking out the edges of a field"]
+      ],
+      "watch": "田 is a common building block where it is not the radical: 思 (to think) is filed under heart and 累 (tired) under silk. Look-alikes with a stroke poking out: 由, 甲 and 申.",
+      "decode": [["畔", "pàn", "edge of a field, bank"], ["畦", "qí", "vegetable plot"]]
+    },
+    {
+      "id": "hill", "glyph": "⻖", "full": "阜", "fullPinyin": "fù", "name": "HILL", "color": "amber", "twin": "town",
+      "cn": "左耳旁", "cnPinyin": "zuǒ'ěrpáng", "cnLit": "left-ear side",
+      "pos": "left",
+      "origin": "阜 is a mound, drawn as steps cut into a hillside. As a radical it shrinks to a hook that looks like an ear, always on the LEFT of the character.",
+      "clue": "hills, slopes and walls of earth",
+      "ex": [
+        ["院", "yuàn", "courtyard", "ground closed in by earth walls"],
+        ["阳", "yáng", "sun, sunny", "the sunny side of the hill"],
+        ["阴", "yīn", "shade, overcast", "the shady side of the hill"],
+        ["险", "xiǎn", "danger", "a steep slope is a risky place"]
+      ],
+      "watch": "The same ear on the RIGHT is a different radical: town, as in 都 (capital) and 邮 (post). Left ear means hill. Right ear means town.",
+      "decode": [["陡", "dǒu", "steep"], ["陵", "líng", "mound, burial hill"]]
+    },
+    {
+      "id": "ice", "glyph": "冫", "full": "冰", "fullPinyin": "bīng", "name": "ICE", "color": "water",
+      "cn": "两点水", "cnPinyin": "liǎngdiǎnshuǐ", "cnLit": "two dots of water",
+      "pos": "left",
+      "origin": "Two cracks in a frozen pond. Think of it as water with one drop frozen away: 氵 has three dots, 冫 has two.",
+      "clue": "ice and cold",
+      "ex": [
+        ["冰", "bīng", "ice", "ice 冫 beside water 水"],
+        ["冷", "lěng", "cold", "the everyday word for cold"],
+        ["冻", "dòng", "to freeze", "water turning hard"],
+        ["凉", "liáng", "cool", "pleasantly cold"]
+      ],
+      "watch": "Count the dots. Three is water (江, river). Two is ice (冷, cold). A few everyday characters carry 冫 with no cold in them at all: 决 (to decide) and 况 (situation).",
+      "decode": [["凝", "níng", "to freeze solid, to set"], ["冽", "liè", "biting cold"]]
+    }
+  ]
+}
