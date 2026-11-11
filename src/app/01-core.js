@@ -9,6 +9,16 @@ GROUPS.forEach((g, gi) => g.radicals.forEach((r, ri) => {
   RADS.push(r);
 }));
 const RAD = Object.fromEntries(RADS.map((r) => [r.id, r]));
+// The sound families: the other half of a character, the part that hints at how it is said.
+const FAMSETS = DATA.families || [];
+const FAMS = [];
+FAMSETS.forEach((s, si) => s.families.forEach((f, fi) => {
+  f.set = s; f.si = si; f.fi = fi; f.n = FAMS.length; f.fam = true;
+  FAMS.push(f);
+}));
+const FAM = Object.fromEntries(FAMS.map((f) => [f.id, f]));
+/** {char: the strokes that make up its sound part} */
+const SND = DATA.snd || {};
 const POS_LABEL = { left: "on the left", right: "on the right", top: "on top", bottom: "at the bottom",
   "wrap-tl": "wrapping the top and left", "wrap-bl": "wrapping the left and bottom", frame: "framing the character",
   box: "all the way around" };
@@ -64,17 +74,22 @@ const sample = (list) => list[Math.floor(Math.random() * list.length)];
 // Kept in this browser only. Everything works without it.
 // The key keeps its first name so that progress made when the site taught thirty radicals carries over.
 const STORE_KEY = "thirty-radicals-v1";
-const fresh = () => ({ rad: {}, best: {}, sprint: 0, sound: true, intro: 0, hunt: {}, built: {} });
+const fresh = () => ({ rad: {}, best: {}, sprint: 0, sound: true, intro: 0, hunt: {}, built: {}, fam: {}, fbest: {} });
 let state = fresh();
 try { state = Object.assign(fresh(), JSON.parse(localStorage.getItem(STORE_KEY) || "{}")); } catch (e) { /* private window */ }
 const save = () => { try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch (e) { /* ignore */ } };
-const prog = (id) => (state.rad[id] ||= { seen: false, streak: 0, right: 0, wrong: 0, last: 0 });
+// Radicals and sound families keep the same kind of record, each in a bag of its own (state.rad, state.fam).
+const progIn = (bag, id) => (bag[id] ||= { seen: false, streak: 0, right: 0, wrong: 0, last: 0 });
+const prog = (id) => progIn(state.rad, id);
 /** 0 new, 1 learned, 2 mastered (three right answers in a row) */
-const level = (id) => { const p = state.rad[id]; return !p || !p.seen ? 0 : p.streak >= 3 ? 2 : 1; };
+const levelIn = (bag, id) => { const p = bag[id]; return !p || !p.seen ? 0 : p.streak >= 3 ? 2 : 1; };
+const level = (id) => levelIn(state.rad, id);
+const famLevel = (id) => levelIn(state.fam, id);
 const learnedCount = () => RADS.filter((r) => level(r.id) > 0).length;
 const masteredCount = () => RADS.filter((r) => level(r.id) > 1).length;
-function record(id, ok) {
-  const p = prog(id);
+const famCount = () => FAMS.filter((f) => famLevel(f.id) > 0).length;
+function record(id, ok, bag = state.rad) {
+  const p = progIn(bag, id);
   p.seen = true;
   p.streak = ok ? p.streak + 1 : 0;
   p[ok ? "right" : "wrong"]++;
@@ -94,6 +109,8 @@ const LEAN = { "⻖": -170, "⻏": 170 };
  * hanzi("河", { size, anim, whole, center, delay })
  * anim: draw it stroke by stroke. whole: colour every stroke as the radical. center: move the glyph to the middle
  * of its box (radical forms sit off to one side in the data).
+ * snd: light up the sound part instead. Its strokes take the "rad" class, so every rule about the lit part of a
+ * character (ink until answered, the tap question) holds for it too, and the radical's own strokes are marked "mean".
  */
 function hanzi(ch, opt = {}) {
   const g = STROKES[ch];
@@ -116,10 +133,11 @@ function hanzi(ch, opt = {}) {
   const n = g.s.length;
   const step = n > 1 ? Math.min(0.16, 1.1 / (n - 1)) : 0;
   g.s.forEach((d, i) => {
-    const isRad = opt.whole || g.r.includes(i);
+    const isRad = opt.whole || (opt.snd ? (SND[ch] || []).includes(i) : g.r.includes(i));
+    const kind = isRad ? "rad" : opt.snd && g.r.includes(i) ? "rest mean" : "rest";
     const path = document.createElementNS(SVGNS, "path");
     path.setAttribute("d", d);
-    path.setAttribute("class", isRad ? "rad" : "rest");
+    path.setAttribute("class", kind);
     path.dataset.i = i;
     if (!anim) { root.append(path); return; }
     const at = (opt.delay || 0) + i * step;
@@ -135,7 +153,7 @@ function hanzi(ch, opt = {}) {
     for (let k = 1; k < m.length; k++) len += Math.hypot(m[k][0] - m[k - 1][0], m[k][1] - m[k - 1][1]);
     line.setAttribute("points", m.map((p) => p.join(",")).join(" "));
     line.setAttribute("clip-path", `url(#${id})`);
-    line.setAttribute("class", "draw " + (isRad ? "rad" : "rest"));
+    line.setAttribute("class", "draw " + kind);
     line.style.strokeDasharray = `${len} ${len}`;
     line.style.strokeDashoffset = len;
     line.style.animation = `hz-draw ${STROKE_S}s ${at}s ease-out forwards`;

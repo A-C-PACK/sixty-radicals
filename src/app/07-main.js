@@ -13,7 +13,11 @@ function route() {
   if (gg) return { kind: "game", make: () => gameView(gm[1], gg) };
   if (h === "review") return { kind: "quiz", make: reviewView };
   if (h === "sprint") return { kind: "quiz", make: sprintView };
-  return { kind: "home", make: homeView, anchor: ["how", "the-sixty", "play"].includes(h) ? h : h === "the-thirty" ? "the-sixty" : null };
+  if (h.startsWith("f-") && FAM[h.slice(2)]) return { kind: "lesson", make: () => famView(FAM[h.slice(2)]) };
+  const fs = h.startsWith("fset-") && FAMSETS.find((x) => x.id === h.slice(5));
+  if (fs) return { kind: "quiz", make: () => famSetView(fs) };
+  if (h === "sound-review") return { kind: "quiz", make: famReviewView };
+  return { kind: "home", make: homeView, anchor: ["how", "the-sixty", "sounds", "play"].includes(h) ? h : h === "the-thirty" ? "the-sixty" : null };
 }
 
 let lastKind = null;

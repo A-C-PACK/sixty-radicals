@@ -55,6 +55,9 @@ h3 { font-size: 1.15rem; font-weight: 700; line-height: 1.25; }
 .hz .draw { fill: none; stroke-width: 220; stroke-linecap: round; stroke-linejoin: round; }
 .hz .draw.rest { stroke: var(--ink); }
 .hz .draw.rad { stroke: var(--rc, var(--ink)); }
+/* in a sound lesson the sound part is the lit one, and the radical may take a second colour */
+.hz .rest.mean { fill: var(--rc2, var(--ink)); }
+.hz .draw.rest.mean { stroke: var(--rc2, var(--ink)); }
 .hz.inline { display: inline-block; width: 1.2em; height: 1.2em; vertical-align: -0.24em; }
 .hz.inline path { fill: currentColor; }
 .hz-font { font-family: "Kaiti SC", "STKaiti", "KaiTi", "Noto Serif CJK SC", serif; }

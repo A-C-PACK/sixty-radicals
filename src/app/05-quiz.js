@@ -25,16 +25,17 @@ function reviewQuestions() {
   return shuffle(chosen).map((r, i) => kinds[i](r));
 }
 
-function quizShell(title, body) {
+function quizShell(title, body, back = "#the-sixty") {
   const bar = el("div.quiz-meter", el("div.quiz-fill"));
   const count = el("span.quiz-count");
   const view = el("div.quiz.wrap",
-    el("div.quiz-top", el("a.back", { href: "#the-sixty" }, "← Leave"), el("span.eyebrow", title), count),
+    el("div.quiz-top", el("a.back", { href: back }, "← Leave"), el("span.eyebrow", title), count),
     bar, body);
   return { view, setProgress: (i, n) => { $(".quiz-fill", bar).style.width = `${(Math.min(i, n) / n) * 100}%`; count.textContent = i < n ? `${i + 1} / ${n}` : "Retry"; } };
 }
 
 function resultRow(r, ok) {
+  if (r.fam) return famResultRow(r, ok);
   return el("a.res" + (ok ? ".ok" : ".no"), { href: "#r-" + r.id, style: radStyle(r) },
     el("span.res-glyph", hanzi(r.glyph, { whole: true, center: true })),
     el("span.res-name", r.name),
@@ -43,9 +44,9 @@ function resultRow(r, ok) {
 }
 
 /** A round with feedback after every answer. Missed questions come back once at the end. */
-function quizView({ title, questions, onDone, again, nextLink, extra }) {
+function quizView({ title, questions, onDone, again, nextLink, extra, home = ["#the-sixty", "Back to the sixty"] }) {
   const host = el("div.q");
-  const shell = quizShell(title, host);
+  const shell = quizShell(title, host, home[0]);
   const firstTry = new Map();
   const queue = questions.map((q) => ({ q, retry: false }));
   let i = 0, right = 0;
@@ -57,9 +58,10 @@ function quizView({ title, questions, onDone, again, nextLink, extra }) {
     host.classList.remove("is-right", "is-wrong");
     mountQuestion(q, host, (ok) => {
       if (!retry) {
-        record(q.rad.id, ok);
+        // q.rad is the thing being learned: a radical, or a sound family (which keeps its record in a bag of its own)
+        record(q.rad.id, ok, q.rad.fam ? state.fam : state.rad);
         if (ok) right++;
-        firstTry.set(q.rad.id, (firstTry.get(q.rad.id) ?? true) && ok);
+        firstTry.set(q.rad, (firstTry.get(q.rad) ?? true) && ok);
         if (!ok) queue.push({ q: { ...q, prompt: q.prompt }, retry: true });
       }
       i++;
@@ -74,7 +76,7 @@ function quizView({ title, questions, onDone, again, nextLink, extra }) {
     const pct = Math.round((right / total) * 100);
     onDone?.(pct);
     blip(pct >= 80 ? "win" : "ok");
-    const rads = [...firstTry.keys()].map((id) => RAD[id]).sort((a, b) => a.n - b.n);
+    const rads = [...firstTry.keys()].sort((a, b) => a.n - b.n);
     const headline = pct === 100 ? "A PERFECT ROUND" : pct >= 80 ? "STRONG ROUND" : pct >= 50 ? "GETTING THERE" : "FIRST PASS DONE";
     shell.view.replaceChildren(
       el("div.done",
@@ -82,11 +84,11 @@ function quizView({ title, questions, onDone, again, nextLink, extra }) {
         el("h1", headline),
         el("p.done-score", el("span.red", `${right}`), ` of ${total} right first time`),
         el("p.sub", pct === 100 ? "Every answer right on the first try." : "The ones marked “review” are worth another look before your next round."),
-        el("div.res-list", rads.map((r) => resultRow(r, firstTry.get(r.id)))),
+        el("div.res-list", rads.map((r) => resultRow(r, firstTry.get(r)))),
         el("div.done-btns",
           nextLink || null,
           el("button.btn" + (nextLink ? ".ghost" : ".primary"), { type: "button", onclick: again }, "Another round"),
-          el("a.btn.ghost", { href: "#the-sixty" }, "Back to the sixty")),
+          el("a.btn.ghost", { href: home[0] }, home[1])),
         extra?.()));
     window.scrollTo({ top: 0 });
   };

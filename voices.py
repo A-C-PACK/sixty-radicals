@@ -22,7 +22,7 @@ import numpy as np
 import soundfile as sf
 from pypinyin import Style, lazy_pinyin, pinyin
 
-from fetch import groups
+from fetch import families, groups, strays
 
 ROOT = Path(__file__).resolve().parent
 SERVER = "http://127.0.0.1:8100"
@@ -192,7 +192,7 @@ def syllable(p):
 # whisper writes a lone "ti" or "bi" as the letter it sounds like
 LETTERS = {"T": {"ti"}, "B": {"bi"}}
 # read alone, these come out in their other reading, so a character with the wanted sound is spoken instead
-SPOKEN_AS = {"缝": "逢", "厦": "霎"}
+SPOKEN_AS = {"缝": "逢", "厦": "霎", "长": "掌", "鲭": "青", "艮": "亘", "杆": "竿"}
 
 
 def readings(c):
@@ -225,6 +225,17 @@ def site_items():
     for game in json.loads((ROOT / "src" / "content" / "games.json").read_text()).values():
         for ch, p in [(c, t[0]) for h in game["scene"]["hunts"] for c, t in h["targets"].items()] + [(b["ch"], b["py"]) for b in game["builds"]]:
             assert items.setdefault(ch, syllable(p)) == syllable(p), (ch, p, items[ch])
+    # the sound families: each sound part, its members, and the strays a watch-out note names
+    for s in families():
+        for f in s["families"]:
+            for ch, p in [(f["glyph"], f["pinyin"])] + [e[:2] for e in f["ex"] + f["decode"]] + strays(f):
+                assert items.setdefault(ch, syllable(p)) == syllable(p), (ch, p, items[ch])
+    # and every character in a family's table, so the whole family can be heard
+    from build import sound_families
+    for s in sound_families(groups())[0]:
+        for f in s["families"]:
+            for ch, p in [c for row in f["tally"] for c in row[2]]:
+                items.setdefault(ch, syllable(p))
     return {t: (([s], tone) if isinstance(s, str) else (s, tone)) for t, (s, tone) in items.items()}
 
 

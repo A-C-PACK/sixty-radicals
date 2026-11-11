@@ -1,0 +1,286 @@
+[
+ {
+  "id": "echo", "title": "CLEAN ECHOES", "zh": "同",
+  "blurb": "One part, one syllable. Only the tone moves.",
+  "families": [
+   {
+    "id": "qing", "glyph": "青", "pinyin": "qīng", "mean": "blue-green", "says": ["qing"], "color": "green",
+    "origin": "青 is the colour of young plants: blue-green. On its own it is said qīng, and inside another character it passes that sound along. The radical beside it tells you what kind of thing is meant.",
+    "ex": [
+     ["清", "qīng", "clear", "water", "water you can see through"],
+     ["请", "qǐng", "to ask; please", "speech", "asking is done with words"],
+     ["情", "qíng", "feeling", "heart", "feelings live in the heart"],
+     ["晴", "qíng", "sunny", "sun", "the sun is out"]
+    ],
+    "watch": "The syllable holds but the tone moves: qīng, qíng, qǐng. A few cousins slid from q to j, as in 精 (jīng, essence) and 睛 (jīng, eyeball), and 猜 (cāi, to guess) has left the family altogether.",
+    "decode": [["蜻", "qīng", "dragonfly", "bug"], ["鲭", "qīng", "mackerel", "fish"]],
+    "kin": "清请情晴蜻氰精睛猜"
+   },
+   {
+    "id": "fang", "glyph": "方", "pinyin": "fāng", "mean": "square; direction", "says": ["fang"], "color": "teal",
+    "origin": "方 means square, and also a direction or a place. It is one of the busiest sound parts in Chinese: put it beside a radical and the character is almost always said fang.",
+    "ex": [
+     ["放", "fàng", "to let go; to put", "strike", "an action of the hand: letting something go"],
+     ["访", "fǎng", "to visit", "speech", "a visit is for talking"],
+     ["防", "fáng", "to guard against", "hill", "a bank of earth raised against a flood"],
+     ["纺", "fǎng", "to spin thread", "silk", "thread being made"]
+    ],
+    "watch": "方 can also be the radical. On the left of 旅 (lǚ, to travel), 族 (zú, clan) and 旗 (qí, flag) it began as a picture of a banner and says nothing about the sound. One true cousin drifted: 旁 (páng, side).",
+    "decode": [["芳", "fāng", "fragrant", "grass"], ["肪", "fáng", "body fat", "flesh"]],
+    "kin": "放房防访纺仿芳妨坊肪旁"
+   },
+   {
+    "id": "ma", "glyph": "马", "pinyin": "mǎ", "mean": "horse", "says": ["ma"], "color": "violet",
+    "origin": "马 is a horse, and one of the sixty radicals. It does two jobs. On the left of a character it is usually the radical and means horse. Elsewhere it is often there only for its sound, ma.",
+    "ex": [
+     ["妈", "mā", "mom", "woman", "a woman called ma"],
+     ["吗", "ma", "question word", "mouth", "a small spoken word that ends a question"],
+     ["骂", "mà", "to scold", "mouth", "two mouths going at once"],
+     ["码", "mǎ", "number, code", "stone", "stones were the first counters"]
+    ],
+    "watch": "骑 (qí, to ride) and 驾 (jià, to drive) are horse characters: there 马 is the radical and the sound comes from the other part. Always ask which part could be the meaning. In 驻 (zhù, to be stationed) the sound part is 主, the next family.",
+    "decode": [["玛", "mǎ", "agate, a banded gemstone", "jade"], ["蚂", "mǎ", "ant", "bug"]],
+    "kin": "妈吗码骂玛蚂"
+   },
+   {
+    "id": "zhu", "glyph": "主", "pinyin": "zhǔ", "mean": "master, host; main", "says": ["zhu"], "color": "lime",
+    "origin": "主 began as a lamp with its flame: the thing at the centre of the room, and so the master or the main one. As a sound part it is one of the most dependable. Nearly every character built on it is said zhù, with a falling tone.",
+    "ex": [
+     ["住", "zhù", "to live somewhere", "person", "a person who stays put"],
+     ["注", "zhù", "to pour; to pay attention", "water", "water poured into one spot"],
+     ["柱", "zhù", "pillar", "tree", "a wooden post"],
+     ["驻", "zhù", "to be stationed", "horse", "where the horses halt"]
+    ],
+    "watch": "往 (wǎng, to go towards) looks like a member but is not: its right side was once a different shape that has worn down to look like 主. And 主 itself is zhǔ, third tone, while the family settled on the fourth.",
+    "decode": [["蛀", "zhù", "to be eaten by moths or worms", "bug"], ["拄", "zhǔ", "to lean on a stick", "hand"]],
+    "kin": "住注驻柱蛀拄"
+   },
+   {
+    "id": "zhang", "glyph": "长", "pinyin": "zhǎng", "mean": "to grow; also cháng, long", "says": ["zhang"], "color": "coral",
+    "origin": "长 has two readings: cháng, long, and zhǎng, to grow. The family follows the second. All four characters below are zhang, and each one carries a different radical from the sixty.",
+    "ex": [
+     ["张", "zhāng", "to stretch open; a sheet", "bow", "a bow being drawn"],
+     ["帐", "zhàng", "tent, curtain", "cloth", "cloth hung up for shelter"],
+     ["胀", "zhàng", "to swell", "flesh", "a swollen belly"],
+     ["账", "zhàng", "account, bill", "shell", "money owed"]
+    ],
+    "watch": "A sound part with two readings gives you two guesses. For 长 the first guess is zhang. Its other reading turns up only in rare characters such as 怅 (chàng, downcast).",
+    "decode": [["涨", "zhǎng", "to rise, of water or prices", "water", "张"]],
+    "kin": "张帐胀账涨怅"
+   }
+  ]
+ },
+ {
+  "id": "stray", "title": "A STRAY OR TWO", "zh": "声",
+  "blurb": "Dependable families, each with a member or two that wandered off.",
+  "families": [
+   {
+    "id": "ba", "glyph": "巴", "pinyin": "bā", "mean": "to cling to", "says": ["ba"], "color": "coral",
+    "origin": "巴 was a picture of a snake. Today it is mostly a sound: ba. It gave that sound to some of the first words a learner meets.",
+    "ex": [
+     ["把", "bǎ", "to hold; a handle", "hand", "what the hand takes hold of"],
+     ["吧", "ba", "suggestion word", "mouth", "a spoken word that softens a sentence"],
+     ["爸", "bà", "dad", ["父", "father"], "father, said ba"],
+     ["疤", "bā", "scar", "sick", "what a wound leaves behind"]
+    ],
+    "watch": "The lips stay where they are but a puff of air is added: 爬 (pá, to climb) and 琶 (pá, in 琵琶 the lute) are said pa. 肥 (féi, fat) has wandered right away.",
+    "decode": [["芭", "bā", "banana plant", "grass"], ["笆", "bā", "bamboo fence", "bamboo"]],
+    "kin": "把吧爸疤芭笆靶爬琶肥"
+   },
+   {
+    "id": "yang", "glyph": "羊", "pinyin": "yáng", "mean": "sheep", "says": ["yang"], "color": "lime",
+    "origin": "羊 is a sheep, horns and all, and one of the sixty radicals. It is also a sound part. Next to another radical it usually says yang.",
+    "ex": [
+     ["洋", "yáng", "ocean", "water", "the widest water there is"],
+     ["样", "yàng", "appearance; kind", "tree", "a wooden pattern to copy"],
+     ["痒", "yǎng", "to itch", "sick", "a small complaint of the skin"],
+     ["氧", "yǎng", "oxygen", ["气", "air"], "a gas, named for its sound"]
+    ],
+    "watch": "Some members begin with x and keep the rhyme: 祥 (xiáng, good fortune), 详 (xiáng, detailed). And where 羊 is the meaning, as in 群 (qún, flock), it tells you nothing about the sound.",
+    "decode": [["佯", "yáng", "to pretend", "person"], ["恙", "yàng", "a worry; an illness", "heart"]],
+    "kin": "洋样养氧痒佯恙祥详翔"
+   },
+   {
+    "id": "ling", "glyph": "令", "pinyin": "lìng", "mean": "an order; to command", "says": ["ling"], "color": "water",
+    "origin": "令 shows a person kneeling under a roof to take orders. Its sound, ling, rings through a large family, usually in the second or third tone.",
+    "ex": [
+     ["领", "lǐng", "collar; to lead", "head", "the neck, just under the head"],
+     ["零", "líng", "zero; fragments", "rain", "the last light drops of a shower"],
+     ["铃", "líng", "bell", "metal", "a small metal bell"],
+     ["岭", "lǐng", "mountain ridge", "mountain", "a line of peaks"]
+    ],
+    "watch": "The l never leaves, but the rhyme can slip: 冷 (lěng, cold), 邻 (lín, neighbour), 怜 (lián, to pity). 命 (mìng, fate) is an old relative that kept the rhyme and lost the l.",
+    "decode": [["玲", "líng", "the tinkle of jade", "jade"], ["伶", "líng", "a performer, an actor", "person"]],
+    "kin": "领零龄铃岭玲伶羚聆冷邻怜拎"
+   },
+   {
+    "id": "zhong", "glyph": "中", "pinyin": "zhōng", "mean": "middle", "says": ["zhong"], "color": "green",
+    "origin": "中 is a line through the centre of a target: middle, and the first half of 中国, China. As a sound part it says zhong.",
+    "ex": [
+     ["种", "zhǒng", "seed; kind", "grain", "grain kept back for sowing"],
+     ["钟", "zhōng", "bell; clock", "metal", "a great bronze bell"],
+     ["肿", "zhǒng", "swollen", "flesh", "flesh puffed up"],
+     ["忠", "zhōng", "loyal", "heart", "a heart that stays in the middle and does not sway"]
+    ],
+    "watch": "种 is also said zhòng when it means to plant. One relative took a puff of air: 冲 (chōng, to rush; to rinse).",
+    "decode": [["仲", "zhòng", "the middle one of three brothers", "person"], ["盅", "zhōng", "a small cup", "dish"]],
+    "kin": "种钟忠肿仲衷盅冲"
+   },
+   {
+    "id": "ding", "glyph": "丁", "pinyin": "dīng", "mean": "a nail; a small cube", "says": ["ding"], "color": "pink",
+    "origin": "丁 is a nail seen from the side. It is said dīng, and two strokes are enough to carry that sound into a character.",
+    "ex": [
+     ["顶", "dǐng", "top of the head; top", "head", "the very top of the head"],
+     ["订", "dìng", "to book, to order", "speech", "an agreement made in words"],
+     ["盯", "dīng", "to stare at", "eye", "eyes nailed to one spot"],
+     ["叮", "dīng", "to sting; to nag", "mouth", "what a mosquito's mouth does"]
+    ],
+    "watch": "Three very common characters only half follow: 厅 (tīng, hall) keeps the rhyme, 灯 (dēng, lamp) keeps the d, and 打 (dǎ, to hit) keeps almost nothing.",
+    "decode": [["钉", "dīng", "a nail", "metal"]],
+    "kin": "顶订盯叮钉厅灯打"
+   }
+  ]
+ },
+ {
+  "id": "near", "title": "NEAR RHYMES", "zh": "近",
+  "blurb": "The rhyme holds while the first sound slides: b to p, g to h, j to x.",
+  "families": [
+   {
+    "id": "bao", "glyph": "包", "pinyin": "bāo", "mean": "to wrap; a bag", "says": ["bao", "pao"], "color": "teal",
+    "origin": "包 is something wrapped up, at first a baby in the womb. Its family splits in two: half say bao and half say pao. The lips are in the same place for both. The p only adds a puff of air.",
+    "ex": [
+     ["饱", "bǎo", "full, having eaten enough", "food", "enough food"],
+     ["抱", "bào", "to hug, to hold in the arms", "hand", "arms wrapped around"],
+     ["跑", "pǎo", "to run", "foot", "feet moving fast"],
+     ["泡", "pào", "bubble; to soak", "water", "a skin of water around air"]
+    ],
+    "watch": "You cannot tell bao from pao by looking. Guess the rhyme first, then try both. The tones wander as well: 雹 (báo, hail), 袍 (páo, robe).",
+    "decode": [["炮", "pào", "cannon; firecracker", "fire"], ["苞", "bāo", "flower bud", "grass"]],
+    "kin": "饱抱胞苞雹鲍跑泡炮袍刨"
+   },
+   {
+    "id": "gen", "glyph": "艮", "pinyin": "gèn", "mean": "one of the eight trigrams; rare alone", "says": ["gen", "hen"], "color": "water",
+    "origin": "艮 is rarely seen alone today. Long ago it showed an eye turned to look back. Inside a character it is a sound part with two voices, gen and hen, both made at the back of the mouth.",
+    "ex": [
+     ["根", "gēn", "root", "tree", "the part of a tree below ground"],
+     ["跟", "gēn", "heel; to follow; with", "foot", "the back of the foot, and walking behind"],
+     ["很", "hěn", "very", "step", "borrowed for its sound long ago"],
+     ["恨", "hèn", "to hate", "heart", "a hard feeling"]
+    ],
+    "watch": "The same part sits in 银 (yín, silver), 眼 (yǎn, eye) and 限 (xiàn, limit), where the sound has moved a long way. Outside gen and hen, do not lean on it.",
+    "decode": [["狠", "hěn", "ruthless, fierce", "animal"], ["痕", "hén", "a scar, a mark left behind", "sick"]],
+    "kin": "根跟很恨狠痕恳垦银眼限"
+   },
+   {
+    "id": "jiao", "glyph": "交", "pinyin": "jiāo", "mean": "to cross; to hand over", "says": ["jiao", "xiao"], "color": "violet",
+    "origin": "交 is a person with legs crossed: to cross, to meet, to hand over. Most of its family say jiao. A few changed j for x and say xiao, with the same rhyme.",
+    "ex": [
+     ["较", "jiào", "to compare; rather", "vehicle", "at first a part of a cart, later borrowed"],
+     ["饺", "jiǎo", "dumpling", "food", "something to eat"],
+     ["郊", "jiāo", "outskirts of a city", "town", "the edge of town"],
+     ["校", "xiào", "school", "tree", "once a wooden frame, then the place that keeps pupils in line"]
+    ],
+    "watch": "效 (xiào, effect) goes with 校. 咬 (yǎo, to bite) dropped the first sound altogether, though you can still hear the rhyme.",
+    "decode": [["胶", "jiāo", "glue", "flesh"], ["狡", "jiǎo", "sly, cunning", "animal"]],
+    "kin": "较饺郊胶狡绞跤校效咬"
+   },
+   {
+    "id": "gu", "glyph": "古", "pinyin": "gǔ", "mean": "ancient", "says": ["gu", "ku"], "color": "coral",
+    "origin": "古 is ten 十 over a mouth 口: a story passed down through ten generations, so ancient. The family says gu, and a few members say ku or hu, all from the back of the mouth.",
+    "ex": [
+     ["故", "gù", "reason; old, former", "strike", "what made a thing happen"],
+     ["姑", "gū", "aunt, father's sister", "woman", "a woman of the older generation"],
+     ["固", "gù", "solid, firm", "enclosure", "walled in on every side"],
+     ["苦", "kǔ", "bitter", "grass", "a bitter herb"]
+    ],
+    "watch": "胡 (hú, beard; reckless) took the h and then became a sound part itself: 湖 (hú, lake), 糊 (hú, paste). 居 (jū, to dwell) has moved furthest.",
+    "decode": [["估", "gū", "to estimate", "person"], ["枯", "kū", "withered", "tree"]],
+    "kin": "故姑固估咕苦枯胡湖居"
+   },
+   {
+    "id": "gan", "glyph": "干", "pinyin": "gān", "mean": "dry; also gàn, to do", "says": ["gan", "han"], "color": "amber",
+    "origin": "干 was a forked pole used as a weapon. Simplified Chinese uses it for two words, dry (gān) and to do (gàn). As a sound part it gives gan and, with a breathier start, han.",
+    "ex": [
+     ["赶", "gǎn", "to hurry, to catch up", "run", "running after something"],
+     ["肝", "gān", "liver", "flesh", "an organ of the body"],
+     ["汗", "hàn", "sweat", "water", "water from the skin"],
+     ["杆", "gān", "pole", "tree", "a long piece of wood"]
+    ],
+    "watch": "刊 (kān, to publish) starts with k, and 岸 (àn, shore) has lost the first sound entirely. The rhyme, an, is what lasts.",
+    "decode": [["竿", "gān", "bamboo pole", "bamboo"], ["旱", "hàn", "drought", "sun"]],
+    "kin": "赶肝杆竿汗旱刊岸"
+   }
+  ]
+ },
+ {
+  "id": "worn", "title": "WORN HINTS", "zh": "旧",
+  "blurb": "Sound parts chosen two thousand years ago. Some have drifted a long way.",
+  "families": [
+   {
+    "id": "gong", "glyph": "工", "pinyin": "gōng", "mean": "work", "says": ["gong", "hong"], "color": "teal",
+    "origin": "工 is a carpenter's square: work. When these characters were made, about two thousand years ago, they all rhymed with it. Speech has moved on since, and the family now spreads across gong, hong, kong and jiang.",
+    "ex": [
+     ["功", "gōng", "achievement, merit", "strength", "effort that paid off"],
+     ["攻", "gōng", "to attack", "strike", "striking at an enemy"],
+     ["红", "hóng", "red", "silk", "dyed silk"],
+     ["江", "jiāng", "great river", "water", "the Yangtze is the 长江"]
+    ],
+    "watch": "The rhyme ong is the part worth guessing: 空 (kōng, empty) keeps it too. 江 (jiāng), 项 (xiàng, item) and 缸 (gāng, vat) show how far a sound can travel in two thousand years.",
+    "decode": [["虹", "hóng", "rainbow", "bug"], ["贡", "gòng", "tribute paid to a ruler", "shell"]],
+    "kin": "功攻贡红虹空江缸扛项"
+   },
+   {
+    "id": "mei", "glyph": "每", "pinyin": "měi", "mean": "each, every", "says": ["mei"], "color": "pink",
+    "origin": "每 is a woman with her hair pinned up, borrowed long ago for the word every. Half its family still say mei. The other half kept only a trace.",
+    "ex": [
+     ["梅", "méi", "plum", "tree", "a fruit tree"],
+     ["霉", "méi", "mould", "rain", "what grows in the damp"],
+     ["海", "hǎi", "sea", "water", "all the water there is"],
+     ["悔", "huǐ", "to regret", "heart", "a feeling that comes afterwards"]
+    ],
+    "watch": "海 is one of the commonest characters in Chinese and it does not sound like 每 at all. When a guess from the sound part fails, that is normal for an old family. 敏 (mǐn, quick) keeps only the m.",
+    "decode": [["莓", "méi", "berry", "grass"], ["酶", "méi", "enzyme, what makes things ferment", "wine"]],
+    "kin": "梅霉莓酶海悔敏侮"
+   },
+   {
+    "id": "guo", "glyph": "果", "pinyin": "guǒ", "mean": "fruit; result", "says": ["guo", "ke"], "color": "amber",
+    "origin": "果 is a tree 木 with fruit on top. As a sound part it has two voices. Wrapped inside a character it says guo. Next to a radical it usually says ke.",
+    "ex": [
+     ["课", "kè", "lesson, class", "speech", "teaching is done in words"],
+     ["棵", "kē", "counting word for trees", "tree", "one tree, two trees"],
+     ["颗", "kē", "counting word for small round things", "head", "at first a small head"],
+     ["裹", "guǒ", "to wrap", "clothes", "clothing 衣 split open with 果 wrapped inside"]
+    ],
+    "watch": "g and k are made in the same place in the mouth, and that is all that links guo and ke today. 裸 (luǒ, naked) keeps the rhyme of guo and changes the start.",
+    "decode": [["稞", "kē", "highland barley", "grain"], ["窠", "kē", "a nest, a burrow", "cave"]],
+    "kin": "裹课棵颗稞窠裸"
+   },
+   {
+    "id": "ge", "glyph": "各", "pinyin": "gè", "mean": "each, every one", "says": ["ge", "ke", "luo", "lu"], "color": "lime",
+    "origin": "各 is a foot arriving at a doorway: each one, coming separately. Its family is split down the middle. One half says ge or ke. The other half begins with l: lu, luo.",
+    "ex": [
+     ["格", "gé", "grid; standard", "tree", "a wooden lattice"],
+     ["客", "kè", "guest", "roof", "someone under your roof"],
+     ["路", "lù", "road", "foot", "where feet go"],
+     ["络", "luò", "net, web", "silk", "knotted threads"]
+    ],
+    "watch": "Linguists think the old word began with two sounds together, something like gl, and each half of the family kept one of them. A new character with 各 gives you two guesses, not one. 略 (lüè, brief) is on the l side.",
+    "decode": [["阁", "gé", "pavilion, upper room", "door"], ["骆", "luò", "camel", "horse"]],
+    "kin": "格阁胳客路络洛骆略"
+   },
+   {
+    "id": "fen", "glyph": "分", "pinyin": "fēn", "mean": "to divide; a part", "says": ["fen", "pen"], "color": "green",
+    "origin": "分 is a knife 刀 splitting something in two 八: to divide. Its family holds to fen most of the time. The rest keep the lips together and change what follows: pen, pan, ban.",
+    "ex": [
+     ["份", "fèn", "share, portion", "person", "one person's part"],
+     ["粉", "fěn", "powder, flour", "rice", "rice ground fine"],
+     ["盆", "pén", "basin, pot", "dish", "a wide dish"],
+     ["盼", "pàn", "to look forward to", "eye", "eyes on the road, waiting"]
+    ],
+    "watch": "f, p and b are all made with the lips, and that is the thread. 扮 (bàn, to dress up as), 颁 (bān, to award) and 贫 (pín, poor) each kept the lips and little else.",
+    "decode": [["芬", "fēn", "a sweet smell", "grass"], ["纷", "fēn", "tangled, in a flurry", "silk"]],
+    "kin": "份粉芬纷吩氛盆盼扮颁贫"
+   }
+  ]
+ }
+]

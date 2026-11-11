@@ -4,12 +4,13 @@ A single-page website that teaches a Chinese learner the 60 most useful simplifi
 
 **Visit it: https://a-c-pack.github.io/sixty-radicals/**
 
-The page is `docs/index.html`, one self-contained file (about 5.4 MB) served by GitHub Pages. It can also be opened straight from disk, and needs an internet connection only for the web fonts and the Hanzi Writer script used for tracing.
+The page is `docs/index.html`, one self-contained file (about 6.6 MB) served by GitHub Pages. It can also be opened straight from disk, and needs an internet connection only for the web fonts and the Hanzi Writer script used for tracing.
 
 ## What is in it
 
 - Twelve themed sets of five radicals. Each lesson gives the radical's origin, its usual position, the name teachers use for it, a memory clue, four example characters, a "watch out" note, a question on an unseen character, and stroke tracing.
 - Set quizzes with five question types (meaning, shape, spot the radical, decode, family), a mixed review weighted towards weak radicals, and a 60-second decode sprint.
+- Sound families: twenty sound parts in four sets (clean echoes, a stray or two, near rhymes, worn hints). Each lesson shows the part in four characters with four different radicals, a table of every common character built on it sorted by how it is said, and a two-step question on an unseen character: first the sound from the sound part, then the meaning from the radical. Each set has a practice round and there is a mixed sound review. The content is `src/content/families.json`; `build.py` checks it against the Make Me a Hanzi dictionary and works out which strokes belong to the sound part.
 - Two games at the end of every set. In **Radical hunt** you read a piece of everyday text (a family chat, a clinic form, a menu, a town map, a shopping list, a museum guide) and tap every character that carries a given radical. In **Build a character** you start from a meaning and pick the radical, where it sits, and the part that finishes it.
 - Mandarin pronunciation for all 412 taught characters, the 60 radical names and the characters the games teach (532 clips).
 - Progress is kept in the browser's local storage.

@@ -1,5 +1,5 @@
 """Fetch stroke data (hanzi-writer-data 2.0, from Make Me a Hanzi) for every character the site draws -> cache/hw/."""
-import json, pathlib, sys, urllib.parse, urllib.request, urllib.error
+import json, pathlib, re, sys, urllib.parse, urllib.request, urllib.error
 
 ROOT = pathlib.Path(__file__).parent
 HW = ROOT / "cache" / "hw"
@@ -10,6 +10,16 @@ EXTRA = "妈马吗蚂女口虫部首学会"
 
 def groups():
     return [json.loads((ROOT / "src" / "content" / f"g{i}.json").read_text()) for i in range(1, 13)]
+
+
+def families():
+    """The sound-family sets: the half of a character that hints at how it is said."""
+    return json.loads((ROOT / "src" / "content" / "families.json").read_text())
+
+
+def strays(f):
+    """Characters a family's watch-out note spells out, as [char, pinyin]: 精 (jīng, essence)."""
+    return [list(m) for m in re.findall(r"([一-鿿]) \(([^\s,)]+)[,)]", f["watch"])]
 
 
 def wanted():

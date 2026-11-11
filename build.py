@@ -11,10 +11,10 @@ import base64
 import json
 import re
 
-from fetch import EXTRA, HW, ROOT, get, groups
+from fetch import EXTRA, HW, ROOT, families, get, groups, strays
 
 SRC, DIST, DOCS = ROOT / "src", ROOT / "dist", ROOT / "docs"
-ABOUT = "Learn the 60 most useful Chinese radicals: stroke-drawn lessons, quizzes, radical hunts, character building, a 60-second decode sprint and Mandarin audio."
+ABOUT = "Learn the 60 most useful Chinese radicals and 20 sound families: stroke-drawn lessons, quizzes, radical hunts, character building, a 60-second decode sprint and Mandarin audio."
 ICON = ("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23F2452F'/%3E"
         "%3Cpath d='M18 20h28M18 32h28M18 44h28M32 14v36' stroke='%23F7F2E8' stroke-width='6' stroke-linecap='round' fill='none'/%3E%3C/svg%3E")
 CJK = re.compile(r"[⺀-⿟㐀-鿿]")
@@ -68,6 +68,7 @@ def components(chars):
     return out
 
 
+COLORS = ("water", "amber", "pink", "green", "violet", "teal", "coral", "lime")
 POSITIONS = ("left", "right", "top", "bottom", "wrap-tl", "wrap-bl", "frame", "box")
 
 
@@ -162,6 +163,117 @@ def games(gs):
     return content
 
 
+IDC = {**{c: 2 for c in "⿰⿱⿴⿵⿶⿷⿸⿹⿺⿻"}, "⿲": 3, "⿳": 3}
+TONELESS = dict(zip("āáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ", "aaaaeeeeiiiioooouuuuüüüü"))
+toneless = lambda p: "".join(TONELESS.get(c, c) for c in p.lower())
+
+
+def part_path(ids, part):
+    """Where a component sits in a decomposition (⿰氵青): the child numbers that lead to it, or None."""
+    pos = 0
+
+    def node(path):
+        nonlocal pos
+        c = ids[pos]
+        pos += 1
+        if c not in IDC:
+            return path if c == part else None
+        found = None
+        for k in range(IDC[c]):
+            below = node(path + [k])
+            found = below if found is None else found
+        return found
+
+    return node([])
+
+
+def rhyme(syl):
+    """The syllable without its first sound, spelled the way it sounds: yang and xiang both end in iang."""
+    ini = next((i for i in ("zh", "ch", "sh", *"bpmfdtnlgkhjqxrzcsyw") if syl.startswith(i)), "")
+    fin = syl[len(ini):]
+    if ini == "y":
+        fin = fin if fin[0] == "i" else "ü" + fin[1:] if fin[0] == "u" else "i" + fin
+    elif ini == "w":
+        fin = fin if fin == "u" else "u" + fin
+    elif ini in ("j", "q", "x") and fin[0] == "u":
+        fin = "ü" + fin[1:]
+    return {"iou": "iu", "uei": "ui", "uen": "un"}.get(fin, fin)
+
+
+def sound_families(gs):
+    """The sound-family sets, checked against the dictionary.
+
+    Adds to each family `strays` (the characters its watch-out note spells out) and `tally`: every common
+    character built on the sound part, grouped by how it is said, as [syllable, kind, [[char, pinyin], ...]]
+    with kind 0 for the part's own syllable, 1 for a rhyme and 2 for anything else.
+    Returns the sets and {char: the strokes that make up its sound part}.
+    """
+    sets = families()
+    by_id = {r["id"]: r for g in gs for r in g["radicals"]}
+    entry = {}
+    for line in (ROOT / "cache" / "dictionary.txt").read_text().splitlines():
+        d = json.loads(line)
+        entry[d["character"]] = d
+    taught = {e[0] for g in gs for r in g["radicals"] for e in r["ex"] + r["decode"]}
+    snd, odd, seen = {}, [], set()
+    for s in sets:
+        for f in s["families"]:
+            assert f["id"] not in seen and f["color"] in COLORS, f["id"]
+            seen.add(f["id"])
+            assert toneless(f["pinyin"]) == f["says"][0], f["id"]
+            assert len(f["ex"]) == 4 and 1 <= len(f["decode"]) <= 2, f["id"]
+            f["strays"] = strays(f)
+            f["forms"] = {}
+            said = {c: p for c, p in f["strays"]}
+            for e in f["ex"] + f["decode"]:
+                ch, p, rad = e[0], e[1], e[3]
+                d = entry[ch]
+                said[ch] = p
+                if p not in d["pinyin"] and toneless(p) not in map(toneless, d["pinyin"]):
+                    odd.append(f"{ch} {p} (dictionary: {', '.join(d['pinyin'])})")
+                # an unseen character is a fair test only if it is said one of the ways the lesson gives for the part
+                assert e in f["ex"] or toneless(p) in f["says"], (ch, p, f["says"])
+                if ch not in f["kin"]:
+                    f["kin"] += ch
+                if isinstance(rad, str):
+                    r = by_id[rad]
+                    forms = [x for x in (r["glyph"], r.get("alt"), r.get("full")) if x] + {"flesh": ["⺼"], "hill": ["阝"], "town": ["阝"]}.get(rad, [])
+                    assert d["radical"] in forms, (ch, rad, d["radical"])
+                    # the two halves of a character are shown in two colours, so they must differ
+                    assert r["color"] != f["color"], (f["id"], ch, rad, "shares the family's colour")
+                    # the shape the radical takes in this character (心 under 忠, 忄 beside 情)
+                    f["forms"][ch] = (ear(d["decomposition"]) if d["radical"] == "阝" else d["radical"] if d["radical"] in (r["glyph"], r.get("alt"))
+                                      else d["radical"] if d["decomposition"][0] == "⿻" else r["glyph"])
+                else:
+                    assert d["radical"] == rad[0], (ch, rad, d["radical"])
+                # the strokes of the sound part (a decode character may name a bigger part: 张 inside 涨)
+                part = e[4] if e in f["decode"] and len(e) > 4 else f["glyph"]
+                path = part_path(d["decomposition"], part)
+                assert path is not None, (ch, d["decomposition"], part)
+                g = glyph(ch)
+                assert len(d["matches"]) == len(g["s"]), ch
+                snd[ch] = [i for i, m in enumerate(d["matches"]) if m is not None and m[:len(path)] == path]
+                assert snd[ch] and not set(snd[ch]) & set(g["r"]) and len(snd[ch]) < len(g["s"]), (ch, snd[ch], g["r"])
+            for e in f["decode"]:
+                assert e[0] not in taught, (e[0], "is taught in a radical lesson, so it is no test")
+                assert isinstance(e[3], str) and glyph(e[0])["r"], (e[0], "needs one of the sixty, with its strokes marked")
+            groups_ = {}
+            for c in f["kin"]:
+                assert f["glyph"] in components([c])[c], (f["id"], c)
+                p = said.get(c) or entry[c]["pinyin"][0]
+                groups_.setdefault(toneless(p), []).append([c, p])
+                # light the sound part in the family portrait too, wherever the dictionary can point to it
+                path = part_path(entry[c]["decomposition"], f["glyph"])
+                if c not in snd and path and len(entry[c]["matches"]) == len(glyph(c)["s"]):
+                    snd[c] = [i for i, m in enumerate(entry[c]["matches"]) if m is not None and m[:len(path)] == path]
+            base = f["says"][0]
+            kind = lambda syl: 0 if syl == base else 1 if rhyme(syl) == rhyme(base) else 2
+            f["tally"] = sorted(([syl, kind(syl), cs] for syl, cs in groups_.items()), key=lambda t: (t[1], -len(t[2])))
+    if odd:
+        print("family pinyin to check:", "; ".join(odd))
+    return sets, snd
+
+
 def audio_manifest():
     """Clips made by voices.py, if any, as {text: base64 mp3}. The page decodes them with Web Audio."""
     f = SRC / "audio" / "manifest.json"
@@ -175,7 +287,9 @@ def main():
     gs = groups()
     chars = []
     play = games(gs)
-    for c in CJK.findall(json.dumps(gs, ensure_ascii=False) + json.dumps(play, ensure_ascii=False)) + list(EXTRA) + list(DERIVED):
+    fams, snd = sound_families(gs)
+    for c in (CJK.findall(json.dumps(gs, ensure_ascii=False) + json.dumps(play, ensure_ascii=False) + json.dumps(fams, ensure_ascii=False))
+              + list(EXTRA) + list(DERIVED)):
         if c not in chars:
             chars.append(c)
     strokes, missing = {}, []
@@ -186,7 +300,7 @@ def main():
         else:
             missing.append(c)
     taught = [e[0] for g in gs for r in g["radicals"] for e in r["ex"] + r["decode"]]
-    data = dict(groups=gs, strokes=strokes, comps=components(taught), audio=audio_manifest(), games=play)
+    data = dict(groups=gs, strokes=strokes, comps=components(taught), audio=audio_manifest(), games=play, families=fams, snd=snd)
     silent = [c for g in play.values() for c in [t for h in g["scene"]["hunts"] for t in h["targets"]] + [b["ch"] for b in g["builds"]]
               if c not in data["audio"]]
     blob = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")

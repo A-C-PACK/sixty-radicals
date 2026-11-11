@@ -120,12 +120,14 @@ function mountQuestion(q, host, cb, opt = {}) {
   let body;
   if (q.spot) {
     const g = STROKES[q.spot];
-    const svg = hanzi(q.spot);
-    const wrap = el("button.q-spot", { type: "button", style: radStyle(q.rad), "aria-label": "Tap the radical" }, svg);
+    // q.hot: the strokes that count as a hit, when it is not the radical being hunted (the sound part, say)
+    const hot = q.hot || g.r;
+    const svg = hanzi(q.spot, q.hz);
+    const wrap = el("button.q-spot", { type: "button", style: radStyle(q.rad), "aria-label": q.spotLabel || "Tap the radical" }, svg);
     wrap.addEventListener("click", (ev) => {
       if (answered) return;
       const i = strokeAt(svg, q.spot, ev);
-      const ok = g.r.includes(i);
+      const ok = hot.includes(i);
       if (!ok) $(`path[data-i="${i}"]`, svg)?.classList.add("miss");
       finish(ok, () => wrap.classList.add("lit"));
     });

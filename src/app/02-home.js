@@ -73,7 +73,7 @@ function hero() {
         el("p.eyebrow", el("span.kai", hanzi("部"), hanzi("首")), py("bùshǒu"), " · the building blocks of Chinese"),
         el("h1", "60 RADICALS.", el("br"), el("span.red", "THOUSANDS"), " OF CHARACTERS."),
         el("p.lede", "Chinese characters are built from parts. One part, the radical, hints at the meaning. Learn the sixty that matter most and every new character arrives with a clue."),
-        el("div.hero-cta", cta, el("a.btn.ghost", { href: "#how" }, "How radicals work"))),
+        el("div.hero-cta", cta, el("a.btn.ghost", { href: "#how" }, "How radicals work"), el("a.btn.ghost", { href: "#sounds" }, "Sound families"))),
       heroDemo()));
   requestAnimationFrame(() => paintWall(canvas));
   return sec;
@@ -167,7 +167,7 @@ function groupBand(g, gi) {
 }
 
 function playSection() {
-  const n = learnedCount();
+  const n = learnedCount(), fam = famCount();
   return el("section.band#play",
     el("div.wrap",
       el("p.eyebrow", "Make it stick"),
@@ -182,7 +182,12 @@ function playSection() {
           el("h3", "60-second decode"),
           el("p", "Characters you have never been taught, one after another. Read the radical, pick the meaning, beat the clock."),
           el("span.play-meta", state.sprint ? `Your best: ${state.sprint}` : "No score yet"),
-          el("span.btn.small", "Start the clock")))));
+          el("span.btn.small", "Start the clock")),
+        el("a.play-card", { href: "#sound-review" },
+          el("h3", "Sound review"),
+          el("p", "Ten questions on the sound families: name the part, find it inside a character, and guess how an unseen character is said."),
+          el("span.play-meta", fam ? `${fam} sound famil${fam === 1 ? "y" : "ies"} in your pool` : "Learn a sound family first, or jump in anyway"),
+          el("span.btn.small", "Start sound review")))));
 }
 
 function footer() {
@@ -202,7 +207,7 @@ function footer() {
         el("p", "They were picked for two things: how many everyday characters they appear in, and how dependable the hint is. The first thirty are the dictionary radical of about 58% of the 2,500 most-used simplified characters. All sixty together cover about 75%. The first six sets hold the clearest hints. The last six add radicals that are just as common but ask for a little more care, such as the two that share one ear-shaped hook.")),
       el("div",
         el("h4", "How the site teaches"),
-        el("p", "Five radicals at a time, each with its picture, its position and four familiar characters. Then you recall them, spot them inside characters, and use them on characters you have not met. Missed questions come back. Each set ends with two games: a radical hunt through something you would really read, and a round of building characters from their parts. A red seal means three right answers in a row.")),
+        el("p", "Five radicals at a time, each with its picture, its position and four familiar characters. Then you recall them, spot them inside characters, and use them on characters you have not met. Missed questions come back. Each set ends with two games: a radical hunt through something you would really read, and a round of building characters from their parts. A red seal means three right answers in a row. The sound families work the same way for the other half of the character: twenty sound parts, each shown with every common character built on it, including the ones that no longer keep the sound.")),
       el("div",
         el("h4", "Credits"),
         el("p", "Stroke outlines: Make Me a Hanzi and Hanzi Writer data, derived from Arphic fonts under the Arphic Public License. Progress is saved in this browser only."),
@@ -220,6 +225,7 @@ function homeView() {
         el("h2", "THE ", el("span.red", "SIXTY")),
         el("p.sub", "Twelve sets of five. Open a radical to learn it, then practise the set."),
         GROUPS.map(groupBand))),
+    soundSection(),
     playSection(),
     footer());
 }
